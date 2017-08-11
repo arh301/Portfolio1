@@ -31,7 +31,9 @@
    .slideImg{
 	  margin-top:15%;
   }
- 
+  #javaProj{
+	  padding-left:1.5%
+  }
 }
 @media (max-width: 1199px) {
 #largename{
@@ -74,10 +76,23 @@
   .slideImg {
     margin-top: 4px;
 }
+#ipp1{
+	width:50%;
+	margin-left:17%;
+	margin-top:5%;
+}
+#ipp2{
+	display:none;
+}
+#ipp3{
+	display:none;
+}
 #portTop{
 	width:55%;
 }
 }
+
+
 @media (max-width:1125px){
 	#appText{
 		padding-top:0px;
@@ -99,7 +114,16 @@
 	padding-top:5px;
 	font-size:16px;
 }
-}
+ #javaProj{
+	 font-size:18px;
+	 padding-left:20%
+ }
+ #javaPaint {
+	 display:none;
+ }
+ #javaSkills{
+	 font-size:18px;
+}}
 	
 @media (max-width:1055px){
 	#appPane{
@@ -122,9 +146,16 @@
 	}
 	.column{
 	  width:170px;
-	  margin-top:0;
+	  margin-left:25%;
 	  padding-left:15% !important;
 	  padding-right:15% !important;
+  }
+
+   #ipp1 {
+	  padding-right:0px;
+	  margin-left:0px;
+	  padding-left:19% !important;
+	  width:220px !important;
   }
 	#appIm2{
 		display:none;
@@ -197,6 +228,36 @@
 	  padding-left:0% !important;
 	  padding-right:0% !important;
   }
+  #ipp1 {
+	  padding-right:0px;
+	  margin-left:0px;
+	  padding-left:17% !important;
+	  width:220px !important;
+  }
+   #javaProj{
+	 padding-left:14%
+ }
+}
+@media (max-width: 879px) {
+
+#ipp1 {
+	  padding-right:0px;
+	  margin-left:0px;
+	  padding-left:13% !important;
+	  width:220px !important;
+  }
+  }
+@media (max-width: 829px) {
+	.column{
+		margin-top:25%;
+	}
+	#appPane{
+		font-size:16px;
+	}
+	#javaProj{
+	 padding-left:10%
+ }
+	
 }
 @media (max-width: 749px) {
   #largename{
@@ -221,5 +282,31 @@
   #conLeftList{
 	  font-size:16px;
   }
+  #appPane{
+	  font-size:16px;
+  }
+  #appText{
+	  width:63%;
+  }
+  #appLinks{
+	  width:62%;
+  }
+  #appImgs{
+	  width:29%;
+	  padding-left:0px;
+	  margin-left:0;
+  }
+  .column{
+	  width:90%;
+	  margin-top:18%;
+  }
+  #javaProj{
+	 padding-left:5%
+ }
+ #javaSkills{
+	 padding-left:1%;
+	 padding-right:1%;
+	 width:20%;
+ }
 }
 
