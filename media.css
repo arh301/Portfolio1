@@ -1,0 +1,225 @@
+@charset "utf-8";
+/* CSS Document */
+
+@media(min-width:1300px){
+	#largename{
+	  display:block;
+  }
+  #smallname{
+	  display:none;
+  }
+  
+}
+@media (max-width: 1299px) {
+#largename{
+	  display:block;
+  }
+  #smallname{
+	  display:none;
+  }
+  .slideImg{
+	  margin-top:10%;
+  }
+}
+@media (max-width: 1249px) {
+#largename{
+	  display:block;
+  }
+  #smallname{
+	  display:none;
+  }
+   .slideImg{
+	  margin-top:15%;
+  }
+ 
+}
+@media (max-width: 1199px) {
+#largename{
+	  display:block;
+  }
+  #smallname{
+	  display:none;
+  }
+  #portTop{
+	  width:60%;
+  }
+  #portDocsLink{
+	  width:280px;
+  }
+  #appPane{
+	  font-size:16px;
+	  height:340px;
+  }
+  #appImgs{
+	  width:400px;
+	 padding:15px;
+  }
+  #appLinks{
+	  padding-top:10px;
+	  width:27%;
+  }
+  #appText{
+	  padding-top:10px;
+	  width:27%;
+  }
+  
+  #appIm3{
+	  display:none;
+  }
+  .column{
+	  width:160px;
+	  margin-top:0;
+	  padding-left:22px !important;
+  }
+  .slideImg {
+    margin-top: 4px;
+}
+#portTop{
+	width:55%;
+}
+}
+@media (max-width:1125px){
+	#appText{
+		padding-top:0px;
+	}
+	#appLinks{
+		padding-top:0px;
+	}
+	.column{
+	  width:160px;
+	  margin-top:0;
+	  padding-left:18px !important;
+  }
+  #portTop{
+	width:65%;
+}
+#portDocsLink{
+	width:240px;
+	height:40px;
+	padding-top:5px;
+	font-size:16px;
+}
+}
+	
+@media (max-width:1055px){
+	#appPane{
+		font-size:17px;
+		height:350px;
+	}
+	#appImgs{
+	  width:28%;
+	 padding:10px;
+  }
+	#appText{
+		width:36%;
+		padding-top:0px;
+		padding-right:3%;
+	}
+	#appLinks{
+		width:36%;
+		padding-top:0px;
+		padding-left:3%;
+	}
+	.column{
+	  width:170px;
+	  margin-top:0;
+	  padding-left:15% !important;
+	  padding-right:15% !important;
+  }
+	#appIm2{
+		display:none;
+	}
+}
+@media (max-width: 919px) {
+  #largename{
+	  display:none;
+  }
+  #smallname{
+	  display:block;
+  }
+  nav {
+ 	width:80%
+  }
+  .conText{
+	  font-size:18px;
+  }
+  #conLeftList{
+	  font-size:17px;
+  }
+  #portDocsL{
+	  display:block;
+  }
+  #portDocsLink{
+	  display:none;
+  }
+  #portTop{
+	  width:90%;
+  }
+	  
+  #appPane{
+	  flex-direction: row;
+    flex-wrap: wrap;
+	height:460px;
+  }
+  #appText{
+	  width:65%;
+  }
+  #appImgs{
+	  width:26%;
+	  margin:0;
+	  height:430px;
+
+  }
+  #appLinks{
+	  float:left;
+	  margin-top:-205px;
+	  width:65%;
+	  
+  }
+  #screenshots1{
+	  display:none;
+  }
+  #screenshots2{
+	  display:block;
+  }
+  .column{
+	  width:85%;
+	  margin-top:5%;
+	  margin-left:0 auto;
+	  margin-right:0 auto;
+	  padding-left:0% !important;
+	  padding-right:0% !important;
+  }
+  #appIm1{
+	   margin-left:7%;
+	  margin-right:7%;
+	  padding-bottom:8%;
+	  padding-left:0% !important;
+	  padding-right:0% !important;
+  }
+}
+@media (max-width: 749px) {
+  #largename{
+	  display:none;
+  }
+  #smallname{
+	  display:block;
+  }
+  nav {
+ 	width:85%;
+	padding-right:5px;
+  }
+  li a{
+	 padding:20px; 
+  }
+  body{
+	  font-size:16px;
+  }
+  .conText{
+	  font-size:17px;
+  }
+  #conLeftList{
+	  font-size:16px;
+  }
+}
+

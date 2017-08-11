@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Contact</title>
+<link href="styles.css" rel="stylesheet" type="text/css">
+<link href="media.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+</head>
+
+<body>
+<header>
+  <p id="largename" class="name"><span style="font-weight:bolder; font-size:45px">Anna</span>Hughes</p>
+  <p id="smallname" class="name"><span style="font-weight:bolder; font-size:45px">A</span>H</p>
+  <nav>
+    <ul class="navlist">
+      <li class="nav"><a href="index.html">Home</a></li>
+      <li class="nav"><a href="port.html">Portfolio</a></li>
+      <li class="nav"><a href="cv.html">CV</a></li>
+      <li class="nav"><a href="contact.html">Contact.</a></li>
+    </ul>
+  </nav>
+</header>
+<spacer></spacer>
+<div id="conLeftPane">
+  <p class="conText">Currently located in Brighton, with plans to move to Bournemouth, I am based in the South of the UK. Actively seeking new projects and/or my first professional position, I am particularly interested in hearing from:<br>
+  </p>
+  <div id="conLeftList">
+    <ul>
+      <li>Web &amp; Digital Development companies.</li>
+      <li>Social enterprises.</li>
+      <li>Homeless charities &amp; others invested in this area.</li>
+    </ul>
+  </div>
+  <p class="conText" style="padding-top:5px">If you wish to contact me, please do so by email (using the contact form) or LinkedIn.</p>
+</div>
+<div id="formPane">
+  <p class="text" style="text-align:center">Please use the form below to contact me by email. If you would prefer me to reply to you by phone call, leave a number and I will do so as soon as possible.</p>
+  <form id = "form" name="form" method="post" action="contact.php">
+    <p style="padding-left:30px">
+      <label for="name"><strong>Name:</strong></label>
+      <input type="text" name="name" id="name" required/>
+    </p>
+    <p style="padding-left:35px">
+      <label for="email"><strong>Email:</strong></label>
+      <input type="email" name="email" id="email" required/>
+    </p>
+    <p>
+      <label for="message" class="formmes"><strong>Message:</strong></label>
+      <textarea rows="4" cols="50" name="message" id="message" required></textarea>
+    </p>
+    <input name="submit" type="submit" class="submit" value="Send"/>
+  </form>
+</div>
+<div id="contactEnd">
+  <div id="linkedin"> <a href="https://www.linkedin.com/in/anna-hughes-748bb9109/"><img src="linkedin.png" alt="linkedin" /></a></div>
+  <img id="cableimg" src="cable2.png" alt="fiber"> </div>
+</body>
+</html>

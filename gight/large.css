@@ -1,0 +1,215 @@
+@media (min-width: 1750px) and (max-width: 3000px) {
+
+#content{
+	width:1749px;
+}
+
+.menu {
+	font-size: 38px;
+}
+h6 {
+	font-size: 55px;
+	padding-top: 40px;
+}
+h1, h2, h3, h4, h5 {
+	font-size: 55px;
+	padding-top: 120px;
+}
+#logo {
+	width: 500px;
+}
+#header {
+	height: 100px;
+	width: 1749px;
+}
+.nav {
+	margin-top: 12px;
+	width: 875px;
+}
+.li1 {
+	padding-left: 32px;
+	padding-right: 32px;
+	font-size: 35px;
+}
+#product {
+	font-size: 28px;
+	height: 1080px;
+}
+#product_pic {
+	margin-top: 40px;
+	width: 60%;
+}
+#about {
+	height: 1080px;
+	overflow: hidden;
+}
+
+#about_pic {
+	width: 29%;
+	padding-top: 20px
+}
+#about_t1 {
+	width: 34%;
+	padding-right: 5px;
+	font-size: 23px;
+	margin-left: 5px;
+}
+#shop {
+	height: 1080px;
+}
+#team {
+	height: 1080px;
+}
+#team_t1 {
+	font-size: 28px;
+	margin: 10px;
+}
+#teambox {
+	height: 610px;
+	padding: 10px;
+}
+.teamtext {
+	font-size: 20px;
+	padding: 5px;
+}
+#service {
+	height: 520px;
+}
+#returns_t1 {
+	padding: 40px;
+	font-size: 24px;
+}
+#contact {
+	height: 520px;
+	font-size: 23px;
+}
+.formfills {
+	font-size: 25px;
+	padding-bottom: 10px;
+	height: 30px;
+}
+#name, #email, #tel {
+	height: 30px;
+	font-size: 18px;
+}
+#message {
+	height: 175px;
+	font-size: 18px;
+}
+.submit {
+	height: 40px;
+	width: 120px;
+	font-size: 18px;
+}
+.sub {
+	padding-right: 60px;
+}
+.foot {
+	width: 470px;
+	padding-top: 8px;
+	font-weight: bold;
+}
+.li2 {
+	font-size: 24px;
+}
+#footer {
+	height: 45px;
+	width: 1920px;
+}
+}
+
+@media (min-width: 1550px) and (max-width: 1750px) {
+.menu {
+	font-size: 38px;
+}
+h6 {
+	font-size: 45px;
+	padding-top: 40px;
+}
+h1, h2, h3, h4, h5 {
+	font-size: 45px;
+	padding-top: 100px;
+}
+#logo {
+	width: 390px;
+}
+#header {
+	height: 80px;
+}
+.nav {
+	margin-top: 8px;
+	width: 810px;
+}
+.li1 {
+	padding-left: 32px;
+	padding-right: 32px;
+	font-size: 30px;
+}
+#product {
+	height: 700px;
+}
+#product_t1 {
+	font-size: 20px;
+	padding-bottom: 20px;
+}
+#about {
+	min-height: 700px;
+}
+
+#about_pic {
+	width: 29%;
+	padding-top: 70px
+}
+#about_t1 {
+	width: 34%;
+	padding-right: 5px;
+	font-size: 23px;
+	margin-left: 5px;
+}
+#team_t1 {
+	font-size: 23px;
+	margin: 10px;
+}
+#teambox {
+	height: 580px;
+}
+.teamtext {
+	font-size: 18px;
+}
+#returns_t1 {
+	padding: 30px;
+	font-size: 23px;
+}
+#contact {
+	height: 400px;
+	font-size: 23px;
+}
+.formfills {
+	font-size: 20px;
+	padding-bottom: 7px;
+	height: 20px;
+}
+#name, #email, #tel {
+	height: 25px;
+	font-size: 16px;
+}
+#message {
+	height: 120px;
+}
+.submit {
+	height: 40px;
+	width: 80px;
+	font-size: 16px;
+}
+.foot {
+	width: 450px;
+	padding-top: 3px;
+	font-weight: bold;
+}
+.li2 {
+	font-size: 22px;
+}
+#footer {
+	height: 35px;
+}
+}
