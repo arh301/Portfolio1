@@ -11,8 +11,7 @@ html, body {
 	width: 100%;
 	margin:0 auto;
 	max-width: 1400px;
-	min-width: 615px; 
-
+	min-width: 615px;
 
 }
 header {
@@ -104,7 +103,7 @@ a.link {
 	top:0%;
 }
 #para3{ 
-    background-image:url(tree.JPG);
+    background-image:url(../../Pictures/Old%20Laptop/photos/Photography/DSCF1288.JPG);
     height: 35%;
 	top:0%;
 }
@@ -338,7 +337,7 @@ a.link {
 	float: right;
 }
 #clockPane{
-	width: 35%;
+	width: 38%;
 	color:black;
 	display: block;
 	text-align:center;
@@ -353,8 +352,9 @@ a.link {
 	left:50%
 }
 #gamePane1{
-	width: 53%;
+	width: 48%;
 	color:black;
+	text-align:center;
 	display: block;
 	float:right;
 	background-color: #F7F3E3;
@@ -387,7 +387,7 @@ a.link {
 	padding-left: 3%;
 	padding-right:2%;
 	bottom:0;
-	padding-top:10%;
+	padding-top:1%;
 	font-size:19px;
 }
 #javaPaint {
