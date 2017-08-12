@@ -146,9 +146,11 @@
 	}
 	.column{
 	  width:170px;
-	  margin-left:25%;
 	  padding-left:15% !important;
 	  padding-right:15% !important;
+  }
+  #appIm2{
+	  display:none;
   }
 
    #ipp1 {
@@ -157,9 +159,7 @@
 	  padding-left:19% !important;
 	  width:220px !important;
   }
-	#appIm2{
-		display:none;
-	}
+	
 }
 @media (max-width: 919px) {
   #largename{
@@ -300,6 +300,10 @@
 	  width:90%;
 	  margin-top:18%;
   }
+  #ipp1{
+	padding-left:9% !important;
+	padding-right:9% !important;
+}
   #javaProj{
 	 padding-left:5%
  }
@@ -308,5 +312,11 @@
 	 padding-right:1%;
 	 width:20%;
  }
+}
+@media (max-width:680px){
+	#ipp1{
+	padding-left:4% !important;
+	padding-right:5% !important;
+}
 }
 
