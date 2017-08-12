@@ -1,540 +1,375 @@
-<<<<<<< HEAD
 @charset "utf-8";
+
 /* CSS Document */
 
-@media(min-width:1300px){
-	#largename{
-	  display:block;
-  }
-  #smallname{
-	  display:none;
-  }
-  
+@media(min-width:1300px) {
+#largename {
+	display: block;
 }
+#smallname {
+	display: none;
+}
+#websPane1 > .row {
+	margin-top: 15px;
+}
+}
+
 @media (max-width: 1299px) {
-#largename{
-	  display:block;
-  }
-  #smallname{
-	  display:none;
-  }
-  .slideImg{
-	  margin-top:10%;
-  }
+#largename {
+	display: block;
 }
+#smallname {
+	display: none;
+}
+.slideImg {
+	margin-top: 10%;
+}
+}
+
 @media (max-width: 1249px) {
-#largename{
-	  display:block;
-  }
-  #smallname{
-	  display:none;
-  }
-   .slideImg{
-	  margin-top:15%;
-  }
-  #javaProj{
-	  padding-left:1.5%
-  }
+#largename {
+	display: block;
 }
+#smallname {
+	display: none;
+}
+.slideImg {
+	margin-top: 15%;
+}
+#javaProj {
+	padding-left: 1.5%
+}
+}
+
 @media (max-width: 1199px) {
-#largename{
-	  display:block;
-  }
-  #smallname{
-	  display:none;
-  }
-  #portTop{
-	  width:60%;
-  }
-  #portDocsLink{
-	  width:280px;
-  }
-  #appPane{
-	  font-size:16px;
-	  height:340px;
-  }
-  #appImgs{
-	  width:400px;
-	 padding:15px;
-  }
-  #appLinks{
-	  padding-top:10px;
-	  width:27%;
-  }
-  #appText{
-	  padding-top:10px;
-	  width:27%;
-  }
-  
-  #appIm3{
-	  display:none;
-  }
-  .column{
-	  width:160px;
-	  margin-top:0;
-	  padding-left:22px !important;
-  }
-  .slideImg {
-    margin-top: 4px;
+#largename {
+	display: block;
 }
-#ipp1{
-	width:50%;
-	margin-left:17%;
-	margin-top:5%;
+#smallname {
+	display: none;
 }
-#ipp2{
-	display:none;
+#portTop {
+	width: 60%;
 }
-#ipp3{
-	display:none;
+#portDocsLink {
+	width: 280px;
 }
-#portTop{
-	width:55%;
+#appPane {
+	font-size: 16px;
+	height: 340px;
 }
+#appImgs {
+	width: 400px;
+	padding: 15px;
 }
-
-
-@media (max-width:1125px){
-	#appText{
-		padding-top:0px;
-	}
-	#appLinks{
-		padding-top:0px;
-	}
-	.column{
-	  width:160px;
-	  margin-top:0;
-	  padding-left:18px !important;
-  }
-  #portTop{
-	width:65%;
+#appLinks {
+	padding-top: 10px;
+	width: 27%;
 }
-#portDocsLink{
-	width:240px;
-	height:40px;
-	padding-top:5px;
-	font-size:16px;
+#appText {
+	padding-top: 10px;
+	width: 27%;
 }
- #javaProj{
-	 font-size:18px;
-	 padding-left:20%
- }
- #javaPaint {
-	 display:none;
- }
- #javaSkills{
-	 font-size:18px;
-}}
-	
-@media (max-width:1055px){
-	#appPane{
-		font-size:17px;
-		height:350px;
-	}
-	#appImgs{
-	  width:28%;
-	 padding:10px;
-  }
-	#appText{
-		width:36%;
-		padding-top:0px;
-		padding-right:3%;
-	}
-	#appLinks{
-		width:36%;
-		padding-top:0px;
-		padding-left:3%;
-	}
-	.column{
-	  width:170px;
-	  margin-left:25%;
-	  padding-left:15% !important;
-	  padding-right:15% !important;
-  }
-
-   #ipp1 {
-	  padding-right:0px;
-	  margin-left:0px;
-	  padding-left:19% !important;
-	  width:220px !important;
-  }
-	#appIm2{
-		display:none;
-	}
+#appIm3 {
+	display: none;
 }
-@media (max-width: 919px) {
-  #largename{
-	  display:none;
-  }
-  #smallname{
-	  display:block;
-  }
-  nav {
- 	width:80%
-  }
-  .conText{
-	  font-size:18px;
-  }
-  #conLeftList{
-	  font-size:17px;
-  }
-  #portDocsL{
-	  display:block;
-  }
-  #portDocsLink{
-	  display:none;
-  }
-  #portTop{
-	  width:90%;
-  }
-	  
-  #appPane{
-	  flex-direction: row;
-    flex-wrap: wrap;
-	height:460px;
-  }
-  #appText{
-	  width:65%;
-  }
-  #appImgs{
-	  width:26%;
-	  margin:0;
-	  height:430px;
-
-  }
-  #appLinks{
-	  float:left;
-	  margin-top:-205px;
-	  width:65%;
-	  
-  }
-  #screenshots1{
-	  display:none;
-  }
-  #screenshots2{
-	  display:block;
-  }
-  .column{
-	  width:85%;
-	  margin-top:5%;
-	  margin-left:0 auto;
-	  margin-right:0 auto;
-	  padding-left:0% !important;
-	  padding-right:0% !important;
-  }
-  #appIm1{
-	   margin-left:7%;
-	  margin-right:7%;
-	  padding-bottom:8%;
-	  padding-left:0% !important;
-	  padding-right:0% !important;
-  }
-  #ipp1 {
-	  padding-right:0px;
-	  margin-left:0px;
-	  padding-left:17% !important;
-	  width:220px !important;
-  }
-   #javaProj{
-	 padding-left:14%
- }
+.column {
+	width: 160px;
+	margin-top: 0;
+	padding-left: 22px !important;
 }
-@media (max-width: 879px) {
-
+.slideImg {
+	margin-top: 4px;
+}
 #ipp1 {
-	  padding-right:0px;
-	  margin-left:0px;
-	  padding-left:13% !important;
-	  width:220px !important;
-  }
-  }
-@media (max-width: 829px) {
-	.column{
-		margin-top:25%;
-	}
-	#appPane{
-		font-size:16px;
-	}
-	#javaProj{
-	 padding-left:10%
- }
-	
+	width: 50%;
+	margin-left: 17%;
+	margin-top: 5%;
 }
-@media (max-width: 749px) {
-  #largename{
-	  display:none;
-  }
-  #smallname{
-	  display:block;
-  }
-  nav {
- 	width:85%;
-	padding-right:5px;
-  }
-  li a{
-	 padding:20px; 
-  }
-  body{
-	  font-size:16px;
-  }
-  .conText{
-	  font-size:17px;
-  }
-  #conLeftList{
-	  font-size:16px;
-  }
-  #appPane{
-	  font-size:16px;
-  }
-  #appText{
-	  width:63%;
-  }
-  #appLinks{
-	  width:62%;
-  }
-  #appImgs{
-	  width:29%;
-	  padding-left:0px;
-	  margin-left:0;
-  }
-  .column{
-	  width:90%;
-	  margin-top:18%;
-  }
-  #javaProj{
-	 padding-left:5%
- }
- #javaSkills{
-	 padding-left:1%;
-	 padding-right:1%;
-	 width:20%;
- }
+#ipp2 {
+	display: none;
+}
+#ipp3 {
+	display: none;
+}
+#portTop {
+	width: 55%;
+}
 }
 
-=======
-@charset "utf-8";
-/* CSS Document */
+@media (max-width:1125px) {
+#appText {
+	padding-top: 0px;
+}
+#appLinks {
+	padding-top: 0px;
+}
+.column {
+	width: 160px;
+	margin-top: 0;
+	padding-left: 18px !important;
+}
+#portTop {
+	width: 65%;
+}
+#portDocsLink {
+	width: 240px;
+	height: 40px;
+	padding-top: 5px;
+	font-size: 16px;
+}
+#javaProj {
+	padding-left: 20%
+}
+#javaPaint {
+	display: none;
+}
 
-@media(min-width:1300px){
-	#largename{
-	  display:block;
-  }
-  #smallname{
-	  display:none;
-  }
-  
 }
-@media (max-width: 1299px) {
-#largename{
-	  display:block;
-  }
-  #smallname{
-	  display:none;
-  }
-  .slideImg{
-	  margin-top:10%;
-  }
+
+@media (max-width:1055px) {
+#appPane {
+	font-size: 17px;
+	height: 350px;
 }
-@media (max-width: 1249px) {
-#largename{
-	  display:block;
-  }
-  #smallname{
-	  display:none;
-  }
-   .slideImg{
-	  margin-top:15%;
-  }
- 
+#appImgs {
+	width: 28%;
+	padding: 10px;
 }
-@media (max-width: 1199px) {
-#largename{
-	  display:block;
-  }
-  #smallname{
-	  display:none;
-  }
-  #portTop{
-	  width:60%;
-  }
-  #portDocsLink{
-	  width:280px;
-  }
-  #appPane{
-	  font-size:16px;
-	  height:340px;
-  }
-  #appImgs{
-	  width:400px;
-	 padding:15px;
-  }
-  #appLinks{
-	  padding-top:10px;
-	  width:27%;
-  }
-  #appText{
-	  padding-top:10px;
-	  width:27%;
-  }
-  
-  #appIm3{
-	  display:none;
-  }
-  .column{
-	  width:160px;
-	  margin-top:0;
-	  padding-left:22px !important;
-  }
-  .slideImg {
-    margin-top: 4px;
+#appText {
+	width: 36%;
+	padding-top: 0px;
+	padding-right: 3%;
 }
-#portTop{
-	width:55%;
+#appLinks {
+	width: 36%;
+	padding-top: 0px;
+	padding-left: 3%;
+}
+.column {
+	width: 170px;
+	padding-left: 15% !important;
+	padding-right: 15% !important;
+}
+#appIm2 {
+	display: none;
+}
+#ipp1 {
+	padding-right: 0px;
+	margin-left: 0px;
+	padding-left: 19% !important;
+	width: 220px !important;
+}
+#websPane2 {
+	font-size: 17px;
+}
+#clockPane{
+	padding-right:0;
+	width:42%
+}
+#gamePane1{
+	text-align:right;
+	margin-top:4%;
+}
+#gamePane1 > p{
+	float:right;
+	width:95%
+}
+#java{
+	font-size:18px !important;
 }
 }
-@media (max-width:1125px){
-	#appText{
-		padding-top:0px;
-	}
-	#appLinks{
-		padding-top:0px;
-	}
-	.column{
-	  width:160px;
-	  margin-top:0;
-	  padding-left:18px !important;
-  }
-  #portTop{
-	width:65%;
-}
-#portDocsLink{
-	width:240px;
-	height:40px;
-	padding-top:5px;
-	font-size:16px;
-}
-}
-	
-@media (max-width:1055px){
-	#appPane{
-		font-size:17px;
-		height:350px;
-	}
-	#appImgs{
-	  width:28%;
-	 padding:10px;
-  }
-	#appText{
-		width:36%;
-		padding-top:0px;
-		padding-right:3%;
-	}
-	#appLinks{
-		width:36%;
-		padding-top:0px;
-		padding-left:3%;
-	}
-	.column{
-	  width:170px;
-	  margin-top:0;
-	  padding-left:15% !important;
-	  padding-right:15% !important;
-  }
-	#appIm2{
-		display:none;
-	}
-}
+
 @media (max-width: 919px) {
-  #largename{
-	  display:none;
-  }
-  #smallname{
-	  display:block;
-  }
-  nav {
- 	width:80%
-  }
-  .conText{
-	  font-size:18px;
-  }
-  #conLeftList{
-	  font-size:17px;
-  }
-  #portDocsL{
-	  display:block;
-  }
-  #portDocsLink{
-	  display:none;
-  }
-  #portTop{
-	  width:90%;
-  }
-	  
-  #appPane{
-	  flex-direction: row;
-    flex-wrap: wrap;
-	height:460px;
-  }
-  #appText{
-	  width:65%;
-  }
-  #appImgs{
-	  width:26%;
-	  margin:0;
-	  height:430px;
-
-  }
-  #appLinks{
-	  float:left;
-	  margin-top:-205px;
-	  width:65%;
-	  
-  }
-  #screenshots1{
-	  display:none;
-  }
-  #screenshots2{
-	  display:block;
-  }
-  .column{
-	  width:85%;
-	  margin-top:5%;
-	  margin-left:0 auto;
-	  margin-right:0 auto;
-	  padding-left:0% !important;
-	  padding-right:0% !important;
-  }
-  #appIm1{
-	   margin-left:7%;
-	  margin-right:7%;
-	  padding-bottom:8%;
-	  padding-left:0% !important;
-	  padding-right:0% !important;
-  }
+#largename {
+	display: none;
 }
+#smallname {
+	display: block;
+}
+nav {
+	width: 80%
+}
+.conText {
+	font-size: 18px;
+}
+#conLeftList {
+	font-size: 17px;
+}
+#portDocsL {
+	display: block;
+}
+#portDocsLink {
+	display: none;
+}
+#portTop {
+	width: 90%;
+}
+#appPane {
+	flex-direction: row;
+	flex-wrap: wrap;
+	height: 460px;
+}
+#appText {
+	width: 65%;
+}
+#appImgs {
+	width: 26%;
+	margin: 0;
+	height: 430px;
+}
+#appLinks {
+	float: left;
+	margin-top: -205px;
+	width: 65%;
+}
+#screenshots1 {
+	display: none;
+}
+#screenshots2 {
+	display: block;
+}
+.column {
+	width: 85%;
+	margin-top: 5%;
+	margin-left: 0 auto;
+	margin-right: 0 auto;
+	padding-left: 0% !important;
+	padding-right: 0% !important;
+}
+#appIm1 {
+	margin-left: 7%;
+	margin-right: 7%;
+	padding-bottom: 8%;
+	padding-left: 0% !important;
+	padding-right: 0% !important;
+}
+#ipp1 {
+	padding-right: 0px;
+	margin-left: 0px;
+	padding-left: 17% !important;
+	width: 220px !important;
+}
+#clockPane{
+	width:70%;
+	float:none;
+	margin:0 auto;
+}
+#gamePane1{
+	width:100%;
+	float:none;
+	margin:0 auto;
+	padding:10px;
+	padding-top:0;
+	margin-bottom:20px;
+	text-align:center;
+}
+#gamePane1 > p {
+     float: none;
+     width: 93%; 
+	 margin-left:20px;
+	 margin-right:20px;
+}
+#javaProj {
+	padding-left: 14%
+}
+}
+
+@media (max-width: 879px) {
+#ipp1 {
+	padding-right: 0px;
+	margin-left: 0px;
+	padding-left: 13% !important;
+	width: 220px !important;
+}
+}
+
+@media (max-width: 829px) {
+.column {
+	margin-top: 25%;
+}
+#appPane {
+	font-size: 16px;
+}
+#websPane2 > p {
+	font-size: 16px;
+	margin-top: 10px;
+}
+#java{
+	font-size:17px !important;
+}
+#javaProj {
+	padding-left: 10%
+}
+}
+
 @media (max-width: 749px) {
-  #largename{
-	  display:none;
-  }
-  #smallname{
-	  display:block;
-  }
-  nav {
- 	width:85%;
-	padding-right:5px;
-  }
-  li a{
-	 padding:20px; 
-  }
-  body{
-	  font-size:16px;
-  }
-  .conText{
-	  font-size:17px;
-  }
-  #conLeftList{
-	  font-size:16px;
-  }
+#largename {
+	display: none;
+}
+#smallname {
+	display: block;
+}
+nav {
+	width: 85%;
+	padding-right: 5px;
+}
+li a {
+	padding: 20px;
+}
+body {
+	font-size: 16px;
+}
+.conText {
+	font-size: 17px;
+}
+#conLeftList {
+	font-size: 16px;
+}
+#appPane {
+	font-size: 16px;
+}
+#appText {
+	width: 63%;
+}
+#appLinks {
+	width: 62%;
+}
+#appImgs {
+	width: 29%;
+	padding-left: 0px;
+	margin-left: 0;
+}
+.column {
+	width: 90%;
+	margin-top: 18%;
+}
+#ipp1 {
+	padding-left: 9% !important;
+	padding-right: 9% !important;
+}
+#javaProj {
+	padding-left: 5%
+}
+#javaSkills {
+	padding-left: 1%;
+	padding-right: 1%;
+	width: 20%;
+}
 }
 
->>>>>>> bcb9b9effc76ed84c55663b1f9882aa27fd40ab0
+@media(max-width:680px){
+#ipp1 {
+	padding-left: 4% !important;
+	padding-right: 5% !important;
+}
+#websPane2 > p {
+ font-size:15.5px;
+ margin-top:8px;
+}
+#websPane2 {
+	padding-left: 0;
+	padding-right: 25px;
+	width: 45%;
+}
+}
