@@ -335,6 +335,7 @@ a.link {
 	padding: 3%;
 	padding-top: 0px;
 	float: right;
+	text-align:center;
 }
 #clockPane{
 	width: 38%;

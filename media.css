@@ -8,6 +8,9 @@
   #smallname{
 	  display:none;
   }
+  #websPane1 > .row{
+	  margin-top:15px;
+  }
   
 }
 @media (max-width: 1299px) {
@@ -34,6 +37,7 @@
   #javaProj{
 	  padding-left:1.5%
   }
+  
 }
 @media (max-width: 1199px) {
 #largename{
@@ -90,6 +94,7 @@
 #portTop{
 	width:55%;
 }
+
 }
 
 
@@ -158,6 +163,9 @@
 	  margin-left:0px;
 	  padding-left:19% !important;
 	  width:220px !important;
+  }
+  #websPane2{
+	  font-size:17px;
   }
 	
 }
@@ -234,6 +242,7 @@
 	  padding-left:17% !important;
 	  width:220px !important;
   }
+  
    #javaProj{
 	 padding-left:14%
  }
@@ -246,6 +255,7 @@
 	  padding-left:13% !important;
 	  width:220px !important;
   }
+  
   }
 @media (max-width: 829px) {
 	.column{
@@ -254,6 +264,10 @@
 	#appPane{
 		font-size:16px;
 	}
+	#websPane2 > p{
+	  font-size:16px; 
+	  margin-top:10px;
+  }
 	#javaProj{
 	 padding-left:10%
  }
@@ -318,5 +332,13 @@
 	padding-left:4% !important;
 	padding-right:5% !important;
 }
+#websPane2 < p{
+	  font-size:15.5px; 
+	  margin-top:8px;
+  }
+  #websPane2{
+	  padding-left:0;
+	  padding-right:25px;
+	  width:45%;
 }
 
