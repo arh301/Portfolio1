@@ -94,7 +94,9 @@
 #portTop{
 	width:55%;
 }
-
+.conText{
+	font-size:19px;
+}
 }
 
 
@@ -128,7 +130,15 @@
  }
  #javaSkills{
 	 font-size:18px;
-}}
+}
+#contactEnd{
+	height:110px;
+}
+#linkedin{
+	
+	padding-top:32px;
+}
+}
 	
 @media (max-width:1055px){
 	#appPane{
@@ -167,7 +177,9 @@
   #websPane2{
 	  font-size:17px;
   }
-	
+	#cvImg{
+	width:90%;
+}
 }
 @media (max-width: 919px) {
   #largename{
@@ -326,13 +338,16 @@
 	 padding-right:1%;
 	 width:20%;
  }
+ #cvImg{
+	width:100%;
+}
 }
 @media (max-width:680px){
 	#ipp1{
 	padding-left:4% !important;
 	padding-right:5% !important;
 }
-#websPane2 < p{
+#websPane2 > p{
 	  font-size:15.5px; 
 	  margin-top:8px;
   }
@@ -340,5 +355,6 @@
 	  padding-left:0;
 	  padding-right:25px;
 	  width:45%;
+}
 }
 
