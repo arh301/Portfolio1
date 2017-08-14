@@ -97,6 +97,11 @@
 .conText{
 	font-size:19px;
 }
+#gamePane1{
+	text-align:right;
+	width:47%;
+	padding-left:0px;
+}
 }
 
 
@@ -179,6 +184,13 @@
 	#cvImg{
 	width:90%;
 }
+#gamePane1 > p{
+	padding-left:20px;
+	padding-top:20px;
+}
+#clockPane{
+	width:44%;
+}
 }
 @media (max-width: 919px) {
   #largename{
@@ -253,7 +265,28 @@
 	  padding-left:17% !important;
 	  width:220px !important;
   }
-  
+  #gamePane1 > p{
+	padding-left:0px;
+	padding-top:0px;
+}
+#gamePane1{
+	width:90%;
+	float:none;
+	text-align:center;
+	padding-left:5%;
+	padding-right:5%;
+	padding-bottom:0%;
+}
+#clockPane{
+	width:100%;
+	padding:0%;
+	padding-top:20px;
+	float:none;
+	margin-left:0;
+}
+#clockPane > svg {
+	left:0;
+}
    #javaProj{
 	 padding-left:14%
  }

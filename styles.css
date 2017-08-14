@@ -9,10 +9,9 @@ body {
 html, body {
 	height: 100%;
 	width: 100%;
-	margin:0 auto;
+	margin: 0 auto;
 	max-width: 1400px;
 	min-width: 615px;
-
 }
 header {
 	margin: 0 auto;
@@ -21,12 +20,11 @@ header {
 	box-shadow: 0px 0px 0px 6px rgba(179, 179, 179, 0.8);
 	border-radius: 1px;
 	position: fixed;
-	z-index:5;
+	z-index: 5;
 	top: 0;
 	width: 100%;
-	min-width:615px;
-	max-width:1400px;
-	
+	min-width: 615px;
+	max-width: 1400px;
 }
 .name {
 	margin: 0 auto;
@@ -69,7 +67,7 @@ h3 {
 	margin-top: 5px;
 	margin-bottom: 0px;
 	padding-top: 15px;
-	padding-bottom:15px;
+	padding-bottom: 15px;
 	text-align: center;
 }
 h4 {
@@ -77,11 +75,11 @@ h4 {
 	margin-top: 20px;
 	margin-bottom: 10px;
 }
-h5{
-	float:none;
-	font-size:22px;
-	display:inline;
-	padding-left:4px;
+h5 {
+	float: none;
+	font-size: 22px;
+	display: inline;
+	padding-left: 4px;
 }
 a.link {
 	font-weight: 400;
@@ -90,37 +88,33 @@ a.link {
 	padding: 0px;
 	text-decoration: underline;
 }
-
-#para1{ 
-    background-image:url(ionic2.png);
-    height: 35%; 
-	z-index:-1;
+#para1 {
+	background-image: url(ionic2.png);
+	height: 35%;
+	z-index: -1;
 }
-#para2{ 
-    background-image:url(steps.jpg);
-    height: 35%; 
-	opacity:0.8;
-	z-index:-1;
-	top:0%;
+#para2 {
+	background-image: url(steps.jpg);
+	height: 35%;
+	z-index: -1;
+	top: 0%;
 }
-#para3{ 
-    background-image:url(tree.JPG);
-    height: 35%;
-	opacity:0.8;
-	top:0%;
+#para3 {
+	background-image:url(tree.JPG);
+	height: 35%;
+	top: 0%;
 }
-#para4{ 
-    background-image:url(type.jpg);
-    height: 35%;
-	opacity:0.8;
-	top:0%;
+#para4 {
+	background-image: url(type.jpg);
+	height: 35%;
+	top: 0%;
 }
-#para1, #para2, #para3, #para4{
-	position:relative;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+#para1, #para2, #para3, #para4 {
+	position: relative;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 .text {
 	color: white;
@@ -211,7 +205,7 @@ a.link {
 	overflow: hidden;
 	display: inline-block;
 	background-color: rgba(39,34,30,1);
-	box-shadow: 0px 0px 0px 8px  rgba(179, 179, 179, 0.6);
+	box-shadow: 0px 0px 0px 8px rgba(179, 179, 179, 0.6);
 }
 #linkedin {
 	width: 180px;
@@ -233,32 +227,32 @@ a.link {
 	color: white;
 }
 #portTop {
-	width:51%;
+	width: 51%;
 	height: 170px;
 	margin-top: 65px;
-	margin-left:7%;
-	float:left;
+	margin-left: 7%;
+	float: left;
 	color: white;
 }
-#portHead{
+#portHead {
 	font-size: 30px;
-	margin-bottom:0;
-	font-weight:600;
-	float:left; 
-	margin-right:10px
+	margin-bottom: 0;
+	font-weight: 600;
+	float: left;
+	margin-right: 10px
 }
-#portDocsLink{
+#portDocsLink {
 	margin-top: 170px;
-	float:right;
-	width:320px;
-	height:50px;
-	color:white;
+	float: right;
+	width: 320px;
+	height: 50px;
+	color: white;
 }
-#portDocsL{
-	display:none;
-	margin:0;
-	text-align:right;
-	font-size:16px;
+#portDocsL {
+	display: none;
+	margin: 0;
+	text-align: right;
+	font-size: 16px;
 }
 #appPane {
 	background-color: #D9D9D9;
@@ -268,14 +262,14 @@ a.link {
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	display: flex;
-	border:white 6px solid;
+	border: white 6px solid;
 	font-size: 17px;
 }
-.slideImg{
-	width:100%; 
-	border:2px rgba(33,33,33,1.00) solid;
-	border-radius:4px;
-	margin-top:2%;
+.slideImg {
+	width: 100%;
+	border: 2px rgba(33,33,33,1.00) solid;
+	border-radius: 4px;
+	margin-top: 2%;
 }
 #appText, #appImgs, #appLinks {
 	padding-top: 0px;
@@ -284,32 +278,32 @@ a.link {
 }
 #appText {
 	width: 25%;
-	order:1;
+	order: 1;
 	padding-left: 3%;
-	padding-right:2%;
+	padding-right: 2%;
 }
 #appImgs {
 	padding: 2%;
 	background-color: #F7F3E3;
 	width: 40%;
-	order:2;
+	order: 2;
 	text-align: center;
 	box-shadow: 0px 0px 0px 6px rgba(179, 179, 179, 0.8);
-	border-radius:3px;
+	border-radius: 3px;
 }
 #appLinks {
 	width: 25%;
-	order:3;
+	order: 3;
 	padding-right: 2%;
 	padding-left: 2%;
 }
-#screenshots2{
-	display:none;
-	font-size:16px;
-	width:80%;
-	margin:0 auto;
+#screenshots2 {
+	display: none;
+	font-size: 16px;
+	width: 80%;
+	margin: 0 auto;
 }
-#websPane{
+#websPane {
 	width: 100%;
 	height: 300px;
 	margin: 0 auto;
@@ -318,10 +312,10 @@ a.link {
 #websPane1 {
 	width: 50%;
 	display: block;
-	background-color:#D9D9D9;
+	background-color: #D9D9D9;
 	padding: 3%;
-	height:375px;
-	border-radius:25px;
+	height: 375px;
+	border-radius: 25px;
 	border: #561111 14px solid;
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -332,102 +326,114 @@ a.link {
 #websPane2 {
 	background-color: #561111;
 	width: 44%;
-	color:white;
+	color: white;
 	display: block;
 	height: 330px;
 	padding: 3%;
 	padding-top: 0px;
 	float: right;
-	text-align:center;
+	text-align: center;
 }
-#multimediaPane{
-	margin-bottom:10px;
-	display:table; 
-	background-color:#F7F3E3
-}
-#clockPane{
+#clockPane {
 	width: 38%;
-	color:black;
+	color: black;
 	display: block;
-	text-align:center;
-   	padding: 3%;
-	padding-bottom:1%;
-	float:left;
+	text-align: center;
+	padding: 3%;
+	padding-bottom: 1%;
+	float: left;
 	background-color: #F7F3E3;
 }
-#clockPane>svg{
-	margin:0 auto;
-	z-index:1;
-	left:50%
+#clockPane>svg {
+	margin: 0 auto;
+	z-index: 1;
+	left: 50%
 }
-#gamePane1{
+#gamePane1 {
 	width: 48%;
-	color:black;
-	text-align:center;
+	color: black;
+	text-align: center;
 	display: block;
-	float:right;
+	float: right;
 	background-color: #F7F3E3;
-	padding:3%;
-	margin-top:2%;
+	padding: 3%;
 }
-#java{
+#java {
 	width: 96%;
-	margin:0 auto;
+	margin: 0 auto;
 	display: block;
-	color:white;
-	font-size:20px;
-	padding:2%;
+	color: white;
+	font-size: 20px;
+	padding: 2%;
 }
 #javaPane {
 	width: 100%;
-	position:relative;
+	position: relative;
 	margin: 0 auto;
-	margin-top:20px;
+	margin-top: 20px;
 	display: table;
 }
 #javaProj, #javaPaint, #javaSkills {
 	padding-top: 0px;
 	display: table-cell;
 	vertical-align: top;
+	font-size: 19px;
 }
 #javaProj {
 	width: 25%;
-	height:auto;
+	height: auto;
 	padding-left: 3%;
-	padding-right:2%;
-	bottom:0;
-	padding-top:1%;
+	padding-right: 2%;
+	bottom: 0;
+	padding-top: 1%;
+	font-size: 19px;
 }
 #javaPaint {
 	background-color: #F7F3E3;
 	width: 25%;
-	max-height:220px;
+	max-height: 220px;
 	box-shadow: 0px 0px 0px 6px rgba(179, 179, 179, 0.4);
-	border-radius:3px;margin:0;
-padding:0;
+	border-radius: 3px;
+	margin: 0;
+	padding: 0;
 }
 #javaSkills {
 	width: 25%;
 	padding-right: 3%;
-	padding-top:1%;
+	padding-top: 1%;
 	padding-left: 3%;
 }
-#gamePane{
+#gamePane {
 	width: 725px;
-	margin:0 auto;
-	margin-top:100px;
+	margin: 0 auto;
+	margin-top: 100px;
 	display: block;
 	height: 400px;
 }
-#papers{
+#papers {
 	width: 96%;
-	background-color:#D9D9D9;
-	margin:0 auto;
+	background-color: #D9D9D9;
+	margin: 0 auto;
 	display: block;
-	color:black;
-	font-size:20px;
-	padding:2%;
+	color: black;
+	font-size: 20px;
+	padding: 2%;
 }
+#cvTop{
+	color:white;
+	text-align:center;
+	margin:30px;
+	margin-top:40px;
+	font-size:22px;
+}
+#cvImg {
+	width: 75%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 8px;
+}
+
 
 
 
@@ -470,12 +476,11 @@ padding:0;
 /* The Close Button */
 .close {
 	color: white;
-	
-  position: absolute;
-  top: 70px;
-  right: 25px;
-  font-size: 40px;
-  font-weight: bold;
+	position: absolute;
+	top: 70px;
+	right: 25px;
+	font-size: 40px;
+	font-weight: bold;
 }
 .close:hover, .close:focus {
 	color: #999;
