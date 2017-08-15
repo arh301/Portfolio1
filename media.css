@@ -381,7 +381,7 @@
 	width:100%;
 }
 }
-@media (max-width:680px){
+@media all and (max-device-width:680px){
 	#ipp1{
 	padding-left:4% !important;
 	padding-right:5% !important;
@@ -395,5 +395,10 @@
 	  padding-right:25px;
 	  width:45%;
 }
+}
+@media all and (max-device-width:450px){
+	body{
+		font-size:18px !important;
+	}
 }
 
