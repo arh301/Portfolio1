@@ -384,7 +384,7 @@
 	width:100%;
 }
 }
-@media all and (max-width:680px){
+@media all and (max-width:680px), handheld and (orientation: landscape){
 	#ipp1{
 	padding-left:4% !important;
 	padding-right:5% !important;
