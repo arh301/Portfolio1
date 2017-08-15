@@ -369,6 +369,9 @@
 	padding-left:9% !important;
 	padding-right:9% !important;
 }
+#multi{
+	font-size:18px;
+}
   #javaProj{
 	 padding-left:5%
  }
@@ -402,16 +405,21 @@
 	margin-left:0%;
 }
 .conText{
-	font-size:18px;
+	font-size:20px;
 	padding-top:50px;
 }
 #conLeftList{
-	font-size:18px;
+	font-size:20px;
 }
 #formPane{
+	
 	width:100%;
 	font-size:20px;
 	padding-bottom:20px;
 }
 }
+@media all and (max-width:450px){
+	
+}
+
 

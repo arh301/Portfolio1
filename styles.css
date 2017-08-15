@@ -336,6 +336,9 @@ a.link {
 	float: right;
 	text-align: center;
 }
+#multi{
+	display:table; background-color:#F7F3E3;padding-bottom:2%;
+}
 #clockPane {
 	width: 38%;
 	color: black;
