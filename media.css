@@ -332,8 +332,8 @@
 	  display:block;
   }
   nav {
- 	width:85%;
-	padding-right:5px;
+ 	width:80%;
+	padding-right:15px;
   }
   li a{
 	 padding:20px; 
@@ -398,10 +398,12 @@
 #conLeftPane{
 	width:100%;
 	height:auto;
-	margin-bottom:10px;
+	padding-bottom:40px;
+	margin-left:0%;
 }
 .conText{
 	font-size:18px;
+	padding-top:50px;
 }
 #conLeftList{
 	font-size:18px;
@@ -409,6 +411,7 @@
 #formPane{
 	width:100%;
 	font-size:20px;
+	padding-bottom:20px;
 }
 }
 
