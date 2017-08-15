@@ -395,5 +395,20 @@
 	  padding-right:25px;
 	  width:45%;
 }
+#conLeftPane{
+	width:100%;
+	height:auto;
+	margin-bottom:10px;
+}
+.conText{
+	font-size:18px;
+}
+#conLeftList{
+	font-size:18px;
+}
+#formPane{
+	width:100%;
+	font-size:20px;
+}
 }
 
