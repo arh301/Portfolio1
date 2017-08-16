@@ -437,10 +437,12 @@
 }
 }
 @media (max-width:350px){
-	
-	#appImgs{
-		display:none;
-	}
+	#featured-content .flex-viewport {
+max-height: 2000px;
+-webkit-transition: all 1s ease;
+-moz-transition: all 1s ease;
+transition: all 1s ease;
+}
 	#gameText{
 		display:none;
 	}
