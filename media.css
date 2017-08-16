@@ -436,7 +436,8 @@
 	padding-bottom:20px;
 }
 }
-@media handheld, (max-width:350){
+@media (max-width:350px){
+	
 	#appImgs{
 		display:none;
 	}
