@@ -4,20 +4,20 @@ body {
 	margin: 0 auto;
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 18px;
-	position:absolute;
+	position: absolute;
 }
 html, body {
 	width: 100%;
-	height:100%;
+	height: 100%;
 	margin: 0 auto;
 	min-width: 615px;
 }
-html{
+html {
 	background-color: #561111;
 }
 header {
 	margin: 0 auto;
-	padding-top:10px;
+	padding-top: 1%;
 	background-color: #12130F;
 	height: 60px;
 	box-shadow: 0px 0px 0px 6px rgba(179, 179, 179, 0.8);
@@ -102,7 +102,7 @@ a.link {
 	top: 0%;
 }
 #para3 {
-	background-image:url(tree.JPG);
+	background-image: url(tree.JPG);
 	height: 35%;
 	top: 0%;
 }
@@ -335,8 +335,10 @@ a.link {
 	float: right;
 	text-align: center;
 }
-#multi{
-	display:table; background-color:#F7F3E3;padding-bottom:2%;
+#multi {
+	display: table;
+	background-color: #F7F3E3;
+	padding-bottom: 2%;
 }
 #clockPane {
 	width: 38%;
@@ -362,6 +364,18 @@ a.link {
 	background-color: #F7F3E3;
 	padding: 3%;
 }
+#gameText {
+	color: white;
+	margin: 3%;
+	text-align: center;
+	display:block;
+}
+#gameFail {
+	color: white;
+	margin: 3%;
+	text-align: center;
+	display:none;
+}
 #java {
 	width: 96%;
 	margin: 0 auto;
@@ -369,7 +383,7 @@ a.link {
 	color: white;
 	font-size: 20px;
 	padding: 2%;
-	margin-bottom:20px;
+	margin-bottom: 20px;
 }
 #javaPane {
 	width: 100%;
@@ -424,12 +438,12 @@ a.link {
 	font-size: 20px;
 	padding: 2%;
 }
-#cvTop{
-	color:white;
-	text-align:center;
-	margin:30px;
-	margin-top:40px;
-	font-size:22px;
+#cvTop {
+	color: white;
+	text-align: center;
+	margin: 30px;
+	margin-top: 40px;
+	font-size: 22px;
 }
 #cvImg {
 	width: 75%;
@@ -438,11 +452,6 @@ a.link {
 	margin-right: auto;
 	padding-top: 8px;
 }
-
-
-
-
-
 .row > .column {
 	padding: 0 1.6%;
 }
