@@ -436,14 +436,13 @@
 	padding-bottom:20px;
 }
 }
-@media handheld{
+@media handheld, (max-width:350){
 	#gameText{
 		display:none;
 	}
 	#gameFail{
 		display:block;
-	}
-	
+	}		
 }
 
 
