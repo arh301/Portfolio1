@@ -229,7 +229,7 @@ a.link {
 	color: white;
 }
 #portTop {
-	width: 51%;
+	width: 53%;
 	height: 170px;
 	margin-top: 75px;
 	margin-left: 7%;
@@ -259,7 +259,6 @@ a.link {
 #appPane {
 	background-color: #D9D9D9;
 	width: 100%;
-	height: 350px;
 	margin: 0 auto;
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;

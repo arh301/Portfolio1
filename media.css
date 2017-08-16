@@ -11,7 +11,6 @@
   #websPane1 > .row{
 	  margin-top:15px;
   }
-  
 }
 @media (max-width: 1299px) {
 #largename{
@@ -54,7 +53,6 @@
   }
   #appPane{
 	  font-size:16px;
-	  height:340px;
   }
   #appImgs{
 	  width:400px;
@@ -78,7 +76,7 @@
 	  padding-left:22px !important;
   }
   .slideImg {
-    margin-top: 4px;
+    margin-top:4%;
 }
 #ipp1{
 	width:50%;
@@ -147,7 +145,6 @@
 @media (max-width:1055px){
 	#appPane{
 		font-size:17px;
-		height:350px;
 	}
 	#appImgs{
 	  width:28%;
@@ -167,6 +164,9 @@
 	  width:170px;
 	  padding-left:15% !important;
 	  padding-right:15% !important;
+  }
+  .slideImg{
+	  margin-top:8%;
   }
   #appIm2{
 	  display:none;
@@ -221,7 +221,6 @@
   #appPane{
 	  flex-direction: row;
     flex-wrap: wrap;
-	height:460px;
   }
   #appText{
 	  width:65%;
@@ -229,7 +228,7 @@
   #appImgs{
 	  width:26%;
 	  margin:0;
-	  height:430px;
+	  height:440px;
 
   }
   #appLinks{
@@ -255,7 +254,7 @@
   #appIm1{
 	   margin-left:7%;
 	  margin-right:7%;
-	  padding-bottom:8%;
+	  padding-bottom:2%;
 	  padding-left:0% !important;
 	  padding-right:0% !important;
   }
@@ -308,9 +307,9 @@
   }
   
   }
-@media (max-width: 829px) {
+@media (max-width: 855px) {
 	.column{
-		margin-top:25%;
+		margin-top:15%;
 	}
 	#appPane{
 		font-size:16px;
@@ -318,6 +317,9 @@
 	#websPane2 > p{
 	  font-size:16px; 
 	  margin-top:10px;
+  }
+  #appIm1{
+	  padding-bottom:10px;
   }
 	#javaProj{
 	 padding-left:10%
@@ -363,7 +365,7 @@
   }
   .column{
 	  width:90%;
-	  margin-top:18%;
+	  margin-top:10%;
   }
   #ipp1{
 	padding-left:9% !important;
@@ -385,6 +387,9 @@
 }
 }
 @media all and (max-width:680px), handheld and (orientation: portrait){
+	.slideImg{
+		margin-top:14%;
+	}
 	#ipp1{
 	padding-left:4% !important;
 	padding-right:5% !important;
