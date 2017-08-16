@@ -437,6 +437,9 @@
 }
 }
 @media handheld, (max-width:350){
+	#appImgs{
+		display:none;
+	}
 	#gameText{
 		display:none;
 	}
