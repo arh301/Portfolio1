@@ -1,37 +1,24 @@
 @charset "utf-8";
+@import url("large-media.css");
 /* CSS Document */
 
-@media(min-width:1300px){
-	#largename{
-	  display:block;
-  }
-  #smallname{
-	  display:none;
-  }
+@media(max-width:1300px){
+
   #websPane1 > .row{
 	  margin-top:15px;
   }
 }
 @media (max-width: 1299px) {
-#largename{
-	  display:block;
-  }
-  #smallname{
-	  display:none;
-  }
   .slideImg{
 	  margin-top:10%;
   }
 }
 @media (max-width: 1249px) {
-#largename{
-	  display:block;
-  }
-  #smallname{
-	  display:none;
-  }
    .slideImg{
 	  margin-top:15%;
+  }
+  #websPane1 > .slideImg {
+	  margin-top:2% !important;
   }
   #javaProj{
 	  padding-left:1.5%
@@ -39,20 +26,11 @@
   
 }
 @media (max-width: 1199px) {
-#largename{
-	  display:block;
-  }
-  #smallname{
-	  display:none;
-  }
   #portTop{
 	  width:60%;
   }
   #portDocsLink{
 	  width:280px;
-  }
-  #appPane{
-	  font-size:16px;
   }
   #appImgs{
 	  width:400px;
@@ -89,10 +67,7 @@
 #ipp3{
 	display:none;
 }
-.conText{
-	font-size:19px;
-	
-}
+
 #gamePane1{
 	text-align:right;
 	width:47%;
@@ -120,18 +95,13 @@
 	width:240px;
 	height:40px;
 	padding-top:5px;
-	font-size:16px;
 }
  #javaProj{
-	 font-size:18px;
 	 padding-left:20%
  }
  #javaPaint {
 	 display:none;
  }
- #javaSkills{
-	 font-size:18px;
-}
 #contactEnd{
 	height:110px;
 }
@@ -141,9 +111,7 @@
 }
 	
 @media (max-width:1055px){
-	#appPane{
-		font-size:17px;
-	}
+	
 	#appImgs{
 	  width:28%;
 	 padding:10px;
@@ -177,9 +145,7 @@
 	  padding-left:19% !important;
 	  width:220px !important;
   }
-  #websPane2{
-	  font-size:17px;
-  }
+  
 	#cvImg{
 	width:90%;
 }
@@ -200,12 +166,6 @@
   }
   nav {
  	width:80%
-  }
-  .conText{
-	  font-size:18px;
-  }
-  #conLeftList{
-	  font-size:17px;
   }
   #portDocsL{
 	  display:block;
@@ -320,7 +280,6 @@
 		margin-top:15%;
 	}
 	#appPane{
-		font-size:16px;
 		border-bottom:0;
 	}
  
@@ -343,18 +302,7 @@
   li a{
 	 padding:20px; 
   }
-  body{
-	  font-size:16px;
-  }
-  .conText{
-	  font-size:17px;
-  }
-  #conLeftList{
-	  font-size:16px;
-  }
-  #appPane{
-	  font-size:16px;
-  }
+  
   #appText{
 	  width:63%;
   }
@@ -376,15 +324,9 @@
 	padding-right:9% !important;
 }
 #websPane2 > p{
-	  font-size:16px; 
 	  margin-top:10px;
   }
-#multi{
-	font-size:18px;
-}
-#java{
-	font-size:18px;
-}
+
   #javaProj{
 	 padding-left:5%
  }
@@ -398,17 +340,23 @@
 }
 }
 @media all and (max-width:680px), handheld and (orientation: portrait){
-	
+	#portTop{
+		margin-left:3%;
+		font-size:1.1em;
+		height:10.5em;
+	}
+	#appPane{
+		font-size:1em;
+	}
 	.slideImg{
 		margin-top:20%;
 	}
 	#ipp1{
 	padding-left:4% !important;
 	padding-right:5% !important;
-	margin-top:-11%;
+	margin-top:-17%;
 }
 #websPane2 > p{
-	  font-size:15.5px; 
 	  margin-top:8px;
   }
   #websPane2{
@@ -423,16 +371,12 @@
 	margin-left:0%;
 }
 .conText{
-	font-size:20px;
 	padding-top:50px;
 }
-#conLeftList{
-	font-size:20px;
-}
+
 #formPane{
 	
 	width:100%;
-	font-size:20px;
 	padding-bottom:20px;
 }
 }
