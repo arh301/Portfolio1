@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Canvas Game</title>
+<title>AH - JavaScript Game</title>
 <link href="styles.css" rel="stylesheet" type="text/css">
 <link href="media.css" rel="stylesheet" type="text/css">
 <link href="font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet" type="text/css">
@@ -14,8 +14,8 @@
 
 <body style="overflow:hidden">
 <header>
-  <p id="largename" class="name"><span style="font-weight:bolder; font-size:45px">Anna</span>Hughes</p>
-  <p id="smallname" class="name"><span style="font-weight:bolder; font-size:45px">A</span>H</p>
+    <p id="largename" class="name"><span style="font-weight:bolder; font-size:1.2em">Anna</span>Hughes</p>
+  <p id="smallname" class="name"><span style="font-weight:bolder; font-size:1.2em">A</span>H</p>
   <nav>
     <ul class="navlist">
       <li class="nav"><a href="index.html">Home</a></li>
@@ -25,8 +25,10 @@
     </ul>
   </nav>
 </header>
+<p id="gameText">Dodjet, a simple Canvas game built using JavaScript. Completed to a specification, not perfected <br> or built for release. <a class="link" href="game.zip">Get the code.</a></p>
 <div id="gamePane">
-<p style="color:white; margin:3%; text-align:center">Dodjet, a simple Canvas game built using JavaScript. Completed to a specification, not perfected <br> or built for release. <a class="link" href="game.zip">Get the code.</a></p>
+
+<p id="gameFail">THIS GAME IS NOT COMPATIBLE WITH HANDHELD DEVICES. Please revisit this page from a laptop/PC to play the game! Or <a class="link" href="game.zip">Get the code.</a></p>
 <video id="video" src="game/video1.mp4" width="720" height="400"  autoplay loop muted style="position:absolute"></video>
 
 <canvas id="myCanvas" width="703" height="390" style="border:10px solid #000000; position:absolute">

@@ -1,38 +1,24 @@
 @charset "utf-8";
+@import url("large-media.css");
 /* CSS Document */
 
-@media(min-width:1300px){
-	#largename{
-	  display:block;
-  }
-  #smallname{
-	  display:none;
-  }
+@media(max-width:1300px){
+
   #websPane1 > .row{
 	  margin-top:15px;
   }
-  
 }
 @media (max-width: 1299px) {
-#largename{
-	  display:block;
-  }
-  #smallname{
-	  display:none;
-  }
   .slideImg{
 	  margin-top:10%;
   }
 }
 @media (max-width: 1249px) {
-#largename{
-	  display:block;
-  }
-  #smallname{
-	  display:none;
-  }
    .slideImg{
 	  margin-top:15%;
+  }
+  #websPane1 > .slideImg {
+	  margin-top:2% !important;
   }
   #javaProj{
 	  padding-left:1.5%
@@ -40,21 +26,11 @@
   
 }
 @media (max-width: 1199px) {
-#largename{
-	  display:block;
-  }
-  #smallname{
-	  display:none;
-  }
   #portTop{
 	  width:60%;
   }
   #portDocsLink{
 	  width:280px;
-  }
-  #appPane{
-	  font-size:16px;
-	  height:340px;
   }
   #appImgs{
 	  width:400px;
@@ -78,12 +54,12 @@
 	  padding-left:22px !important;
   }
   .slideImg {
-    margin-top: 4px;
+    margin-top:4%;
 }
 #ipp1{
-	width:50%;
+	width:53%;
 	margin-left:17%;
-	margin-top:5%;
+	margin-top:2%;
 }
 #ipp2{
 	display:none;
@@ -91,12 +67,7 @@
 #ipp3{
 	display:none;
 }
-#portTop{
-	width:55%;
-}
-.conText{
-	font-size:19px;
-}
+
 #gamePane1{
 	text-align:right;
 	width:47%;
@@ -124,18 +95,13 @@
 	width:240px;
 	height:40px;
 	padding-top:5px;
-	font-size:16px;
 }
  #javaProj{
-	 font-size:18px;
 	 padding-left:20%
  }
  #javaPaint {
 	 display:none;
  }
- #javaSkills{
-	 font-size:18px;
-}
 #contactEnd{
 	height:110px;
 }
@@ -145,10 +111,7 @@
 }
 	
 @media (max-width:1055px){
-	#appPane{
-		font-size:17px;
-		height:350px;
-	}
+	
 	#appImgs{
 	  width:28%;
 	 padding:10px;
@@ -168,19 +131,21 @@
 	  padding-left:15% !important;
 	  padding-right:15% !important;
   }
+  .slideImg{
+	  margin-top:8%;
+  }
   #appIm2{
 	  display:none;
   }
 
    #ipp1 {
 	  padding-right:0px;
+	  margin-top:0%;
 	  margin-left:0px;
 	  padding-left:19% !important;
 	  width:220px !important;
   }
-  #websPane2{
-	  font-size:17px;
-  }
+  
 	#cvImg{
 	width:90%;
 }
@@ -202,12 +167,6 @@
   nav {
  	width:80%
   }
-  .conText{
-	  font-size:18px;
-  }
-  #conLeftList{
-	  font-size:17px;
-  }
   #portDocsL{
 	  display:block;
   }
@@ -221,7 +180,6 @@
   #appPane{
 	  flex-direction: row;
     flex-wrap: wrap;
-	height:460px;
   }
   #appText{
 	  width:65%;
@@ -229,7 +187,7 @@
   #appImgs{
 	  width:26%;
 	  margin:0;
-	  height:430px;
+	  height:440px;
 
   }
   #appLinks{
@@ -255,7 +213,7 @@
   #appIm1{
 	   margin-left:7%;
 	  margin-right:7%;
-	  padding-bottom:8%;
+	  padding-bottom:2%;
 	  padding-left:0% !important;
 	  padding-right:0% !important;
   }
@@ -276,6 +234,9 @@
 	padding-left:5%;
 	padding-right:5%;
 	padding-bottom:0%;
+}
+#gamePane1 > img {
+	width:40%
 }
 #clockPane{
 	width:100%;
@@ -308,17 +269,20 @@
   }
   
   }
-@media (max-width: 829px) {
-	.column{
-		margin-top:25%;
+@media (max-width: 855px) {
+	#appImgs{
+		height:430px;
+	}
+	 #appIm1{
+	  padding-bottom:10px;
+  }
+  .column{
+		margin-top:15%;
 	}
 	#appPane{
-		font-size:16px;
+		border-bottom:0;
 	}
-	#websPane2 > p{
-	  font-size:16px; 
-	  margin-top:10px;
-  }
+ 
 	#javaProj{
 	 padding-left:10%
  }
@@ -332,24 +296,13 @@
 	  display:block;
   }
   nav {
- 	width:85%;
-	padding-right:5px;
+ 	width:80%;
+	padding-right:15px;
   }
   li a{
 	 padding:20px; 
   }
-  body{
-	  font-size:16px;
-  }
-  .conText{
-	  font-size:17px;
-  }
-  #conLeftList{
-	  font-size:16px;
-  }
-  #appPane{
-	  font-size:16px;
-  }
+  
   #appText{
 	  width:63%;
   }
@@ -358,17 +311,22 @@
   }
   #appImgs{
 	  width:29%;
+	  height:440px;
 	  padding-left:0px;
 	  margin-left:0;
   }
   .column{
 	  width:90%;
-	  margin-top:18%;
+	  margin-top:10%;
   }
   #ipp1{
 	padding-left:9% !important;
 	padding-right:9% !important;
 }
+#websPane2 > p{
+	  margin-top:10px;
+  }
+
   #javaProj{
 	 padding-left:5%
  }
@@ -381,13 +339,24 @@
 	width:100%;
 }
 }
-@media (max-width:680px){
+@media all and (max-width:680px), handheld and (orientation: portrait){
+	#portTop{
+		margin-left:3%;
+		font-size:1.1em;
+		height:10.5em;
+	}
+	#appPane{
+		font-size:1em;
+	}
+	.slideImg{
+		margin-top:20%;
+	}
 	#ipp1{
 	padding-left:4% !important;
 	padding-right:5% !important;
+	margin-top:-17%;
 }
 #websPane2 > p{
-	  font-size:15.5px; 
 	  margin-top:8px;
   }
   #websPane2{
@@ -395,5 +364,35 @@
 	  padding-right:25px;
 	  width:45%;
 }
+#conLeftPane{
+	width:100%;
+	height:auto;
+	padding-bottom:40px;
+	margin-left:0%;
 }
+.conText{
+	padding-top:50px;
+}
+
+#formPane{
+	
+	width:100%;
+	padding-bottom:20px;
+}
+}
+@media (max-width:350px){
+	#featured-content .flex-viewport {
+max-height: 2000px;
+-webkit-transition: all 1s ease;
+-moz-transition: all 1s ease;
+transition: all 1s ease;
+}
+	#gameText{
+		display:none;
+	}
+	#gameFail{
+		display:block;
+	}		
+}
+
 
