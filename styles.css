@@ -592,3 +592,15 @@ img.hover-shadow {
 .hover-shadow:hover {
 	box-shadow: 0 8px 8px 2px rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3)
 }
+
+.refs{
+	margin-top:110px;
+	width:40%;
+	float:left;
+	padding-left: 10%;
+	color:white;
+}
+
+.refs > ul li {
+	line-height:20px;
+}
