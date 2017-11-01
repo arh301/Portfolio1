@@ -111,7 +111,10 @@
 }
 	
 @media (max-width:1055px){
-	
+	#homePane{
+		width:auto;
+		height: 100%;
+	}
 	#appImgs{
 	  width:28%;
 	 padding:10px;

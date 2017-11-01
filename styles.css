@@ -30,9 +30,11 @@ header {
 }
 #largename {
 	display: block;
+	padding-top:4px;
 }
 #smallname {
 	display: none;
+	padding-top:8px;
 }
 .name {
 	margin: 0 auto;
@@ -51,6 +53,7 @@ nav {
 .navlist {
 	list-style-type: none;
 	margin: 0;
+	padding:0;
 	float: right;
 }
 li.nav {
@@ -161,10 +164,13 @@ a.link {
 }
 #formPane {
 	font-size: 1.12em;
-	width: 50%;
-	float: right;
-	display: inline-block;
 	background: #561111;
+	margin-bottom:20px;
+}
+#formPane > .text {
+	text-align:center; 
+	padding-bottom:1em;
+	padding-top:1.2em;
 }
 #form {
 	width: 300px;
@@ -177,11 +183,9 @@ a.link {
 }
 #name, #email {
 	width: 72%;
-	margin-left: 10px;
 	text-indent: 5px;
 }
 #email {
-	margin-left: 10px;
 	width: 73%;
 }
 #message {
