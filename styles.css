@@ -290,8 +290,8 @@ a.link {
 }
 
 #portTop {
-	width: 55%;
-	height: 8.6em;
+	width: 93%;
+	height: 6.4em;
 	margin-top: 4.4em;
 	margin-left: 7%;
 	float: left;
@@ -300,11 +300,17 @@ a.link {
 }
 
 #portHead {
-	font-size: 1.56em;
+	font-size: 2.56em;
 	margin-bottom: 0;
+	margin-right: 1px;
 	font-weight: 600;
+	text-align: right;
+	line-height: 28px;
 	float: left;
-	margin-right: 10px
+}
+
+#portHead2{
+	margin-top: 60px;
 }
 
 #portDocsLink {

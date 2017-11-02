@@ -26,9 +26,7 @@
   
 }
 @media (max-width: 1199px) {
-  #portTop{
-	  width:60%;
-  }
+
   #portDocsLink{
 	  width:280px;
   }
@@ -88,9 +86,7 @@
 	  margin-top:0;
 	  padding-left:18px !important;
   }
-  #portTop{
-	width:65%;
-}
+
 #portDocsLink{
 	width:240px;
 	height:40px;
@@ -175,9 +171,6 @@
   }
   #portDocsLink{
 	  display:none;
-  }
-  #portTop{
-	  width:90%;
   }
 	  
   #appPane{
@@ -305,6 +298,11 @@
   li a{
 	 padding:20px; 
   }
+  #portTop{
+	margin-left:2em;
+	font-size:1.1em;
+	height:7.5em;
+}
   
   #appText{
 	  width:63%;
@@ -343,11 +341,7 @@
 }
 }
 @media all and (max-width:680px), handheld and (orientation: portrait){
-	#portTop{
-		margin-left:3%;
-		font-size:1.1em;
-		height:10.5em;
-	}
+
 	#appPane{
 		font-size:1em;
 	}
