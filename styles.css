@@ -857,7 +857,7 @@ img.hover-shadow {
 	}
 }
 
-@media only screen and (min-width: 400px) and (max-width: 749px) {
+@media only screen and (min-width: 450px) and (max-width: 749px) {
 	.refs{
 		width: 70%;
 		margin-top: 124px;
@@ -865,7 +865,7 @@ img.hover-shadow {
 	
 	}
 	.refs.minus-ref-margin{
-		margin-top:124px;
+		margin-top:0px;
 	}
 	.accordion-item .heading {
 		font-size: 1.3rem;
