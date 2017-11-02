@@ -857,7 +857,7 @@ img.hover-shadow {
 	}
 }
 
-@media only screen and (min-width: 400px) and (max-width: 7749px) {
+@media only screen and (min-width: 400px) and (max-width: 749px) {
 	.refs{
 		width: 70%;
 		margin-top: 124px;
