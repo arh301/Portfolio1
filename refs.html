@@ -1,104 +1,334 @@
 <!doctype html>
 <html>
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width">
 
-<title>References</title>
-<link href="styles.css" rel="stylesheet" type="text/css">
-<link href="media.css" rel="stylesheet" type="text/css">
-<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+
+  <title>References</title>
+  <link href="styles.css" rel="stylesheet" type="text/css">
+  <link href="media.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('.accordion-item .heading').click(function () {
+        console.log('goes to js');
+
+        // Add the correct active class
+        if ($(this).closest('.accordion-item').hasClass('active')) {
+          // Remove active classes
+          $('.accordion-item').removeClass('active');
+        } else {
+          // Remove active classes
+          $('.accordion-item').removeClass('active');
+
+          // Add the active class
+          $(this).closest('.accordion-item').addClass('active');
+        }
+
+        // Show the content
+        var $content = $(this).next();
+        $content.slideToggle(100);
+        $('.accordion-item .content').not($content).slideUp('fast');
+      });
+    });
+  </script>
 </head>
 
 <body>
-<header>
+  <header>
     <p id="largename" class="name"><span style="font-weight:bolder; font-size:1.2em">Anna</span>Hughes</p>
-  <p id="smallname" class="name"><span style="font-weight:bolder; font-size:1.2em">A</span>H</p>
-  <nav>
-    <ul class="navlist">
-      <li class="nav"><a href="index.html">Home</a></li>
-      <li class="nav"><a href="port.html">Portfolio</a></li>
-      <li class="nav"><a href="cv.html">CV</a></li>
-      <li class="nav"><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-</header>
+    <p id="smallname" class="name"><span style="font-weight:bolder; font-size:1.2em">A</span>H</p>
+    <nav>
+      <ul class="navlist">
+        <li class="nav"><a href="index.html">Home</a></li>
+        <li class="nav"><a href="port.html">Portfolio</a></li>
+        <li class="nav"><a href="cv.html">CV</a></li>
+        <li class="nav"><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<div class="refs">
+  <div class="refs">
 
-<h2>Key sites and articles</h2>
-<ul>
-<li> <a class="link" target="_blank" href="https://tympanus.net/codrops/css_reference/">Codrops CSS ref</a></li>
-<li><a class="link" target="_blank" href="https://medium.com/javascript-scene/top-javascript-frameworks-topics-to-learn-in-2017-700a397b711">Top JS things to learn</a></li>
+    <div class="accordion">
+      <div class="accordion-item">
+        <a href="#" class="heading">
+          <div class="icon"></div>
+          <div class="title">Key sites and articles</div>
+        </a>
 
-<li> <a class="link" target="_blank" href=""> </a></li>
+        <div class="content">
+          <p>
+            <ul>
 
-</ul>
+              <li> <a class="link" target="_blank" href="https://www.smashingmagazine.com/tag/css/ ">Smashing Magazine</a></li>
+              <li> <a class="link" target="_blank" href="https://medium.com/browse/bookmarks">Medium Bookmarks</a></li>
+              <li> <a class="link" target="_blank" href="https://thenextweb.com/">The Next Web</a></li>
+              <li> <a class="link" target="_blank" href="https://alistapart.com/topics">A List Apart - web articles</a></li>
+              <li> <a class="link" target="_blank" href="https://www.codecademy.com/catalog/subject/web-development">Codecademy</a></li>
+              <li> <a class="link" target="_blank" href="https://dzone.com/web-development-programming-tutorials-tools-news">DZONE - news tools tutorials</a></li>
+              <li> <a class="link" target="_blank" href="https://code.tutsplus.com/">Tuts - tutorials</a></li>
 
-<h2>Design</h2>
-<ul>
-<li> <a class="link" target="_blank" href="https://www.awwwards.com/">Awwwards best websites </a></li>
-<li> <a class="link" target="_blank" href="https://1stwebdesigner.com/">1stwebdesigner - UI/UX/Dev inspo</a></li>
-<li> <a class="link" target="_blank" href="https://tympanus.net/codrops/2017/09/28/sliced-dual-image-layout/">Sliced dual image</a></li>
+            </ul>
+          </p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <a href="#" class="heading">
+          <div class="icon"></div>
+          <div class="title">Design</div>
+        </a>
+
+        <div class="content">
+          <p>
+            <ul>
+              <li> <a class="link" target="_blank" href="https://www.awwwards.com/">Awwwards best websites </a></li>
+              <li> <a class="link" target="_blank" href="https://1stwebdesigner.com/">1stwebdesigner - UI/UX/Dev inspo</a></li>
+              <li> <a class="link" target="_blank" href="https://tympanus.net/codrops/2017/09/28/sliced-dual-image-layout/">Sliced dual image</a></li>
+            </ul>
+          </p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <a href="#" class="heading">
+          <div class="icon"></div>
+          <div class="title">HTML & CSS</div>
+        </a>
+
+        <div class="content">
+          <p>
+            <ul>
+              <li> <a class="link" target="_blank" href="https://www.youtube.com/channel/UCjXZQ0_3uTfnOeINzVVJduA">CSS Dev Conf - YouTube</a></li>
+              <li><a class="link" target="_blank" href="http://freefrontend.com/css-accordions/">Winning CSS Accordians</a></li>
+              <li>TO LEARN: GRIDS<a class="link" target="_blank" href=""></a></li>
+              <li>Flexbox links: <a class="link" target="_blank" href="https://tympanus.net/codrops/css_reference/flexbox/">Codrops ref</a></li>
+              <li> <a class="link" target="_blank" href="https://tympanus.net/codrops/css_reference/">Codrops CSS ref</a></li>
+              <li><a class="link" target="_blank" href="https://medium.com/flexbox-and-grids/css-flexbox-grid-layout-how-to-approach-css-layouts-in-2017-and-beyond-685deef03e6c
+            ">Grids and Flex basics</a></li>
+              <li><a class="link" target="_blank" href="https://developers.google.com/web/fundamentals/design-and-ux/responsive/patterns">Responsive design patterns - Google</a></li>
+              <li><a class="link" target="_blank" href="html_cheats.png">HTML cheatsheet</a></li>
+              <li><a class="link" target="_blank" href="html_cheat_compat_canvas.pdf">HTML MEGA cheatsheet</a></li>
+              <li><a class="link" target="_blank" href="screen_resolutions.gif">Screen Resolutions</a></li>
+              <li><a class="link" target="_blank" href="https://css-tricks.com/snippets/css/media-queries-for-standard-devices/">Media Queries screen resolutions</a></li>
+
+              <li>Page transition effect - <a class="link" target="_blank" href="https://tympanus.net/codrops/2016/09/29/transition-effect-with-css-masks/">CSS Masks</a></li>
+              <li><a class="link" target="_blank" href="https://tympanus.net/codrops/2016/06/01/multi-layer-page-reveal-effects/">Multilayer page reveal</a></li>
+              <li><a class="link" target="_blank" href="https://www.heartinternet.uk/blog/50-superb-css-tutorials-sharpen-web-design-skills-2017/">50 CSS tutorials</a></li>
+              <li><a class="link" target="_blank" href="https://www.keycdn.com/blog/sass-vs-less/">SASS vs LESS</a></li>
+
+            </ul>
+          </p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <a href="#" class="heading">
+          <div class="icon"></div>
+          <div class="title">JavaScript</div>
+        </a>
+
+        <div class="content">
+          <p>
+            <ul>
+              <li><a class="link" target="_blank" href="https://medium.com/javascript-scene/top-javascript-frameworks-topics-to-learn-in-2017-700a397b711">Top JS things to learn</a></li>
+              <li> <a class="link" target="_blank" href="http://overapi.com/javascript">JavaScript cheat sheet </a></li>
+              <li> <a class="link" target="_blank" href="https://javascript.info/first-steps">JavaScript docs/tutorials</a></li>
+              <li> <a class="link" target="_blank" href="https://github.com/getify/You-Dont-Know-JS">You dont know JS - Kyle Simpson </a></li>
+            </ul>
+          </p>
+        </div>
+      </div>
 
 
-</ul>
-<h2>HTML & CSS</h2>
-<ul>
-<li>TO LEARN: GRIDS<a class="link" target="_blank" href=""></a></li>
-<li>Flexbox links: <a class="link" target="_blank" href="https://tympanus.net/codrops/css_reference/flexbox/">Codrops ref</a></li>
-<li><a class="link" target="_blank" href="https://medium.com/flexbox-and-grids/css-flexbox-grid-layout-how-to-approach-css-layouts-in-2017-and-beyond-685deef03e6c
+      <div class="accordion-item">
+        <a href="#" class="heading">
+          <div class="icon"></div>
+          <div class="title">JQuery</div>
+        </a>
+
+        <div class="content">
+          <p>
+            <ul>
+              <li> <a class="link" target="_blank" href="http://overapi.com/jquery">JQuery cheat sheet</a></li>
+              <li> <a class="link" target="_blank" href="https://1stwebdesigner.com/53-jquery-tutorials-resources-tips-and-tricks-ultimate-collection/">50 JQuery tutorials </a></li>
+            </ul>
+          </p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <a href="#" class="heading">
+          <div class="icon"></div>
+          <div class="title">SVG</div>
+        </a>
+
+        <div class="content">
+          <p>
+            <ul>
+              <li><a class="link" target="_blank" href="https://tympanus.net/codrops/2015/04/08/motion-blur-effect-svg/">Motion blur</a></li>
+              <li> <a class="link" target="_blank" href="https://tympanus.net/codrops/2017/10/17/dynamic-shape-overlays-with-svg/">Dynamic shape overlays </a></li>
+              <li> <a class="link" target="_blank" href="https://tympanus.net/codrops/2017/08/08/morphing-page-transition/">Morphing page transition</a></li>
+              <li> <a class="link" target="_blank" href=""> </a></li>
+
+            </ul>
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- <h2>Key sites and articles</h2>
+    <ul>
+        
+      <li> <a class="link" target="_blank" href="https://www.smashingmagazine.com/tag/css/ ">Smashing Magazine</a></li>      
+      <li> <a class="link" target="_blank" href="https://medium.com/browse/bookmarks">Medium Bookmarks</a></li>      
+      <li> <a class="link" target="_blank" href="https://thenextweb.com/">The Next Web</a></li>      
+      <li> <a class="link" target="_blank" href="https://alistapart.com/topics">A List Apart - web articles</a></li>
+      <li> <a class="link" target="_blank" href="https://www.codecademy.com/catalog/subject/web-development">Codecademy</a></li>
+      <li> <a class="link" target="_blank" href="https://dzone.com/web-development-programming-tutorials-tools-news">DZONE - news tools tutorials</a></li>
+      <li> <a class="link" target="_blank" href="https://code.tutsplus.com/">Tuts - tutorials</a></li>
+      
+    </ul> -->
+
+    <!-- <h2>Design</h2> -->
+    <!-- <ul>
+      <li> <a class="link" target="_blank" href="https://www.awwwards.com/">Awwwards best websites </a></li>
+      <li> <a class="link" target="_blank" href="https://1stwebdesigner.com/">1stwebdesigner - UI/UX/Dev inspo</a></li>
+      <li> <a class="link" target="_blank" href="https://tympanus.net/codrops/2017/09/28/sliced-dual-image-layout/">Sliced dual image</a></li>
+    </ul> -->
+    <!-- <h2>HTML & CSS</h2>
+    <ul>
+      <li> <a class="link" target="_blank" href="https://www.youtube.com/channel/UCjXZQ0_3uTfnOeINzVVJduA">CSS Dev Conf - YouTube</a></li>
+        
+        https://www.youtube.com/channel/UCjXZQ0_3uTfnOeINzVVJduA
+      <li><a class="link" target="_blank" href="http://freefrontend.com/css-accordions/">Winning CSS Accordians</a></li>
+      
+      <li>TO LEARN: GRIDS<a class="link" target="_blank" href=""></a></li>
+      <li>Flexbox links: <a class="link" target="_blank" href="https://tympanus.net/codrops/css_reference/flexbox/">Codrops ref</a></li>
+      <li> <a class="link" target="_blank" href="https://tympanus.net/codrops/css_reference/">Codrops CSS ref</a></li>
+      <li><a class="link" target="_blank" href="https://medium.com/flexbox-and-grids/css-flexbox-grid-layout-how-to-approach-css-layouts-in-2017-and-beyond-685deef03e6c
 ">Grids and Flex basics</a></li>
-<li><a class="link" target="_blank" href="https://developers.google.com/web/fundamentals/design-and-ux/responsive/patterns">Responsive design patterns - Google</a></li>
-<li><a class="link" target="_blank" href="html_cheats.png">HTML cheatsheet</a></li>
-<li><a class="link" target="_blank" href="html_cheat_compat_canvas.pdf">HTML MEGA cheatsheet</a></li>
-<li><a class="link" target="_blank" href="screen_resolutions.gif">Screen Resolutions</a></li>
-<li>Page transition effect - <a class="link" target="_blank" href="https://tympanus.net/codrops/2016/09/29/transition-effect-with-css-masks/">CSS Masks</a></li>
-<li><a class="link" target="_blank" href="https://tympanus.net/codrops/2016/06/01/multi-layer-page-reveal-effects/">Multilayer page reveal</a></li>
-<li><a class="link" target="_blank" href="https://www.heartinternet.uk/blog/50-superb-css-tutorials-sharpen-web-design-skills-2017/">50 CSS tutorials</a></li>
+      <li><a class="link" target="_blank" href="https://developers.google.com/web/fundamentals/design-and-ux/responsive/patterns">Responsive design patterns - Google</a></li>
+      <li><a class="link" target="_blank" href="html_cheats.png">HTML cheatsheet</a></li>
+      <li><a class="link" target="_blank" href="html_cheat_compat_canvas.pdf">HTML MEGA cheatsheet</a></li>
+      <li><a class="link" target="_blank" href="screen_resolutions.gif">Screen Resolutions</a></li>
+      <li>Page transition effect - <a class="link" target="_blank" href="https://tympanus.net/codrops/2016/09/29/transition-effect-with-css-masks/">CSS Masks</a></li>
+      <li><a class="link" target="_blank" href="https://tympanus.net/codrops/2016/06/01/multi-layer-page-reveal-effects/">Multilayer page reveal</a></li>
+      <li><a class="link" target="_blank" href="https://www.heartinternet.uk/blog/50-superb-css-tutorials-sharpen-web-design-skills-2017/">50 CSS tutorials</a></li>
+      <li><a class="link" target="_blank" href="https://www.keycdn.com/blog/sass-vs-less/">SASS vs LESS</a></li>
 
-</ul>
-<h2>SVG</h2>
-<ul>
-<li><a class="link" target="_blank" href="https://tympanus.net/codrops/2015/04/08/motion-blur-effect-svg/">Motion blur</a></li>
-<li> <a class="link" target="_blank" href="https://tympanus.net/codrops/2017/10/17/dynamic-shape-overlays-with-svg/">Dynamic shape overlays </a></li>
-<li> <a class="link" target="_blank" href="https://tympanus.net/codrops/2017/08/08/morphing-page-transition/">Morphing page transition</a></li>
-<li> <a class="link" target="_blank" href=""> </a></li>
+    </ul> -->
+    <!-- <h2>SVG</h2>
+    <ul>
+      <li><a class="link" target="_blank" href="https://tympanus.net/codrops/2015/04/08/motion-blur-effect-svg/">Motion blur</a></li>
+      <li> <a class="link" target="_blank" href="https://tympanus.net/codrops/2017/10/17/dynamic-shape-overlays-with-svg/">Dynamic shape overlays </a></li>
+      <li> <a class="link" target="_blank" href="https://tympanus.net/codrops/2017/08/08/morphing-page-transition/">Morphing page transition</a></li>
+      <li> <a class="link" target="_blank" href=""> </a></li>
 
-</ul>
-</div>
-<div class="refs">
+    </ul> -->
+  </div>
+  <div class="refs">
+    <div class="accordion">
 
-<h2>JavaScript</h2>
-<ul>
-<li> <a class="link" target="_blank" href="http://overapi.com/javascript">JavaScript cheat sheet </a></li>
-<li> <a class="link" target="_blank" href="https://javascript.info/first-steps">JavaScript docs/tutorials</a></li>
-<li> <a class="link" target="_blank" href="https://github.com/getify/You-Dont-Know-JS">You dont know JS - Kyle Simpson </a></li>
-</ul>
+      <div class="accordion-item">
+        <a href="#" class="heading">
+          <div class="icon"></div>
+          <div class="title">Animation</div>
+        </a>
 
-<h2>JQuery</h2>
-<ul>
-<li> <a class="link" target="_blank" href="http://overapi.com/jquery">JQuery cheat sheet</a></li>
-<li> <a class="link" target="_blank" href="https://1stwebdesigner.com/53-jquery-tutorials-resources-tips-and-tricks-ultimate-collection/">JQuery tutorials </a></li>
+        <div class="content">
+          <p>
+            <ul>
+              <li> <a class="link" target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations">CSS animations docs</a></li>
+              <li> <a class="link" target="_blank" href="http://animejs.com/documentation/#CSStransforms">Anime - animation JS library</a></li>
+              <li>To do: CSS transition <a class="link" target="_blank" href=""> </a></li>
 
-</ul>
+            </ul>
+          </p>
+        </div>
+      </div>
 
-<h2>Python</h2>
-<ul>
-<li> <a class="link" target="_blank" href="cheatsheet_python.pdf">Python basic cheat sheet </a></li>
-</ul>
+      <div class="accordion-item">
+        <a href="#" class="heading">
+          <div class="icon"></div>
+          <div class="title">Cross Browser</div>
+        </a>
 
-<h2>Animation</h2>
-<ul>
-<li> <a class="link" target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations">CSS animations docs</a></li>
-<li> <a class="link" target="_blank" href="http://animejs.com/documentation/#CSStransforms">Anime - animation JS library</a></li>
-<li> <a class="link" target="_blank" href=""> </a></li>
-</ul>
+        <div class="content">
+          <p>
+            <ul>
+              <li> <a target="_blank" class="link" href=""> </a></li>
+            </ul>
+          </p>
+        </div>
+      </div>
 
-<h2>Hacks</h2>
-<ul>
-<li> <a target="_blank" class="link" href=""> </a></li>
-</ul>
-</div>
+      <div class="accordion-item">
+        <a href="#" class="heading">
+          <div class="icon"></div>
+          <div class="title">SEO</div>
+        </a>
+
+        <div class="content">
+          <p>
+            <ul>
+              <li> <a target="_blank" class="link" href=""> </a></li>
+            </ul>
+          </p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <a href="#" class="heading">
+          <div class="icon"></div>
+          <div class="title">Python</div>
+        </a>
+
+        <div class="content">
+          <p>
+            <ul>
+              <li> <a class="link" target="_blank" href="cheatsheet_python.pdf">Python basic cheat sheet </a></li>
+            </ul>
+          </p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <a href="#" class="heading">
+          <div class="icon"></div>
+          <div class="title">Django</div>
+        </a>
+
+        <div class="content">
+          <p>
+            <ul>
+              <li> <a class="link" target="_blank" href=""> </a></li>
+            </ul>
+          </p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <a href="#" class="heading">
+          <div class="icon"></div>
+          <div class="title">Hacks</div>
+        </a>
+
+        <div class="content">
+          <p>
+            <ul>
+              <li> <a target="_blank" class="link" href=""> </a></li>
+            </ul>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
+
 </html>
