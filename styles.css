@@ -835,7 +835,7 @@ img.hover-shadow {
 }
 
 /* Media query for accordian only */
-@media  screen and (min-device-width: 50rem) {
+@media only screen and (min-width: 775px) {
 	.refs{
 		width: 40%;
 		margin-top: 120px;
@@ -856,7 +856,8 @@ img.hover-shadow {
 		line-height: 30px;
 	}
 }
-@media  screen and (min-device-width: 30rem) and (max-device-width: 50rem) {
+
+@media only screen and (min-width: 400px) and (max-width: 7749px) {
 	.refs{
 		width: 70%;
 		margin-top: 124px;
@@ -864,7 +865,7 @@ img.hover-shadow {
 	
 	}
 	.refs.minus-ref-margin{
-		margin-top:120px;
+		margin-top:124px;
 	}
 	.accordion-item .heading {
 		font-size: 1.3rem;
