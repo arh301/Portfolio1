@@ -585,8 +585,8 @@ a.link {
 .modal {
 	display: none;
 	position: fixed;
-	z-index: 1;
-	padding-top: 5%;
+	z-index: 3;
+	padding-top: 110px;
 	left: 0;
 	top: 0;
 	width: 100%;
@@ -613,9 +613,9 @@ a.link {
 .close {
 	color: white;
 	position: fixed;
-	top: 70px;
-	right: 25px;
+	right: 58px;
 	font-size: 40px;
+	z-index: 4;
 	font-weight: bold;
 }
 
