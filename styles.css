@@ -830,14 +830,20 @@ img.hover-shadow {
 .accordion-item .content p {
 	margin-top: 0;
 }
+.refs.minus-ref-margin{
+	margin-top:0px;
+}
 
 /* Media query for accordian only */
-@media (min-width: 50rem) {
+@media  screen and (min-device-width: 50rem) {
 	.refs{
 		width: 40%;
 		margin-top: 120px;
 		padding-left: 8%;
 	
+	}
+	.refs.minus-ref-margin{
+		margin-top:120px;
 	}
 	.accordion-item .heading {
 		font-size: 1.2rem;
@@ -850,12 +856,15 @@ img.hover-shadow {
 		line-height: 30px;
 	}
 }
-@media only screen and (min-device-width: 30rem) and (max-device-width: 50rem) {
+@media  screen and (min-device-width: 30rem) and (max-device-width: 50rem) {
 	.refs{
 		width: 70%;
 		margin-top: 124px;
 		padding-left: 12%;
 	
+	}
+	.refs.minus-ref-margin{
+		margin-top:120px;
 	}
 	.accordion-item .heading {
 		font-size: 1.3rem;
