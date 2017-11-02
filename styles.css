@@ -760,6 +760,7 @@ img.hover-shadow {
 }
 
 .accordion-item.active .icon:after {
+	background: #B7B7B7;	
 	width: 0;
 }
 
@@ -783,9 +784,12 @@ img.hover-shadow {
 	color: white;
 }
 
-.accordion-item .heading:hover .icon:before,
-.accordion-item .heading:hover .icon:after {
+.accordion-item .heading:hover .icon:before{
+
 	background: #B7B7B7;
+}
+.accordion-item .heading:hover .icon:after {
+	background: white;
 }
 
 .accordion-item .icon {
@@ -846,7 +850,7 @@ img.hover-shadow {
 		line-height: 30px;
 	}
 }
-@media (min-width: 30rem) and (max-width: 50rem) {
+@media only screen and (min-device-width: 30rem) and (max-device-width: 50rem) {
 	.refs{
 		width: 70%;
 		margin-top: 124px;
