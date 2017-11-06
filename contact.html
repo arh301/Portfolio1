@@ -1,32 +1,37 @@
 <!doctype html>
 <html>
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width">
 
-<title>AH - Contact</title>
-<link href="styles.css" rel="stylesheet" type="text/css">
-<link href="media.css" rel="stylesheet" type="text/css">
-<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+
+  <title>AH - Contact</title>
+  <link href="styles.css" rel="stylesheet" type="text/css">
+  <link href="media.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
 
 </head>
 
 <body>
-<header>
-  <p id="largename" class="name"><span style="font-weight:bolder; font-size:1.2em">Anna</span>Hughes</p>
-  <p id="smallname" class="name"><span style="font-weight:bolder; font-size:1.2em">A</span>H</p>
-  <nav>
-    <ul class="navlist">
-      <li class="nav"><a href="index.html">Home</a></li>
-      <li class="nav"><a href="port.html">Portfolio</a></li>
-      <li class="nav"><a href="cv.html">CV</a></li>
-      <li class="nav"><a href="contact.html">Contact.</a></li>
-    </ul>
-  </nav>
-</header>
-<spacer></spacer>
-<div>
-<!--<div id="conLeftPane">
+  <div class="header">
+    <div class="headerButtonBlock">
+      <a href="port.html" class="headerButtonContent">
+        <p class="headerButtonPortText">&lt;<span style="font-size:2rem; font-weight:600">/</span>&gt;
+        </p>
+      </a>
+      <p class="headerPortSlider">Portfolio</p>
+    </div>
+    <a href="index.html" id="largename" class="name"><span style="font-weight:bolder; font-size:1.2em">Anna</span>Hughes</a>
+    <div class="headerButtonBlock">
+      <a href="contact.html" class="headerButtonContent active">
+              <img src="contactIcon.png" class="headerButtonContactImg active">  
+      </a>
+    </div>
+  </div>
+
+  <spacer></spacer>
+  <div>
+    <!--<div id="conLeftPane">
   <p class="conText"> If you happen to be involved in one of the following, please do get in touch:<br>
   </p>
   <div id="conLeftList">
@@ -39,27 +44,29 @@
       </div>
   <p class="conText" style="padding-top:5px">You can contact me using the contact form or by connecting with me on LinkedIn.</p>
 </div> -->
-<div id="formPane">
-  <p class="text">Hello! If you'd like to chat development or otherwise, please do connect with me on LinkedIn or send me an email using the contact form below!</p>
-  <form id = "form" name="form" method="POST" action="https://formspree.io/annaraehughes@live.co.uk">
-    <p style="padding-left:30px">
-      <label for="name"><strong>Name:</strong></label>
-      <input type="text" name="name" id="name" required/>
-    </p>
-    <p style="padding-left:35px">
-      <label for="email"><strong>Email:</strong></label>
-      <input type="email" name="email" id="email" required/>
-    </p>
-    <p>
-      <label for="message" class="formmes"><strong>Message:</strong></label>
-      <textarea rows="4" cols="50" name="message" id="message" required></textarea>
-    </p>
-    <input name="submit" type="submit" class="submit" value="Send"/>
-  </form>
-</div>
-</div>
-<div id="contactEnd">
-  <div id="linkedin"> <a target="_blank" href="https://www.linkedin.com/in/anna-hughes-748bb9109/"><img src="linkedin.png" alt="linkedin" /></a></div>
-  <img id="cableimg" src="cable2.png" alt="fiber"> </div>
+    <div id="formPane">
+      <p class="text">Hello! If you'd like to chat development or otherwise, please do connect with me on LinkedIn or send me an email using
+        the contact form below!</p>
+      <form id="form" name="form" method="POST" action="https://formspree.io/annaraehughes@live.co.uk">
+        <p style="padding-left:30px">
+          <label for="name"><strong>Name:</strong></label>
+          <input type="text" name="name" id="name" required/>
+        </p>
+        <p style="padding-left:35px">
+          <label for="email"><strong>Email:</strong></label>
+          <input type="email" name="email" id="email" required/>
+        </p>
+        <p>
+          <label for="message" class="formmes"><strong>Message:</strong></label>
+          <textarea rows="4" cols="50" name="message" id="message" required></textarea>
+        </p>
+        <input name="submit" type="submit" class="submit" value="Send" />
+      </form>
+    </div>
+  </div>
+  <div id="contactEnd">
+    <div id="linkedin"> <a target="_blank" href="https://www.linkedin.com/in/anna-hughes-748bb9109/"><img src="linkedin.png" alt="linkedin" /></a></div>
+    <img id="cableimg" src="cable2.png" alt="fiber"> </div>
 </body>
+
 </html>

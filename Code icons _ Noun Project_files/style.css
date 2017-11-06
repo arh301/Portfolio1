@@ -1,0 +1,160 @@
+/* setup */
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  height: 100%; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
+
+body {
+  background-color: #ccc;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%; }
+
+.hide {
+  border: 0 !important;
+  clip: rect(0 0 0 0) !important;
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important; }
+
+/* Banner Styles */
+#banner {
+  position: relative;
+  width: 728px;
+  height: 90px;
+  border: solid 1px #000;
+  overflow: hidden;
+  background-color: #e0c7ae;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+  #banner .bannerClick {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    background: url("data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"); }
+  #banner .background, #banner .guide {
+    position: absolute;
+    left: 6px;
+    top: -107px;
+    width: 728px;
+    height: 300px;
+    image-rendering: -webkit-optimize-contrast; }
+  #banner .darkLayer {
+    display: none;
+    background-color: #000;
+    opacity: 0; }
+  #banner .laptop {
+    position: absolute;
+    top: -67px;
+    left: -1px;
+    -webkit-transform-origin: top left;
+            transform-origin: top left; }
+  #banner .underline {
+    display: inline-block;
+    height: 23px;
+    border-bottom: 2px solid #87633d; }
+  #banner .copy {
+    position: absolute;
+    left: -1px;
+    top: -1px;
+    width: 728px;
+    height: 90px;
+    pointer-events: none;
+    z-index: 11; }
+    #banner .copy #boldCopy path, #banner .copy #newCopy path {
+      display: none; }
+    #banner .copy #line {
+      display: none; }
+  #banner .boldCopy {
+    position: absolute;
+    left: 21px;
+    top: 18px;
+    width: 480px;
+    height: 30px;
+    font-size: 19.5px;
+    font-family: 'CircularStd-Book', sans-serif;
+    color: #87633d;
+    line-height: 23px;
+    letter-spacing: -0.2px; }
+    #banner .boldCopy span {
+      margin: 0;
+      opacity: 0; }
+    #banner .boldCopy #boldCopySpace {
+      opacity: 0; }
+  #banner .screenCopy {
+    position: absolute;
+    left: 495px;
+    top: 28px;
+    height: 26px;
+    width: 64px; }
+  #banner #cursorContainer {
+    display: inline;
+    width: 5px;
+    height: 21px; }
+    #banner #cursorContainer #cursor {
+      position: absolute;
+      width: 5px;
+      height: 21px;
+      margin-top: 3px; }
+  #banner .thinCopy {
+    position: absolute;
+    left: 22px;
+    top: 95px;
+    width: 110px;
+    height: 50px;
+    text-decoration: underline;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 1.4px;
+    line-height: 17px;
+    color: #87633d;
+    opacity: 0.8;
+    text-underline-position: under;
+    opacity: 0; }
+  #banner .logo {
+    position: absolute;
+    left: 589px;
+    top: 17px;
+    width: 110px;
+    height: 16px; }
+  #banner .cta {
+    position: absolute;
+    left: 585px;
+    top: 44px;
+    width: 123px;
+    height: 32px;
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    cursor: pointer;
+    z-index: 10; }
+    #banner .cta .cta_copy {
+      padding-top: 5px !important;
+      opacity: 0; }
+  #banner .ctaCopy {
+    position: absolute;
+    left: 596px;
+    top: 57px;
+    width: 101px;
+    height: 7px;
+    z-index: 11;
+    pointer-events: none; }

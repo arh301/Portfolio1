@@ -105,24 +105,30 @@
 </head>
 
 <body>
-  <header>
-    <p id="largename" class="name"><span style="font-weight:bolder; font-size:1.2em">Anna</span>Hughes</p>
-    <p id="smallname" class="name"><span style="font-weight:bolder; font-size:1.2em">A</span>H</p>
-    <nav style="margin-right:-16px;">
-      <ul class="navlist">
-        <li class="nav"><a href="index.html">Home</a></li>
-        <li class="nav"><a href="port.html">Portfolio.</a></li>
-        <li class="nav"><a href="cv.html">CV</a></li>
-        <li class="nav"><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-  <div id="portTop">
-    <p id="portHead">Technical Projects</br>s</p><br/>
-    <p id="portHead2">ee some of my <del>work</del> code.</p>
+  <div class="header">
+    <div class="headerButtonBlock">
+      <a href="port.html" class="headerButtonContent active">
+        <p class="headerButtonPortText active">&lt;<span style="font-size:2rem; font-weight:600">/</span>&gt;
+        </p>
+      </a>
+      <p class="headerPortSlider">Portfolio</p>
+    </div>
+    <a href="index.html" id="largename" class="name"><span style="font-weight:bolder; font-size:1.2em">Anna</span>Hughes</a>
+    <div class="headerButtonBlock">
+      <a href="contact.html" class="headerButtonContent">
+              <img src="contactIcon.png" class="headerButtonContactImg">
+          </a>
+      <p class="headerContactSlider">Contact</p>
+    </div>
   </div>
-  
-  <div style="height:12.4em"></div>
+
+  <spacer></spacer>
+  <div id="portTop">
+    <div id="portHead">Technical Projects</br>s</div>
+    <div id="portHead2">ee some of my
+      <del>work</del> code.</div>
+  </div>
+
   <h3>Hybrid Mobile App</h3>
   <div id="appPane">
     <div id="appText">
@@ -284,7 +290,7 @@
   <div id="para4"></div>
   <!--<h3>Research papers</h3>
 <div id="papers">
-</div>-->
+</div> -->
 </body>
 
 </html>

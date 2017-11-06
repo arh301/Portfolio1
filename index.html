@@ -1,30 +1,36 @@
 <!doctype html>
 <html>
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width">
 
-<title>AH - Home</title>
-<link href="styles.css" rel="stylesheet" type="text/css">
-<link href="media.css" rel="stylesheet" type="text/css">
-<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+
+  <title>AH - Home</title>
+  <link href="styles.css" rel="stylesheet" type="text/css">
+  <link href="media.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
 </head>
 
 <body>
-<header>
-  <p id="largename" class="name"><span style="font-weight:bolder; font-size:1.2em">Anna</span>Hughes</p>
-  <p id="smallname" class="name"><span style="font-weight:bolder; font-size:1.2em">A</span>H</p>
-
-<nav>
-<ul class="navlist">
-    <li class="nav"><a href="index.html">Home.</a></li>
-    <li class="nav"><a href="port.html">Portfolio</a></li>
-    <li class="nav"><a href="cv.html">CV</a></li>
-    <li class="nav"><a href="contact.html">Contact</a></li>
-  </ul>
-  </nav>
-</header>
-<img id="homePane" src="pebbles.JPG" alt="pebbles">
-<p style="width:95%;z-index:0; color:white; padding-top:8.4em; margin:0 auto; text-align:center;font-size:2em">Welcome to a website in progress... <br/>Come back soon to see a lovely homepage, for now you can </br><a class="link" href="port.html">see my portfolio</a> :)</p>
+    <div class="homeHeader">
+        <div class="headerButtonBlock homeHead">
+          <a href="port.html" class="headerButtonContentHome ">
+            <p class="headerButtonPortText ">&lt;<span style="font-size:2.2rem; font-weight:600">/</span>&gt;
+            </p>
+          </a>
+          <p class="headerButtonTextSlider">Portfolio</p>
+        </div>
+        <a href="index.html" id="largename" class="name"><span style="font-weight:bolder; font-size:1.2em">Anna</span>Hughes</a>
+        <div class="headerButtonBlock homeHead">
+          <a href="contact.html" class="headerButtonContentHome">
+                  <img src="contactIcon.png" class="headerButtonContactImg" style="padding-top:26px">
+              </a>
+          <p class="headerButtonTextSlider">Contact</p>
+        </div>
+      </div>
+  <img id="homePane" src="pebbles.JPG" alt="pebbles">
+  <p style="width:95%;z-index:0; color:white; padding-top:8.4em; margin:0 auto; text-align:center;font-size:2em">Welcome to a website in progress... <br/>Come back soon to see a lovely homepage, for now you can </br><a class="link"
+      href="port.html">see my portfolio</a> :)</p>
 </body>
+
 </html>
