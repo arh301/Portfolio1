@@ -311,26 +311,26 @@ a.link {
 }
 
 #para1 {
-	background-image: url(ionic2.png);
+	background-image: url(img/ionic2.png);
 	height: 35%;
 	z-index: -1;
 }
 
 #para2 {
-	background-image: url(steps.jpg);
+	background-image: url(img/steps.jpg);
 	height: 35%;
 	z-index: -1;
 	top: 0%;
 }
 
 #para3 {
-	background-image: url(tree.JPG);
+	background-image: url(img/tree.JPG);
 	height: 35%;
 	top: 0%;
 }
 
 #para4 {
-	background-image: url(type.jpg);
+	background-image: url(img/type.jpg);
 	height: 35%;
 	top: 0%;
 }
