@@ -534,6 +534,8 @@ a.link {
 #portHead2 {
 	margin-top: 76px;
 	width: 50%;
+	font-size: 1.25rem;
+	padding-left: 2px;
 }
 
 #portDocsLink {

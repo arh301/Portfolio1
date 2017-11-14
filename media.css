@@ -357,8 +357,22 @@ handheld and (orientation: portrait) {
 		padding-top: 50px;
 	}
 	#formPane {
-		width: 100%;
+		width: 84%;
 		padding-bottom: 20px;
+	}
+	#formfieldset {
+		margin-top: 1.6em;
+	}
+	.homeHeader{
+		padding-top: 8%;
+	}
+	.header{
+		padding-top:1.2em;
+		padding-right: 0.6em;
+		padding-left: 0.6em;
+	}
+	spacer{
+		height: 9em;
 	}
 }
 
