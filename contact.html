@@ -31,53 +31,37 @@
   </div>
 
   <spacer></spacer>
-  <div>
-    <!--<div id="conLeftPane">
-  <p class="conText"> If you happen to be involved in one of the following, please do get in touch:<br>
-  </p>
-  <div id="conLeftList">
-    <ul>
-      <li>Web &amp; Digital Development Agency.</li>
-      <li>Social enterprise, NGO or N-F-P.</li>
-      <li>Homeless charity / organisation / interested in <a href="port.html" style="font-weight:700" class="link">this</a>.</li>
-      <li>Otherwise? Still open for chats :)</li>
-    </ul>
-      </div>
-  <p class="conText" style="padding-top:5px">You can contact me using the contact form or by connecting with me on LinkedIn.</p>
-</div> -->
-    <div id="formPane">
-      <p class="text">Hello! If you'd like to chat development or otherwise, please do connect with me on LinkedIn or send me an email using
-        the contact form below!</p>
-      <form id="form" name="form" method="POST" action="https://formspree.io/annaraehughes@live.co.uk">
-        <p style="padding-left:30px">
-          <label for="name">
-            <strong>Name:</strong>
-          </label>
-          <input type="text" name="name" id="name" required/>
-        </p>
-        <p style="padding-left:35px">
-          <label for="email">
-            <strong>Email:</strong>
-          </label>
-          <input type="email" name="email" id="email" required/>
-        </p>
-        <p>
-          <label for="message" class="formmes">
-            <strong>Message:</strong>
-          </label>
-          <textarea rows="4" cols="50" name="message" id="message" required></textarea>
-        </p>
-        <input name="submit" type="submit" class="submit" value="Send" />
-      </form>
-    </div>
+  <div id="formPane">
+    <p>Hello! Want to get in touch?</p>
+    <p id="linkedInText">Connect with me on<img src="img/linkedin.png" id="linkedIn" alt="linkedin" /></p>
+    <p>or send me an email...</p>
+    <fieldset id="formfieldset">
+      <img src="img/treeIcon.png" alt="tree icon" id="treeIcon">
+        <!-- <a href="https://www.vexels.com/vectors/preview/132509/flat-tree-silhouette"> Flat tree silhouette  </a> | designed by Vexels -->
+    <form id="form" name="form" method="POST" action="https://formspree.io/annaraehughes@live.co.uk">
+      <p class="contactField">
+        <label class="formLabel" for="name">
+          <strong>Name:</strong>
+        </label>
+        <input type="text" name="name" id="name" required/>
+      </p>
+      <p class="contactField">
+        <label class="formLabel" for="email">
+          <strong>Email:</strong>
+        </label>
+        <input type="email" name="email" id="email" required/>
+      </p>
+      <p class="contactField">
+        <label class="formLabel" for="message">
+          <strong>Message:</strong>
+        </label>
+        <textarea rows="4" cols="50" name="message" id="message" required></textarea>
+      </p>
+      <input name="submit" type="submit" class="submit" value="Send" />
+    </form>
+  </fieldset>
   </div>
-  <div id="contactEnd">
-    <div id="linkedin">
-      <a target="_blank" href="https://www.linkedin.com/in/anna-hughes-748bb9109/">
-        <img src="img/linkedin.png" alt="linkedin" />
-      </a>
-    </div>
-    <img id="cableimg" src="img/cable2.png" alt="fiber"> </div>
+
 </body>
 
 </html>
