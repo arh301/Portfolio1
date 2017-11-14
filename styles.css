@@ -21,20 +21,6 @@ html {
 	background-color: #561111;
 }
 
-header {
-	margin: 0 auto;
-	padding-top: 1%;
-	background-color: #12130F;
-	height: 3.75em;
-	box-shadow: 0px 0px 0px 6px rgba(179, 179, 179, 0.8);
-	border-radius: 1px;
-	position: fixed;
-	z-index: 5;
-	top: 0;
-	width: 100%;
-	min-width: 615px;
-}
-
 .homeHeader {
 	margin: 0 auto;
 	padding-top: 1%;
@@ -57,7 +43,7 @@ header {
 	align-items: center;
 }
 
-.header {
+header {
 	margin: 0 auto;
 	padding-top: 1%;
 	opacity: 0.9;
@@ -241,25 +227,6 @@ header {
 	font-size: 2em;
 	color: white;
 	text-decoration: none !important;
-}
-
-nav {
-	width: 60%;
-	margin: 0 auto;
-	float: right;
-	padding-top: 1.3em;
-	padding-right: 5%;
-}
-
-.navlist {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	float: right;
-}
-
-li.nav {
-	display: inline;
 }
 
 li a {

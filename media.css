@@ -366,7 +366,7 @@ handheld and (orientation: portrait) {
 	.homeHeader {
 		padding-top: 8%;
 	}
-	.header {
+	header {
 		padding-top: 1.2em;
 	}
 	spacer {
