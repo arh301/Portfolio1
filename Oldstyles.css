@@ -82,7 +82,7 @@ header {
 	height: 100%;
 }
 
-.headerButtonBlock:hover>.headerButtonSlider {
+.headerButtonBlock:hover>.headerSlider {
 	display: block;
 }
 
@@ -113,19 +113,19 @@ header {
 	-webkit-animation: none;
 }
 
-.headerButtonBlock:hover .headerButtonPortText {
+.headerButtonBlock:hover .headerPortText {
 	opacity: 0.8;
 }
 
-.headerButtonBlock:hover .headerButtonContactImg {
+.headerButtonBlock:hover .headerContactImg {
 	opacity: 1;
 }
 
-.headerButtonBlock:hover .headerButtonPortText {
+.headerButtonBlock:hover .headerPortText {
 	opacity: 0.9;
 }
 
-.headerButtonBlock:hover .headerButtonContactImg {
+.headerButtonBlock:hover .headerContactImg {
 	opacity: 1;
 }
 
@@ -159,7 +159,7 @@ header {
 	cursor: context-menu;
 }
 
-.headerButtonPortText {
+.headerPortText {
 	text-align: center;
 	width: 80px;
 	opacity: 0.5;
@@ -169,7 +169,7 @@ header {
 	padding-bottom: 21px;
 }
 
-.headerButtonContactImg {
+.headerContactImg {
 	width: 48px;
 	text-align: center;
 	opacity: 0.5;
@@ -179,7 +179,7 @@ header {
 	padding-bottom: 9px;
 }
 
-.headerButtonSlider {
+.headerSlider {
 	font-size: 1.6rem;
 	font-weight: 500;
 	text-align: center;
