@@ -1,0 +1,252 @@
+@charset "utf-8";
+
+/* CSS Document */
+@-webkit-keyframes pulse {
+    0%,
+    100% {
+        box-shadow: 0 0 0 0;
+    }
+    50% {
+        box-shadow: 0 0 16px white, inset 0 0 16px lightgray;
+    }
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    min-width: 615px;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1em;
+    position: absolute;
+}
+
+html {
+    background-color: $main-maroon;
+}
+
+.text {
+    color: white;
+    padding: 4%;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+spacer {
+    width: 100%;
+    height: 10.6em;
+    display: block;
+}
+
+h3 {
+    font-size: 1.5em;
+    background-color: #F7F3E3;
+    width: 100%;
+    margin-top: 0.2em;
+    margin-bottom: 0;
+    padding:0.8em;
+    text-align: center;
+}
+
+h4 {
+    font-size: 1.3rem;
+}
+
+h5 {
+    float: none;
+    font-size: 1.4rem;
+    display: inline;
+    padding-left: 0.1em;
+}
+
+a.link {
+    font-weight: 400;
+    color: inherit;
+    font-size: inherit;
+    padding: 0;
+    text-decoration: underline;
+}
+
+.homeHeader {
+    height: 11em;
+    border-bottom:0;
+    background-color: rgba(86, 17, 17, 0.6);
+}
+
+header {
+    position: fixed;
+    z-index: 5;    
+    height: 7.3em;
+    width: 100%;
+    min-width: 615px;
+    margin: 0 auto;
+    align-items: center;    
+    padding-top: 1%;
+    top: 0;
+    background-color:  rgba(86, 17, 17, 0.9);
+    border-bottom: 2px solid #F7F3E3;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+}
+
+#largename {
+    display: block;
+}
+
+.name {
+    margin: 0 auto;
+    flex: 1;
+    text-align: center;
+    font-size: 2em;
+    color: white;
+    text-decoration: none !important;
+}
+
+.headerButtonBlock {
+    width: 20%;
+    height: 100%;
+}
+
+.headerButtonContentHome {
+    display: block;
+    height: 100px;
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 12%;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    -webkit-animation: pulse 2s linear 1s infinite;
+    font-size: 3.4rem;
+}
+
+.headerButtonContent {
+    display: block;
+    width: 90px;
+    margin: 0 auto;
+    margin-top: 10px;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    -webkit-animation: pulse 3s linear 1s infinite;
+    font-size: 3rem;
+}
+
+.headerButtonContent.active {
+    -webkit-animation: none;
+    cursor: context-menu;
+}
+
+.headerButtonPortText {
+    text-align: center;
+    width: 80px;
+    opacity: 0.5;
+    color: white;
+    margin: 0 auto;
+    padding-top: 21px;
+    padding-bottom: 21px;
+}
+
+.headerButtonContactImg {
+    width: 48px;
+    text-align: center;
+    opacity: 0.5;
+    color: white;
+    margin: 0 auto;
+    padding-top: 21px;
+    padding-bottom: 9px;
+}
+
+.headerButtonSlider {
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-align: center;
+    display: none;
+    color: lightgrey;
+}
+
+.headerPortSlider {
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-align: center;
+    position: absolute;
+    display: none;
+    color: white;
+    left: 15%;
+    top: 28%;
+}
+
+.headerContactSlider {
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-align: center;
+    position: absolute;
+    display: none;
+    color: white;
+    right: 15%;
+    top: 28%;
+}
+
+#contactIcon {
+    width: 20%;
+    height: 100%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.headerButtonBlock:hover>.headerButtonSlider {
+    display: block;
+}
+
+.headerButtonBlock:hover>.headerPortSlider {
+    display: block;
+}
+
+.headerButtonBlock:hover>.headerContactSlider {
+    display: block;
+}
+
+.headerButtonContentHome:hover {
+    box-shadow: 0 0 25px white, inset 0 0 25px white !important;
+}
+
+.headerButtonBlock:hover .headerButtonContent {
+    box-shadow: 0 0 25px white, inset 0 0 25px white !important;
+    -webkit-animation: none;
+}
+
+.headerButtonBlock:hover .headerButtonContent.active {
+    box-shadow: 0 0 0 0 !important;
+    -webkit-animation: none;
+}
+
+.headerButtonBlock:hover .headerButtonContentHome {
+    box-shadow: 0 0 25px white, inset 0 0 25px white !important;
+    -webkit-animation: none;
+}
+
+.headerButtonBlock:hover .headerButtonPortText {
+    opacity: 0.8;
+}
+
+.headerButtonBlock:hover .headerButtonContactImg {
+    opacity: 1;
+}
+
+.headerButtonBlock:hover .headerButtonPortText {
+    opacity: 0.9;
+}
+
+.headerButtonBlock:hover .headerButtonContactImg {
+    opacity: 1;
+}

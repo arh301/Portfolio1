@@ -1,0 +1,55 @@
+
+@charset "utf-8";
+
+/* CSS Document */
+
+#homePane {
+	width: 100%;
+	position: fixed;
+	z-index: -1;
+	opacity: 0.1
+}
+
+.homeTemp {
+	width: 95%;
+	z-index: 0;
+	color: white;
+	padding-top: 8.4em;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 2em;
+	line-height: 1.4em;
+	transform: translateY(20);
+	transition: all .5s .5s;
+}
+
+@keyframes grow {
+	0% {
+		font-size: 1em;
+		line-height: 1em;
+		background-color: none;
+		border-bottom: 0px solid white;
+	}
+	20% {
+		margin-left: 1.6em;
+	}
+	100% {
+		font-size: 1.4em;
+		margin-left: 0em;
+		line-height: 1.4em;
+		background-color: rgba(86, 17, 17, 0.7);
+		padding: 0.15em;
+		border-bottom: 2px solid white;
+	}
+}
+
+.linkGrow {
+	text-decoration: none;
+	color: inherit;
+}
+
+.linkGrow:hover {
+	animation-name: grow;
+	animation-duration: 1.5s;
+	animation-fill-mode: forwards;
+}

@@ -1,0 +1,245 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+#para1 {
+	background-image: url(img/ionic2.png);
+}
+
+#para2 {
+	background-image: url(img/steps.jpg);
+}
+
+#para3 {
+	background-image: url(img/tree.JPG);
+}
+
+#para4 {
+	background-image: url(img/type.jpg);
+}
+
+#para1,
+#para2,
+#para3,
+#para4 {
+	position: relative;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 35%;	
+	top: 0%;	
+	z-index: -1;
+	
+}
+
+#portTop {
+	width: 100%;
+	height: 6em;
+	margin-right: 0%;
+	color: white;
+	display: flex;
+}
+
+#portHead {
+	font-size: 2.56em;
+	width: 50%;
+	margin: 0;
+	font-weight: 600;
+	text-align: right;
+    line-height: 0.8em;
+}
+
+#portHead2 {
+	margin-top: 2.2em;
+	width: 50%;
+	font-size: 1.25rem;
+	padding-left: 0.1em;
+}
+
+#appPane {
+	background-color: #D9D9D9;
+	width: 100%;
+	margin: 0 auto;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	display: flex;
+	border: white 0.2em solid;
+	font-size: 1.05em;
+}
+
+.slideImg {
+	width: 100%;
+	border: 2px rgba(33, 33, 33, 1.00) solid;
+	border-radius: 4px;
+	margin-top: 2%;
+}
+
+#appText,
+#appImgs,
+#appLinks {
+	padding-top: 0px;
+	height: auto;
+	vertical-align: top;
+}
+
+#appText {
+	width: 25%;
+	order: 1;
+	padding-left: 3%;
+	padding-right: 2%;
+}
+
+#appImgs {
+	padding: 2%;
+	background-color: #F7F3E3;
+	width: 40%;
+	order: 2;
+	text-align: center;
+	box-shadow: 0px 0px 0px 6px rgba(179, 179, 179, 0.8);
+	border-radius: 0.1em;
+}
+
+#appLinks {
+	width: 25%;
+	order: 3;
+	padding-right: 2%;
+	padding-left: 2%;
+}
+
+#screenshots2 {
+	display: none;
+	font-size: 1em;
+	width: 80%;
+	margin: 0 auto;
+}
+
+#websPane {
+	width: 100%;
+	margin: 0 auto;
+	display: table;
+	font-size: 1.05em;
+}
+
+#websPane1 {
+	width: 50%;
+	margin-top: 0.6%;
+	display: block;
+	background-color: #D9D9D9;
+	padding: 3%;
+	border-radius: 2em;
+	border: $main-maroon 14px solid;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	padding-top: 0;
+	float: left;
+	color: black;
+}
+
+#ipp1,
+#ipp2,
+#ipp3 {
+	margin-top: 4%;
+}
+
+#websPane2 {
+	background-color: $main-maroon;
+	width: 44%;
+	color: white;
+	display: block;
+	padding: 2.4%;
+	padding-bottom: 0.7%;
+	padding-top: 0;
+	float: right;
+	text-align: center;
+}
+
+#multi {
+	display: table;
+	background-color: #F7F3E3;
+	padding-bottom: 1em;
+	font-size: 1.2em;
+	width: 100%;
+}
+
+#clockPane {
+	width: 38%;
+	color: black;
+	display: block;
+	text-align: center;
+	padding: 3%;
+	padding-bottom: 1%;
+	float: left;
+	background-color: #F7F3E3;
+}
+
+#clockPane>svg {
+	margin: 0 auto;
+	z-index: 1;
+	left: 50%
+}
+
+#gamePane1 {
+	width: 48%;
+	color: black;
+	text-align: center;
+	display: block;
+	float: right;
+	background-color: #F7F3E3;
+	padding: 3%;
+	padding-bottom: 0%;
+}
+
+#java {
+	width: 96%;
+	margin: 0 auto;
+	display: block;
+	color: white;
+	font-size: 1.3em;
+	padding: 2%;
+}
+
+#javaPane {
+	width: 100%;
+	position: relative;
+	margin: 0 auto;
+	margin-top: 1em;
+	display: table;
+}
+
+#javaProj,
+#javaPaint,
+#javaSkills {
+	padding-top: 0;
+	display: table-cell;
+	vertical-align: top;
+}
+
+#javaProj {
+	width: 25%;
+	height: auto;
+	padding-left: 3%;
+	padding-right: 2%;
+	bottom: 0;
+	padding-top: 1%;
+	font-size: 0.9em;
+	;
+}
+
+#javaPaint {
+	background-color: #F7F3E3;
+	width: 25%;
+	max-height: 11em;
+	box-shadow: 0px 0px 0px 6px rgba(179, 179, 179, 0.4);
+	border-radius: 0.2em;
+	margin: 0;
+	padding: 0;
+}
+
+#javaSkills {
+	width: 25%;
+	font-size: 0.9em;
+	padding-right: 3%;
+	padding-top: 1%;
+	padding-left: 3%;
+}

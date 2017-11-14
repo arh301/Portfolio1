@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+#gameText {
+    font-size: 1.2em;
+    color: white;
+    padding-top: 0.5em;
+    padding-top: 0.5em; 
+    margin-bottom: 3%;
+    text-align: center;
+    display: block;
+}
+
+#gamePane {
+    width: 725px;
+    margin: 0 auto;
+    display: block;
+    height: 400px;
+}
+
+#gameFail {
+    font-size: 1.2em;
+    color: white;
+    padding-top: 3.5em;
+    margin-bottom: 1em;
+    margin: 1.2em;
+    text-align: center;
+    display: none;
+}
