@@ -6,16 +6,21 @@
 	body {
 		font-size: 1.1em;
 	}
-	.headerSlider {
-		&.port {
-			left: 0;
-			margin-left: -2%;
-			top: 40%;
-		}
-		&.contact {
-			right: 0;
-			margin-right: -2%;
-			top: 40%;
+	.headerButtonBlock {
+		&:hover {
+			.headerSlider {
+				&.port {
+					margin-left: -1em !important;
+					-webkit-animation: slide-drop55L 0.8s;
+					@include slide("drop55L", 30%, 50%, -3em, -1em, inherit, inherit);
+				
+				}
+				&.contact {
+					margin-right: -1em !important;
+					-webkit-animation: slide-drop55R 0.8s;
+					@include slide("drop55R", 30%, 50%, 0, 0, -3em, -1em);
+				}
+			}
 		}
 	}
 }
