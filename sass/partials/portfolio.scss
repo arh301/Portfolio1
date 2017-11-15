@@ -27,10 +27,9 @@
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 35%;	
-	top: 0%;	
+	height: 35%;
+	top: 0%;
 	z-index: -1;
-	
 }
 
 #portTop {
@@ -47,7 +46,7 @@
 	margin: 0;
 	font-weight: 600;
 	text-align: right;
-    line-height: 0.8em;
+	line-height: 0.8em;
 }
 
 #portHead2 {
@@ -65,7 +64,6 @@
 	-moz-box-sizing: border-box;
 	display: flex;
 	border: white 0.2em solid;
-	font-size: 1.05em;
 }
 
 .slideImg {
@@ -118,7 +116,6 @@
 	width: 100%;
 	margin: 0 auto;
 	display: table;
-	font-size: 1.05em;
 }
 
 #websPane1 {
@@ -156,10 +153,10 @@
 
 #multi {
 	display: table;
+	width: 100%;
+font-size: 1.1em;	
 	background-color: #F7F3E3;
 	padding-bottom: 1em;
-	font-size: 1.2em;
-	width: 100%;
 }
 
 #clockPane {
@@ -191,15 +188,16 @@
 }
 
 #java {
+	display: block;
 	width: 96%;
 	margin: 0 auto;
-	display: block;
-	color: white;
-	font-size: 1.3em;
 	padding: 2%;
+	color: white;
+	font-size: 1.1rem;
+	line-height: 1.2em;
 }
 
-#javaPane {
+#javaLists{
 	width: 100%;
 	position: relative;
 	margin: 0 auto;

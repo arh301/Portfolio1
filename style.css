@@ -5,8 +5,30 @@
   0%,
   100% {
     box-shadow: 0 0 0 0; }
-  50% {
-    box-shadow: 0 0 16px white, inset 0 0 16px lightgray; } }
+  55% {
+    box-shadow: 0 0 0 0;
+    border-radius: 50%; }
+  40% {
+    box-shadow: 0 0 10px white, inset 0 0 4px lightgray; }
+  35% {
+    border-radius: 10%; }
+  20% {
+    box-shadow: 0 0 20px white, inset 0 0 10px lightgray;
+    border-radius: 50%; }
+  10% {
+    box-shadow: 0 0 10px white, inset 0 0 4px lightgray;
+    border-radius: 50%; } }
+
+@keyframes pulse2 {
+  0% {
+    box-shadow: 0 0 0 0;
+    border-radius: 50%; }
+  60% {
+    box-shadow: 0 0 16px white, inset 0 0 8px lightgray;
+    border-radius: 50%; }
+  100% {
+    box-shadow: 0 0 20px white, inset 0 0 8px lightgray;
+    border-radius: 10%; } }
 
 html,
 body {
@@ -22,6 +44,8 @@ body {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 1em;
   position: absolute; }
+  body#portfolioBody {
+    line-height: 1.2em; }
   body .text {
     color: white;
     padding: 4%;
@@ -34,7 +58,6 @@ body {
   body h3 {
     font-size: 1.5em;
     background-color: #F7F3E3;
-    width: 100%;
     margin-top: 0.2em;
     margin-bottom: 0;
     padding: 0.8em;
@@ -95,7 +118,7 @@ header {
       border-radius: 50%;
       text-align: center;
       text-decoration: none;
-      -webkit-animation: pulse 2s linear 1s infinite;
+      -webkit-animation: pulse 4s linear 1s infinite;
       font-size: 3rem; }
       header .headerButtonBlock .headerButtonContent.home {
         height: 100px;
@@ -110,11 +133,15 @@ header {
       header .headerButtonBlock .headerButtonContent .headerPortText {
         text-align: center;
         width: 80px;
+        height: 48px;
         opacity: 0.5;
         color: white;
         margin: 0 auto;
         padding-top: 21px;
-        padding-bottom: 21px; }
+        padding-bottom: 20px;
+        line-height: 48px; }
+        header .headerButtonBlock .headerButtonContent .headerPortText.home {
+          padding-top: 28px; }
       header .headerButtonBlock .headerButtonContent .headerContactImg {
         width: 48px;
         text-align: center;
@@ -122,26 +149,29 @@ header {
         color: white;
         margin: 0 auto;
         padding-top: 21px;
-        padding-bottom: 9px; }
+        padding-bottom: 20px; }
+        header .headerButtonBlock .headerButtonContent .headerContactImg.home {
+          padding-top: 28px; }
     header .headerButtonBlock .headerSlider {
-      font-size: 1.6rem;
+      font-size: 1.4rem;
       font-weight: 500;
       text-align: center;
       display: none;
       color: lightgrey; }
       header .headerButtonBlock .headerSlider.port {
         position: absolute;
-        left: 15%;
-        top: 28%; }
+        left: 18%;
+        top: 50%; }
       header .headerButtonBlock .headerSlider.contact {
         position: absolute;
-        right: 15%;
-        top: 28%; }
+        right: 18%;
+        top: 50%; }
     header .headerButtonBlock:hover .headerSlider {
       display: block; }
     header .headerButtonBlock:hover .headerButtonContent {
-      box-shadow: 0 0 25px white, inset 0 0 25px white !important;
-      -webkit-animation: none; }
+      -webkit-animation: pulse2 1s;
+      box-shadow: 0 0 20px white, inset 0 0 8px lightgray;
+      border-radius: 10%; }
       header .headerButtonBlock:hover .headerButtonContent.active {
         box-shadow: 0 0 0 0 !important;
         -webkit-animation: none; }
@@ -248,8 +278,7 @@ header {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   display: flex;
-  border: white 0.2em solid;
-  font-size: 1.05em; }
+  border: white 0.2em solid; }
 
 .slideImg {
   width: 100%;
@@ -294,8 +323,7 @@ header {
 #websPane {
   width: 100%;
   margin: 0 auto;
-  display: table;
-  font-size: 1.05em; }
+  display: table; }
 
 #websPane1 {
   width: 50%;
@@ -329,10 +357,10 @@ header {
 
 #multi {
   display: table;
+  width: 100%;
+  font-size: 1.1em;
   background-color: #F7F3E3;
-  padding-bottom: 1em;
-  font-size: 1.2em;
-  width: 100%; }
+  padding-bottom: 1em; }
 
 #clockPane {
   width: 38%;
@@ -360,14 +388,15 @@ header {
   padding-bottom: 0%; }
 
 #java {
+  display: block;
   width: 96%;
   margin: 0 auto;
-  display: block;
+  padding: 2%;
   color: white;
-  font-size: 1.3em;
-  padding: 2%; }
+  font-size: 1.1rem;
+  line-height: 1.2em; }
 
-#javaPane {
+#javaLists {
   width: 100%;
   position: relative;
   margin: 0 auto;
@@ -774,7 +803,13 @@ img.hover-shadow {
   box-shadow: 0 8px 8px 2px rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3); }
 
 /* CSS Document */
-@media (max-width: 1300px) {
+@media (max-width: 1350px) {
+  .headerSlider.port {
+    left: 16%;
+    top: 22%; }
+  .headerSlider.contact {
+    right: 16%;
+    top: 22%; }
   #websPane1 > .row {
     margin-top: 15px; } }
 
@@ -783,6 +818,12 @@ img.hover-shadow {
     margin-top: 10%; } }
 
 @media (max-width: 1249px) {
+  .headerSlider.port {
+    left: 16%;
+    top: 22%; }
+  .headerSlider.contact {
+    right: 16%;
+    top: 22%; }
   .slideImg {
     margin-top: 15%; }
   #websPane1 > .slideImg {
@@ -791,9 +832,6 @@ img.hover-shadow {
     padding-left: 1.5%; } }
 
 @media (max-width: 1199px) {
-  .headerPortSlider {
-    left: 16%;
-    top: 22%; }
   .headerContactSlider {
     right: 16%;
     top: 22%; }
@@ -828,6 +866,12 @@ img.hover-shadow {
     padding-left: 0px; } }
 
 @media (max-width: 1125px) {
+  .headerSlider.port {
+    left: 16%;
+    top: 22%; }
+  .headerSlider.contact {
+    right: 14%;
+    top: 22%; }
   #appText {
     padding-top: 0px; }
   #appLinks {
@@ -844,8 +888,11 @@ img.hover-shadow {
     height: 110px; } }
 
 @media (max-width: 1055px) {
-  .headerPortSlider {
+  .headerSlider.port {
     left: 17%;
+    top: 20%; }
+  .headerSlider.contact {
+    right: 17%;
     top: 20%; }
   .headerContactSlider {
     right: 17%;
@@ -887,8 +934,11 @@ img.hover-shadow {
     width: 44%; } }
 
 @media (max-width: 919px) {
-  .headerPortSlider {
+  .headerSlider.port {
     left: 18%;
+    top: 22%; }
+  .headerSlider.contact {
+    right: 18%;
     top: 22%; }
   .headerContactSlider {
     right: 18%;
@@ -973,9 +1023,12 @@ img.hover-shadow {
     padding-left: 10%; } }
 
 @media (max-width: 749px) {
-  .headerPortSlider {
+  .headerSlider.port {
     top: 20%;
     left: 19%; }
+  .headerSlider.contact {
+    top: 20%;
+    right: 19%; }
   .headerContactSlider {
     top: 20%;
     right: 19%; }
@@ -1008,14 +1061,15 @@ img.hover-shadow {
     width: 100%; } }
 
 @media all and (max-width: 680px), handheld and (orientation: portrait) {
-  .headerPortSlider {
+  .headerSlider.port {
     top: 22%;
     left: 20%; }
+  .headerSlider.contact {
+    top: 22%;
+    right: 20%; }
   .headerContactSlider {
     top: 22%;
     right: 20%; }
-  #appPane {
-    font-size: 1em; }
   .slideImg {
     margin-top: 20%; }
   #ipp1 {
@@ -1044,7 +1098,7 @@ img.hover-shadow {
     padding-top: 8%; }
   header {
     padding-top: 1.2em; }
-  .headerButtonBlock:hover > .headerPortSlider {
+  .headerButtonBlock:hover > .headerSlider.port {
     display: none; }
   .headerButtonBlock:hover > .headerContactSlider {
     display: none; } }
@@ -1063,9 +1117,17 @@ img.hover-shadow {
     display: block; } }
 
 /* CSS Document */
-@media (min-width: 1420px) {
+@media (min-width: 1351px) {
   body {
-    font-size: 1.1em; } }
+    font-size: 1.1em; }
+  .headerSlider.port {
+    left: 0;
+    margin-left: -2%;
+    top: 40%; }
+  .headerSlider.contact {
+    right: 0;
+    margin-right: -2%;
+    top: 40%; } }
 
 @media (min-width: 1580px) {
   body {
