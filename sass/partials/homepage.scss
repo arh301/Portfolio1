@@ -1,27 +1,6 @@
-
 @charset "utf-8";
 
 /* CSS Document */
-
-#homePane {
-	width: 100%;
-	position: fixed;
-	z-index: -1;
-	opacity: 0.1
-}
-
-.homeTemp {
-	width: 95%;
-	z-index: 0;
-	color: white;
-	padding-top: 8.4em;
-	margin: 0 auto;
-	text-align: center;
-	font-size: 2em;
-	line-height: 1.4em;
-	transform: translateY(20);
-	transition: all .5s .5s;
-}
 
 @keyframes grow {
 	0% {
@@ -43,13 +22,31 @@
 	}
 }
 
-.linkGrow {
-	text-decoration: none;
-	color: inherit;
+#homeBkg {
+	width: 100%;
+	position: fixed;
+	z-index: -1;
+	opacity: 0.1;
+	
 }
-
-.linkGrow:hover {
-	animation-name: grow;
-	animation-duration: 1.5s;
-	animation-fill-mode: forwards;
+.homeTemp {
+		width: 95%;
+		z-index: 0;
+		color: white;
+		padding-top: 8.4em;
+		margin: 0 auto;
+		text-align: center;
+		font-size: 2em;
+		line-height: 1.4em;
+		transform: translateY(20);
+		transition: all .5s .5s;
+		.linkGrow {
+			text-decoration: none;
+			color: inherit;
+		&:hover {
+			animation-name: grow;
+			animation-duration: 1.5s;
+			animation-fill-mode: forwards;
+		}
+	}
 }

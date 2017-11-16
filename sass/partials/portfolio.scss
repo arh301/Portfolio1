@@ -2,26 +2,7 @@
 
 /* CSS Document */
 
-#para1 {
-	background-image: url(img/ionic2.png);
-}
-
-#para2 {
-	background-image: url(img/steps.jpg);
-}
-
-#para3 {
-	background-image: url(img/tree.JPG);
-}
-
-#para4 {
-	background-image: url(img/type.jpg);
-}
-
-#para1,
-#para2,
-#para3,
-#para4 {
+.parallax {
 	position: relative;
 	background-attachment: fixed;
 	background-position: center;
@@ -30,6 +11,18 @@
 	height: 35%;
 	top: 0%;
 	z-index: -1;
+	&#para1 {
+		background-image: url(img/ionic2.png);
+	}
+	&#para2 {
+		background-image: url(img/steps.jpg);
+	}
+	&#para3 {
+		background-image: url(img/tree.JPG);
+	}
+	&#para4 {
+		background-image: url(img/type.jpg);
+	}
 }
 
 #portTop {
@@ -38,22 +31,20 @@
 	margin-right: 0%;
 	color: white;
 	display: flex;
-}
-
-#portHead {
-	font-size: 2.56em;
-	width: 50%;
-	margin: 0;
-	font-weight: 600;
-	text-align: right;
-	line-height: 0.8em;
-}
-
-#portHead2 {
-	margin-top: 2.2em;
-	width: 50%;
-	font-size: 1.25rem;
-	padding-left: 0.1em;
+	#portHead {
+		font-size: 2.56em;
+		width: 50%;
+		margin: 0;
+		font-weight: 600;
+		text-align: right;
+		line-height: 0.8em;
+	}
+	#portHead2 {
+		margin-top: 2.2em;
+		width: 50%;
+		font-size: 1.25rem;
+		padding-left: 0.1em;
+	}
 }
 
 #appPane {
@@ -64,130 +55,125 @@
 	-moz-box-sizing: border-box;
 	display: flex;
 	border: white 0.2em solid;
-}
-
-.slideImg {
-	width: 100%;
-	border: 2px rgba(33, 33, 33, 1.00) solid;
-	border-radius: 4px;
-	margin-top: 2%;
-}
-
-#appText,
-#appImgs,
-#appLinks {
-	padding-top: 0px;
-	height: auto;
-	vertical-align: top;
-}
-
-#appText {
-	width: 25%;
-	order: 1;
-	padding-left: 3%;
-	padding-right: 2%;
-}
-
-#appImgs {
-	padding: 2%;
-	background-color: #F7F3E3;
-	width: 40%;
-	order: 2;
-	text-align: center;
-	box-shadow: 0px 0px 0px 6px rgba(179, 179, 179, 0.8);
-	border-radius: 0.1em;
-}
-
-#appLinks {
-	width: 25%;
-	order: 3;
-	padding-right: 2%;
-	padding-left: 2%;
-}
-
-#screenshots2 {
-	display: none;
-	font-size: 1em;
-	width: 80%;
-	margin: 0 auto;
+	.appBlock {
+		padding-top: 0px;
+		height: auto;
+		vertical-align: top;
+		&#appText {
+			width: 25%;
+			order: 1;
+			padding-left: 3%;
+			padding-right: 2%;
+			ul {
+				margin-top: 5px;
+				margin-left: -11px
+			}
+		}
+		&#appImgs {
+			padding: 2%;
+			background-color: #F7F3E3;
+			width: 40%;
+			order: 2;
+			text-align: center;
+			box-shadow: 0px 0px 0px 6px rgba(179, 179, 179, 0.8);
+			border-radius: 0.1em;
+		}
+		&#appLinks {
+			width: 25%;
+			order: 3;
+			padding-right: 2%;
+			padding-left: 2%;
+		}
+	}
 }
 
 #websPane {
 	width: 100%;
 	margin: 0 auto;
 	display: table;
+	#websPane1 {
+		width: 50%;
+		margin-top: 0.6%;
+		display: block;
+		background-color: #D9D9D9;
+		padding: 3%;
+		border-radius: 2em;
+		border: $main-maroon 14px solid;
+		box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		padding-top: 0;
+		float: left;
+		color: black;
+		p {
+			margin-bottom: 0px;
+		}
+	}
+	#websPane2 {
+		background-color: $main-maroon;
+		width: 44%;
+		color: white;
+		display: block;
+		padding: 2.4%;
+		padding-bottom: 0.7%;
+		padding-top: 0;
+		float: right;
+		text-align: center;
+		h4 {
+			text-align: left !important;
+		}
+		img {
+			display: block;
+			border-radius: 4px;
+			width: 55%;
+			min-width: 220px;
+			margin: 0 auto;
+			margin-top: 3%;
+			border: rgba(0, 0, 0, 0.8) 2px solid;
+		}
+	}
 }
 
-#websPane1 {
-	width: 50%;
-	margin-top: 0.6%;
-	display: block;
-	background-color: #D9D9D9;
-	padding: 3%;
-	border-radius: 2em;
-	border: $main-maroon 14px solid;
-	box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	padding-top: 0;
-	float: left;
-	color: black;
-}
-
-#ipp1,
-#ipp2,
-#ipp3 {
-	margin-top: 4%;
-}
-
-#websPane2 {
-	background-color: $main-maroon;
-	width: 44%;
-	color: white;
-	display: block;
-	padding: 2.4%;
-	padding-bottom: 0.7%;
-	padding-top: 0;
-	float: right;
-	text-align: center;
-}
-
-#multi {
+#animationPane {
 	display: table;
 	width: 100%;
-font-size: 1.1em;	
+	font-size: 1.1em;
 	background-color: #F7F3E3;
 	padding-bottom: 1em;
+	#clockPane {
+		width: 38%;
+		color: black;
+		display: block;
+		text-align: center;
+		padding: 3%;
+		padding-bottom: 1%;
+		float: left;
+		background-color: #F7F3E3;
+		p {
+			margin-bottom: 0px;
+		}
+		svg {
+			margin: 0 auto;
+			z-index: 1;
+			left: 50%
+		}
+	}
+	#gamePane1 {
+		width: 48%;
+		color: black;
+		text-align: center;
+		display: block;
+		float: right;
+		background-color: #F7F3E3;
+		padding: 3%;
+		padding-bottom: 0%;
+		img {
+			width: 80%;
+			margin: 0 auto;
+		}
+	}
 }
 
-#clockPane {
-	width: 38%;
-	color: black;
-	display: block;
-	text-align: center;
-	padding: 3%;
-	padding-bottom: 1%;
-	float: left;
-	background-color: #F7F3E3;
-}
-
-#clockPane>svg {
-	margin: 0 auto;
-	z-index: 1;
-	left: 50%
-}
-
-#gamePane1 {
-	width: 48%;
-	color: black;
-	text-align: center;
-	display: block;
-	float: right;
-	background-color: #F7F3E3;
-	padding: 3%;
-	padding-bottom: 0%;
-}
-
-#java {
+#javaPane {
 	display: block;
 	width: 96%;
 	margin: 0 auto;
@@ -195,49 +181,63 @@ font-size: 1.1em;
 	color: white;
 	font-size: 1.1rem;
 	line-height: 1.2em;
-}
-
-#javaLists{
-	width: 100%;
-	position: relative;
-	margin: 0 auto;
-	margin-top: 1em;
-	display: table;
-}
-
-#javaProj,
-#javaPaint,
-#javaSkills {
-	padding-top: 0;
-	display: table-cell;
-	vertical-align: top;
-}
-
-#javaProj {
-	width: 25%;
-	height: auto;
-	padding-left: 3%;
-	padding-right: 2%;
-	bottom: 0;
-	padding-top: 1%;
-	font-size: 0.9em;
-	;
-}
-
-#javaPaint {
-	background-color: #F7F3E3;
-	width: 25%;
-	max-height: 11em;
-	box-shadow: 0px 0px 0px 6px rgba(179, 179, 179, 0.4);
-	border-radius: 0.2em;
-	margin: 0;
-	padding: 0;
-}
-
-#javaSkills {
-	width: 25%;
-	font-size: 0.9em;
-	padding-right: 3%;
-	padding-top: 1%;
-	padding-left: 3%;
+	p {
+		text-align: center;
+		width: 73%;
+		padding-bottom: 10px;
+		margin: 0 auto
+	}
+	#javaTable {
+		width: 100%;
+		position: relative;
+		margin: 0 auto;
+		margin-top: 1em;
+		display: table;
+		#projectsBlock,
+		#paintBlock,
+		#skillsBlock {
+			display: table-cell;
+			vertical-align: top;
+			width: 25%;
+			i {
+				padding-left: 10px;
+			}
+			h5 {
+				padding-left: 7px;
+			}
+		}
+		#projectsBlock {
+			height: auto;
+			padding-left: 3%;
+			padding-right: 2%;
+			bottom: 0;
+			padding-top: 1%;
+			font-size: 0.9em;
+			ul {
+				margin-top: 5px;
+				margin-left: -11px;
+			}
+			h5 {
+				margin-top: 5px;
+			}
+		}
+		#paintBlock {
+			background-color: #F7F3E3;
+			max-height: 11em;
+			box-shadow: 0px 0px 0px 6px rgba(179, 179, 179, 0.4);
+			border-radius: 0.2em;
+			margin: 0;
+			padding: 0;
+			padding-top: 0;
+			img {
+				width: 99%;
+			}
+		}
+		#skillsBlock {
+			font-size: 0.9em;
+			padding-right: 3%;
+			padding-top: 1%;
+			padding-left: 3%;
+		}
+	}
 }
