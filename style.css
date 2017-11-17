@@ -189,7 +189,8 @@ header {
       text-align: center;
       display: none;
       color: lightgrey;
-      z-index: 2; }
+      z-index: 2;
+      letter-spacing: 3px; }
       header .headerButtonBlock .headerSlider.port {
         position: absolute; }
       header .headerButtonBlock .headerSlider.contact {
