@@ -13,10 +13,10 @@
 		margin-left: 1.6em;
 	}
 	100% {
-		font-size: 1.4em;
+		font-size: 1.2em;
 		margin-left: 0em;
 		line-height: 1.4em;
-		background-color: rgba(86, 17, 17, 0.7);
+		background-color: rgba(86, 17, 17, 0.4);
 		padding: 0.15em;
 		border-bottom: 2px solid white;
 	}
@@ -46,6 +46,7 @@
 		&:hover {
 			animation-name: grow;
 			animation-duration: 1.5s;
+			border-radius: 10px;
 			animation-fill-mode: forwards;
 		}
 	}

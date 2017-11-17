@@ -2,28 +2,41 @@
 	@import url("large-media.css");
 	/* CSS Document */
 
-
 	@media(max-width:1350px) {
 		.headerButtonBlock {
-		&:hover {
-			.headerSlider {
-				top:50%;
-				&.port {
-					margin-left: -1em !important;
-					-webkit-animation: slide-drop55L 0.8s;
-					@include slide("drop55L", 30%, 50%, -2.6em, -1em, inherit, inherit);
-				
-				}
-				&.contact {
-					margin-right: -1em !important;
-					-webkit-animation: slide-drop55R 0.8s;
-					@include slide("drop55R", 30%, 50%, 0, 0, -2.6em, -1em);
+			&:hover {
+				.headerSlider {
+					top: 50%;
+					&.port {
+						margin-left: -1em !important;
+						-webkit-animation: slide-drop55L 0.8s;
+						@include slide("drop55L",
+						30%,
+						50%,
+						-2.6em,
+						-1em,
+						inherit,
+						inherit);
+					}
+					&.contact {
+						margin-right: -1em !important;
+						-webkit-animation: slide-drop55R 0.8s;
+						@include slide("drop55R",
+						30%,
+						50%,
+						0,
+						0,
+						-2.6em,
+						-1em);
+					}
 				}
 			}
 		}
-	}
 		#websPane1>.row {
 			margin-top: 15px;
+		}
+		#websPane2>p {
+			margin-top: 10px;
 		}
 	}
 
@@ -40,23 +53,27 @@
 		#websPane1>.slideImg {
 			margin-top: 2% !important;
 		}
-		#javaProj {
+		#projectsBlock {
 			padding-left: 1.5%
 		}
 	}
 
 	@media (max-width: 1199px) {
-		#appImgs {
-			width: 400px;
-			padding: 15px;
-		}
-		#appLinks {
-			padding-top: 10px;
-			width: 27%;
-		}
-		#appText {
-			padding-top: 10px;
-			width: 27%;
+		#appPane {
+			.appBlock {
+				&#appText {
+					padding-top: 10px;
+					width: 27%;
+				}
+				&#appImgs {
+					width: 400px;
+					padding: 15px;
+				}
+				&#appLinks {
+					padding-top: 10px;
+					width: 27%;
+				}
+			}
 		}
 		#appIm3 {
 			display: none;
@@ -80,10 +97,12 @@
 		#ipp3 {
 			display: none;
 		}
-		#gamePane1 {
-			text-align: right;
-			width: 47%;
-			padding-left: 0px;
+		#animationPane {
+			#gamePane1 {
+				text-align: right;
+				width: 47%;
+				padding-left: 0px;
+			}
 		}
 	}
 
@@ -94,7 +113,7 @@
 					&.port {
 						margin-left: 0em !important;
 						left: 17% !important;
-						top:50% !important;						
+						top: 50% !important;
 						@include slide("drop",
 						30%,
 						50%,
@@ -105,8 +124,8 @@
 						-webkit-animation: slide-drop 1s;
 					}
 					&.contact {
-						top:56% !important;
-						 margin-right: 0em !important;
+						top: 56% !important;
+						margin-right: 0em !important;
 						@include slide("drop",
 						30%,
 						50%,
@@ -118,7 +137,7 @@
 					}
 				}
 			}
-		} 
+		}
 		#appText {
 			padding-top: 0px;
 		}
@@ -130,11 +149,15 @@
 			margin-top: 0;
 			padding-left: 18px !important;
 		}
-		#javaProj {
-			padding-left: 20%
-		}
-		#javaPaint {
-			display: none;
+		#javaPane {
+			#javaTable {
+				#projectsBlock {
+					padding-left: 20%
+				}
+				#paintBlock {
+					display: none;
+				}
+			}
 		}
 		#contactEnd {
 			height: 110px;
@@ -150,19 +173,23 @@
 			width: auto;
 			height: 100%;
 		}
-		#appImgs {
-			width: 28%;
-			padding: 10px;
-		}
-		#appText {
-			width: 36%;
-			padding-top: 0px;
-			padding-right: 3%;
-		}
-		#appLinks {
-			width: 36%;
-			padding-top: 0px;
-			padding-left: 3%;
+		#appPane {
+			.appBlock {
+				&#appImgs {
+					width: 28%;
+					padding: 10px;
+				}
+				&#appText {
+					width: 36%;
+					padding-top: 0px;
+					padding-right: 3%;
+				}
+				&#appLinks {
+					width: 36%;
+					padding-top: 0px;
+					padding-left: 3%;
+				}
+			}
 		}
 		.column {
 			width: 170px;
@@ -185,26 +212,29 @@
 		#cvImg {
 			width: 90%;
 		}
-		#gamePane1>p {
-			padding-left: 20px;
-			padding-top: 20px;
-		}
-		#clockPane {
-			width: 44%;
+		#animationPane {
+			#clockPane {
+				width: 44%;
+			}
+			#gamePane1 {
+				p {
+					padding-left: 20px;
+					padding-top: 20px;
+				}
+			}
 		}
 	}
 
 	@media (max-width: 919px) {
 		.headerButtonBlock {
-		
 			&:hover {
 				.headerSlider {
-					margin-left:1em;
+					margin-left: 1em;
 					margin-right: 1em;
-					&.port{
+					&.port {
 						left: 19% !important;
 					}
-					&.contact{
+					&.contact {
 						right: 19% !important;
 					}
 					&.port,
@@ -218,26 +248,27 @@
 						inherit);
 						-webkit-animation: slide-drop50s 0.8s;
 					}
-					
 				}
 			}
 		}
 		#appPane {
 			flex-direction: row;
 			flex-wrap: wrap;
-		}
-		#appText {
-			width: 65%;
-		}
-		#appImgs {
-			width: 26%;
-			margin: 0;
-			height: 440px;
-		}
-		#appLinks {
-			float: left;
-			margin-top: -205px;
-			width: 65%;
+			.appBlock {
+				&#appText {
+					width: 65%;
+				}
+				&#appImgs {
+					width: 26%;
+					margin: 0;
+					height: 440px;
+				}
+				&#appLinks {
+					float: left;
+					margin-top: -205px;
+					width: 65%;
+				}
+			}
 		}
 		#screenshots1 {
 			display: none;
@@ -266,32 +297,34 @@
 			padding-left: 17% !important;
 			width: 220px !important;
 		}
-		#gamePane1>p {
-			padding-left: 0px;
-			padding-top: 0px;
+		#animationPane {
+			#clockPane {
+				width: 100%;
+				padding: 0%;
+				padding-top: 20px;
+				float: none;
+				margin-left: 0;
+				svg {
+					left: 0;
+				}
+			}
+			#gamePane1 {
+				width: 90%;
+				float: none;
+				text-align: center;
+				padding-left: 5%;
+				padding-right: 5%;
+				padding-bottom: 0%;
+				p {
+					padding-left: 0px;
+					padding-top: 0px;
+				}
+				img {
+					width: 40%
+				}
+			}
 		}
-		#gamePane1 {
-			width: 90%;
-			float: none;
-			text-align: center;
-			padding-left: 5%;
-			padding-right: 5%;
-			padding-bottom: 0%;
-		}
-		#gamePane1>img {
-			width: 40%
-		}
-		#clockPane {
-			width: 100%;
-			padding: 0%;
-			padding-top: 20px;
-			float: none;
-			margin-left: 0;
-		}
-		#clockPane>svg {
-			left: 0;
-		}
-		#javaProj {
+		#projectsBlock {
 			padding-left: 14%
 		}
 		#contactEnd {
@@ -309,19 +342,21 @@
 	}
 
 	@media (max-width: 855px) {
-		#appImgs {
-			height: 430px;
-		}
-		#appIm1 {
-			padding-bottom: 10px;
+		#appPane {
+			border-bottom: 0;
+			.appBlock {
+				&#appImgs {
+					height: 430px;
+					#appIm1 {
+						padding-bottom: 10px;
+					}
+				}
+			}
 		}
 		.column {
 			margin-top: 15%;
 		}
-		#appPane {
-			border-bottom: 0;
-		}
-		#javaProj {
+		#projectsBlock {
 			padding-left: 10%
 		}
 	}
@@ -342,7 +377,7 @@
 						-webkit-animation: slide-right 0.8s;
 					}
 					&.contact {
-						 margin-right: 0.5em !important;
+						margin-right: 0.5em !important;
 						@include slide("left",
 						40%,
 						50%,
@@ -354,21 +389,25 @@
 					}
 				}
 			}
-		} 
+		}
 		#portHead {
 			font-size: 2.2em;
 		}
-		#appText {
-			width: 63%;
-		}
-		#appLinks {
-			width: 62%;
-		}
-		#appImgs {
-			width: 29%;
-			height: 440px;
-			padding-left: 0px;
-			margin-left: 0;
+		appPane {
+			.appBlock {
+				&#appText {
+					width: 63%;
+				}
+				&#appLinks {
+					width: 62%;
+				}
+				&#appImgs {
+					width: 29%;
+					height: 440px;
+					padding-left: 0px;
+					margin-left: 0;
+				}
+			}
 		}
 		.column {
 			width: 90%;
@@ -381,10 +420,10 @@
 		#websPane2>p {
 			margin-top: 10px;
 		}
-		#javaProj {
+		#projectsBlock {
 			padding-left: 5%
 		}
-		#javaSkills {
+		#skillsBlock {
 			padding-left: 1%;
 			padding-right: 1%;
 			width: 20%;
@@ -400,7 +439,7 @@
 				.headerSlider {
 					&.port {
 						margin-left: 0.7em !important;
-						top:56% !important;						
+						top: 56% !important;
 						@include slide("right",
 						50%,
 						56%,
@@ -411,8 +450,8 @@
 						-webkit-animation: slide-right 1s;
 					}
 					&.contact {
-						top:56% !important;
-						 margin-right: 0.7em !important;
+						top: 56% !important;
+						margin-right: 0.7em !important;
 						@include slide("leftdown",
 						50%,
 						56%,
@@ -424,7 +463,7 @@
 					}
 				}
 			}
-		} 
+		}
 		.slideImg {
 			margin-top: 20%;
 		}

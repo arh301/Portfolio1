@@ -2,44 +2,47 @@
 
 /* CSS Document */
 
-#linkedIn {
-    width: 5em;
-    margin-left: 0.4em;
-    bottom: 1.1em;
-    position: absolute;
-}
-
-#linkedInText {
-    position: relative;
+#contactBkg {
+    width: 100%;
+    position: fixed;
+    opacity: 0.4;
+    top: 0;
 }
 
 #formPane {
     font-size: 1.12em;
-    background: $main-maroon;
-    width: 55%;
-    max-width: 600px;
     margin: 0 auto;
     padding-bottom: 1.6em;
-}
-
-#formPane>p {
-    margin: 0 auto;
-    padding-bottom: 1em;
-    color: white;
-    font-size: 1.4rem;
-}
-
-#formPane>.text {
-    text-align: center;
-    width: 70%;
-    margin: 0 auto;
-    padding-bottom: 1em;
-    padding-top: 2em;
-}
-
-#formfieldset {
-    border-radius: 1em;
-    position: relative
+    display: flex;
+    .textBlock {
+        width: 34%;
+        margin-left: 12%;
+        margin-top: 2em;
+        margin-right: 2%;
+        p {
+            margin: 0 auto;
+            padding-bottom: 1em;
+            color: white;
+            font-size: 1.4rem;
+            position: relative;
+        }
+        #linkedInText {
+            position: relative;
+            img {
+                width: 5em;
+                margin-left: 0.4em;
+                bottom: 1.1em;
+                position: absolute;
+            }
+        }
+    }
+    #formfieldset {
+        border-radius: 1em;
+        margin-top: 0.8em;
+        position: relative;
+        background-color: rgba(99, 34, 34, 0.8);
+        width: 29%;
+    }
 }
 
 #treeIcon {
@@ -53,7 +56,6 @@
     position: relative;
     margin: 3em;
     margin-top: 0.4em;
-    font-size: 1.125em;
     color: white;
 }
 

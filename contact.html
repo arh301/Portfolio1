@@ -6,13 +6,13 @@
   <meta name="viewport" content="width=device-width">
 
   <title>AH - Contact</title>
+  <link href="https://fonts.googleapis.com/css?family=Barlow|Raleway|Roboto+Condensed" rel="stylesheet">
   <link href="style.css" rel="stylesheet" type="text/css">
   <link href="media.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
 
 </head>
 
-<body>
+<body id="contactBody">
   <header>
     <div class="headerButtonBlock">
       <a href="port.html" class="headerButtonContent">
@@ -21,46 +21,52 @@
       </a>
       <p class="headerSlider port">Portfolio</p>
     </div>
-    <a href="index.html"  class="name">
+    <a href="index.html" class="name">
       <span>Anna</span>Hughes</a>
     <div class="headerButtonBlock">
       <a href="contact.html" class="headerButtonContent active">
         <img src="img/contactIcon.png" class="headerContactImg active">
       </a>
-      
+
     </div>
   </header>
 
   <spacer></spacer>
+  <img id="contactBkg" src="img/typewriter.JPG" alt="pebbles">
+
   <div id="formPane">
-    <p>Hello! Want to get in touch?</p>
-    <p id="linkedInText">Connect with me on<img src="img/linkedin.png" id="linkedIn" alt="linkedin" /></p>
-    <p>or send me an email...</p>
+    <div class="textBlock">
+      <p>Hello! Want to get in touch?</p>
+      <p id="linkedInText">Connect with me on
+        <img src="img/linkedin.png" alt="linkedin" />
+      </p>
+      <p>or send me an email...</p>
+    </div>
     <fieldset id="formfieldset">
-      <img src="img/treeIcon.png" alt="tree icon" id="treeIcon">
-        <!-- <a href="https://www.vexels.com/vectors/preview/132509/flat-tree-silhouette"> Flat tree silhouette  </a> | designed by Vexels -->
-    <form id="form" name="form" method="POST" action="https://formspree.io/annaraehughes@live.co.uk">
-      <p class="contactField">
-        <label class="formLabel" for="name">
-          Name:
-        </label>
-        <input type="text" name="name" id="name" required/>
-      </p>
-      <p class="contactField">
-        <label class="formLabel" for="email">
-          Email:
-        </label>
-        <input type="email" name="email" id="email" required/>
-      </p>
-      <p class="contactField">
-        <label class="formLabel" for="message">
-          Message:
-        </label>
-        <textarea rows="4" cols="50" name="message" id="message" required></textarea>
-      </p>
-      <input name="submit" type="submit" class="submit" value="Send" />
-    </form>
-  </fieldset>
+      <!-- <a href="https://www.vexels.com/vectors/preview/132509/flat-tree-silhouette"> Flat tree silhouette  </a> | designed by Vexels -->
+      <form id="form" name="form" method="POST" action="https://formspree.io/annaraehughes@live.co.uk">
+        <p class="contactField">
+          <label class="formLabel" for="name">
+            Name:
+          </label>
+          <input type="text" name="name" id="name" required/>
+        </p>
+        <p class="contactField">
+          <label class="formLabel" for="email">
+            Email:
+          </label>
+          <input type="email" name="email" id="email" required/>
+        </p>
+        <p class="contactField">
+          <label class="formLabel" for="message">
+            Message:
+          </label>
+          <textarea rows="4" cols="50" name="message" id="message" required></textarea>
+        </p>
+        <input name="submit" type="submit" class="submit" value="Send" />
+      </form>
+    </fieldset>
+    </div>
   </div>
 
 </body>

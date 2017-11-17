@@ -48,11 +48,14 @@
                         top: $top1;
                         margin-left: $margin-left1;
                         margin-right: $margin-right1;
+                        letter-spacing: 0px;
                     }
                     100% {
                         top: $top2;
                         margin-left: $margin-left2;
                         margin-right: $margin-right2;
+                        letter-spacing: 3px;
+                        
                     }
                 }
             }
@@ -95,15 +98,21 @@
 
         html {
             background-color: $main-maroon;
+            
         }
 
         body {
-            font-family: 'Josefin Sans', sans-serif;
+            font-family: 'Barlow', sans-serif;
             font-size: 1em;
             position: absolute;
+            p{
+                font-family: 'Roboto+Condensed', sans-serif;
+            }
             &#portfolioBody {
                 line-height: 1.2em;
             }
+            &#contactBody{
+                background-color: rgba(34, 34, 34, 0.8);            }
             .text {
                 color: white;
                 padding: 4%;
@@ -244,6 +253,7 @@
                     display: none;
                     color: lightgrey;
                     z-index: 2;
+                    letter-spacing: 3px;
                     &.port {
                         position: absolute;
                     }
