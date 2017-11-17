@@ -55,7 +55,6 @@
                         margin-left: $margin-left2;
                         margin-right: $margin-right2;
                         letter-spacing: 3px;
-                        
                     }
                 }
             }
@@ -96,23 +95,20 @@
             min-width: 615px;
         }
 
-        html {
-            background-color: $main-maroon;
-            
-        }
-
         body {
             font-family: 'Barlow', sans-serif;
             font-size: 1em;
             position: absolute;
-            p{
-                font-family: 'Roboto+Condensed', sans-serif;
+            background-color: $main-maroon;            
+            &.contact{
+                background-color: rgba(34, 34, 34, 1);                
             }
-            &#portfolioBody {
+            &.portBody{
                 line-height: 1.2em;
             }
-            &#contactBody{
-                background-color: rgba(34, 34, 34, 0.8);            }
+            p {
+                font-family: 'Roboto+Condensed', sans-serif;
+            }
             .text {
                 color: white;
                 padding: 4%;
@@ -131,8 +127,8 @@
                 margin-bottom: 0;
                 padding: 0.8em;
                 text-align: center;
-                &.border-bottom{
-                    border-bottom:#561111 4px solid;
+                &.border-bottom {
+                    border-bottom: #561111 4px solid;
                 }
             }
             h4 {

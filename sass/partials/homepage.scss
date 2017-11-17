@@ -24,11 +24,14 @@
 
 #homeBkg {
 	width: 100%;
-	position: fixed;
-	z-index: -1;
-	opacity: 0.1;
-	
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+    opacity: 0.2;
+    background-size: cover;
+    background-image: url(img/pebbles.JPG);
 }
+
 .homeTemp {
 		width: 95%;
 		z-index: 0;

@@ -672,15 +672,15 @@ a.link {
 	display: table;
 }
 
-#javaProj,
-#javaPaint,
-#javaSkills {
+#projectsBlock,
+#paintBlock,
+#skillsBlock {
 	padding-top: 0px;
 	display: table-cell;
 	vertical-align: top;
 }
 
-#javaProj {
+#projectsBlock {
 	width: 25%;
 	height: auto;
 	padding-left: 3%;
@@ -691,7 +691,7 @@ a.link {
 	;
 }
 
-#javaPaint {
+#paintBlock {
 	background-color: #F7F3E3;
 	width: 25%;
 	max-height: 220px;
@@ -701,7 +701,7 @@ a.link {
 	padding: 0;
 }
 
-#javaSkills {
+#skillsBlock {
 	width: 25%;
 	font-size: 0.9em;
 	padding-right: 3%;

@@ -56,19 +56,17 @@ body {
   margin: 0 auto;
   min-width: 615px; }
 
-html {
-  background-color: #561111; }
-
 body {
   font-family: 'Barlow', sans-serif;
   font-size: 1em;
-  position: absolute; }
+  position: absolute;
+  background-color: #561111; }
+  body.contact {
+    background-color: #222222; }
+  body.portBody {
+    line-height: 1.2em; }
   body p {
     font-family: 'Roboto+Condensed', sans-serif; }
-  body#portfolioBody {
-    line-height: 1.2em; }
-  body#contactBody {
-    background-color: rgba(34, 34, 34, 0.8); }
   body .text {
     color: white;
     padding: 4%;
@@ -238,9 +236,12 @@ header {
 
 #homeBkg {
   width: 100%;
+  height: 100%;
   position: fixed;
   z-index: -1;
-  opacity: 0.1; }
+  opacity: 0.2;
+  background-size: cover;
+  background-image: url(img/pebbles.JPG); }
 
 .homeTemp {
   width: 95%;
@@ -263,6 +264,9 @@ header {
       animation-fill-mode: forwards; }
 
 /* CSS Document */
+body {
+  line-height: 1.2em; }
+
 .parallax {
   position: relative;
   background-attachment: fixed;
@@ -499,20 +503,20 @@ header {
 /* CSS Document */
 #contactBkg {
   width: 100%;
+  height: 100%;
+  top: 0;
   position: fixed;
-  opacity: 0.4;
-  top: 0; }
+  opacity: 0.2;
+  background-size: cover;
+  background-image: url(img/typewriter.JPG); }
 
 #formPane {
   font-size: 1.12em;
-  margin: 0 auto;
-  padding-bottom: 1.6em;
+  margin: 5%;
   display: flex; }
   #formPane .textBlock {
-    width: 34%;
-    margin-left: 12%;
-    margin-top: 2em;
-    margin-right: 2%; }
+    width: 40%;
+    margin: 5%; }
     #formPane .textBlock p {
       margin: 0 auto;
       padding-bottom: 1em;
@@ -524,66 +528,60 @@ header {
       #formPane .textBlock #linkedInText img {
         width: 5em;
         margin-left: 0.4em;
-        bottom: 1.1em;
+        bottom: 0.95em;
         position: absolute; }
-  #formPane #formfieldset {
-    border-radius: 1em;
-    margin-top: 0.8em;
-    position: relative;
-    background-color: rgba(99, 34, 34, 0.8);
-    width: 29%; }
-
-#treeIcon {
-  position: absolute;
-  bottom: 0;
-  margin-bottom: -1.1em;
-  width: 150px; }
-
-#form {
-  position: relative;
-  margin: 3em;
-  margin-top: 0.4em;
-  color: white; }
-
-.contactField {
-  display: flex; }
-
-.formLabel {
-  flex: 1;
-  line-height: 1.5em;
-  text-align: right;
-  padding-right: 0.8em; }
-
-#name,
-#email {
-  text-indent: 3%;
-  width: 13em;
-  height: 1.6em;
-  font-size: 1rem;
-  border-radius: 0.7em;
-  font-family: 'Josefin Sans', sans-serif !important; }
-
-#message {
-  width: 12em;
-  padding: 0.5em;
-  height: 5em;
-  font-size: 1rem;
-  border-radius: 0.6em;
-  font-family: 'Josefin Sans', sans-serif !important; }
-
-.submit {
-  right: 0;
-  position: absolute;
-  border-color: rgba(255, 255, 255, 0.8);
-  color: white;
-  background-color: rgba(39, 34, 30, 0.9);
-  width: 5.6em;
-  height: 2em;
-  border-radius: 1em;
-  font-family: 'Josefin Sans', sans-serif !important;
-  font-weight: 500;
-  font-size: 1rem;
-  line-height: 1.8em; }
+  #formPane .formBlock {
+    flex: 1; }
+    #formPane .formBlock #formfieldset {
+      border-radius: 1em;
+      margin-top: 0.8em;
+      position: relative;
+      background-color: rgba(233, 232, 232, 0.15);
+      width: 11em;
+      margin: 0 auto;
+      border: 0;
+      height: 230px;
+      padding: 2em;
+      box-shadow: 0 0 20px 2px dimgrey; }
+      #formPane .formBlock #formfieldset #form {
+        position: relative;
+        margin-top: 0.4em;
+        color: dimgray; }
+        #formPane .formBlock #formfieldset #form .contactField {
+          display: flex;
+          font-size: 1rem;
+          font-family: 'Josefin Sans', sans-serif !important; }
+          #formPane .formBlock #formfieldset #form .contactField .formLabel {
+            flex: 1;
+            line-height: 1.5em;
+            text-align: right;
+            padding-right: 0.8em;
+            font-weight: 600;
+            color: white; }
+          #formPane .formBlock #formfieldset #form .contactField #name,
+          #formPane .formBlock #formfieldset #form .contactField #email {
+            text-indent: 3%;
+            width: 14em;
+            height: 1.6em;
+            border-radius: 0.7em; }
+          #formPane .formBlock #formfieldset #form .contactField #message {
+            width: 13em;
+            padding: 0.5em;
+            height: 5em;
+            border-radius: 0.6em; }
+        #formPane .formBlock #formfieldset #form .submit {
+          right: 0;
+          width: 5.6em;
+          height: 2em;
+          position: absolute;
+          border-color: rgba(255, 255, 255, 0.8);
+          background-color: rgba(39, 34, 30, 0.9);
+          color: white;
+          border-radius: 1em;
+          font-family: 'Josefin Sans', sans-serif !important;
+          font-weight: 500;
+          font-size: 1rem;
+          line-height: 1.8em; }
 
 /* CSS Document */
 .refs {
@@ -902,7 +900,7 @@ img.hover-shadow {
     margin-top: 15%; }
   #websPane1 > .slideImg {
     margin-top: 2% !important; }
-  #projectsBlock {
+  #javaPane #projectsBlock {
     padding-left: 1.5%; } }
 
 @media (max-width: 1199px) {
@@ -968,9 +966,9 @@ img.hover-shadow {
       margin-left: inherit;
       margin-right: 0em;
       letter-spacing: 3px; } }
-  #appText {
+  #appPane .appBlock#appText {
     padding-top: 0px; }
-  #appLinks {
+  #appPane .appBlock#appLinks {
     padding-top: 0px; }
   .column {
     width: 160px;
@@ -1048,7 +1046,7 @@ img.hover-shadow {
     flex-direction: row;
     flex-wrap: wrap; }
     #appPane .appBlock#appText {
-      width: 65%; }
+      width: 64%; }
     #appPane .appBlock#appImgs {
       width: 26%;
       margin: 0;
@@ -1056,7 +1054,7 @@ img.hover-shadow {
     #appPane .appBlock#appLinks {
       float: left;
       margin-top: -205px;
-      width: 65%; }
+      width: 64%; }
   #screenshots1 {
     display: none; }
   #screenshots2 {
@@ -1099,7 +1097,7 @@ img.hover-shadow {
       padding-top: 0px; }
     #animationPane #gamePane1 img {
       width: 40%; }
-  #projectsBlock {
+  #javaPane #javaTable #projectsBlock {
     padding-left: 14%; }
   #contactEnd {
     height: 85px; } }
@@ -1120,8 +1118,14 @@ img.hover-shadow {
         padding-bottom: 10px; }
   .column {
     margin-top: 15%; }
-  #projectsBlock {
-    padding-left: 10%; } }
+  #javaPane #projectsBlock #javaTable {
+    padding-left: 10%; }
+  #contactBkg {
+    opacity: 0.2; }
+  #formPane {
+    display: block; }
+    #formPane .textBlock {
+      width: 90%; } }
 
 @media (max-width: 749px) {
   .headerButtonBlock:hover .headerSlider.port {
@@ -1152,17 +1156,28 @@ img.hover-shadow {
       margin-left: inherit;
       margin-right: 0.5em;
       letter-spacing: 3px; } }
-  #portHead {
-    font-size: 2.2em; }
-  appPane .appBlock#appText {
+  #portTop #portHead {
+    font-size: 2em; }
+  #portTop #portHead2 {
+    margin-top: 1.8em;
+    width: 50%;
+    font-size: 1.2rem;
+    padding-left: 0.1em; }
+  #appPane .appBlock#appText {
     width: 63%; }
-  appPane .appBlock#appLinks {
+  #appPane .appBlock#appLinks {
     width: 62%; }
-  appPane .appBlock#appImgs {
+  #appPane .appBlock#appImgs {
     width: 29%;
     height: 440px;
     padding-left: 0px;
     margin-left: 0; }
+  #javaPane #javaTable #projectsBlock {
+    padding-left: 5%; }
+  #javaPane #javaTable #skillsBlock {
+    padding-left: 1%;
+    padding-right: 1%;
+    width: 20%; }
   .column {
     width: 90%;
     margin-top: 10%; }
@@ -1171,12 +1186,6 @@ img.hover-shadow {
     padding-right: 9% !important; }
   #websPane2 > p {
     margin-top: 10px; }
-  #projectsBlock {
-    padding-left: 5%; }
-  #skillsBlock {
-    padding-left: 1%;
-    padding-right: 1%;
-    width: 20%; }
   #cvImg {
     width: 100%; } }
 
@@ -1230,9 +1239,6 @@ img.hover-shadow {
     margin-left: 0%; }
   .conText {
     padding-top: 50px; }
-  #formPane {
-    width: 84%;
-    padding-bottom: 20px; }
   #formfieldset {
     margin-top: 1.6em; }
   .homeHeader {

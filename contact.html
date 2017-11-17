@@ -12,7 +12,7 @@
 
 </head>
 
-<body id="contactBody">
+<body class="contact">
   <header>
     <div class="headerButtonBlock">
       <a href="port.html" class="headerButtonContent">
@@ -27,12 +27,11 @@
       <a href="contact.html" class="headerButtonContent active">
         <img src="img/contactIcon.png" class="headerContactImg active">
       </a>
-
     </div>
   </header>
+  <div id="contactBkg"></div>
 
   <spacer></spacer>
-  <img id="contactBkg" src="img/typewriter.JPG" alt="pebbles">
 
   <div id="formPane">
     <div class="textBlock">
@@ -42,30 +41,31 @@
       </p>
       <p>or send me an email...</p>
     </div>
-    <fieldset id="formfieldset">
-      <!-- <a href="https://www.vexels.com/vectors/preview/132509/flat-tree-silhouette"> Flat tree silhouette  </a> | designed by Vexels -->
-      <form id="form" name="form" method="POST" action="https://formspree.io/annaraehughes@live.co.uk">
-        <p class="contactField">
-          <label class="formLabel" for="name">
-            Name:
-          </label>
-          <input type="text" name="name" id="name" required/>
-        </p>
-        <p class="contactField">
-          <label class="formLabel" for="email">
-            Email:
-          </label>
-          <input type="email" name="email" id="email" required/>
-        </p>
-        <p class="contactField">
-          <label class="formLabel" for="message">
-            Message:
-          </label>
-          <textarea rows="4" cols="50" name="message" id="message" required></textarea>
-        </p>
-        <input name="submit" type="submit" class="submit" value="Send" />
-      </form>
-    </fieldset>
+    <div class="formBlock">
+      <fieldset id="formfieldset">
+        <!-- <a href="https://www.vexels.com/vectors/preview/132509/flat-tree-silhouette"> Flat tree silhouette  </a> | designed by Vexels -->
+        <form id="form" name="form" method="POST" action="https://formspree.io/annaraehughes@live.co.uk">
+          <p class="contactField">
+            <label class="formLabel" for="name">
+              Name:
+            </label>
+            <input type="text" name="name" id="name" required/>
+          </p>
+          <p class="contactField">
+            <label class="formLabel" for="email">
+              Email:
+            </label>
+            <input type="email" name="email" id="email" required/>
+          </p>
+          <p class="contactField">
+            <label class="formLabel" for="message">
+              Message:
+            </label>
+            <textarea rows="4" cols="50" name="message" id="message" required></textarea>
+          </p>
+          <input name="submit" type="submit" class="submit" value="Send" />
+        </form>
+      </fieldset>
     </div>
   </div>
 

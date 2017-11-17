@@ -53,8 +53,10 @@
 		#websPane1>.slideImg {
 			margin-top: 2% !important;
 		}
-		#projectsBlock {
-			padding-left: 1.5%
+		#javaPane {
+			#projectsBlock {
+				padding-left: 1.5%
+			}
 		}
 	}
 
@@ -138,11 +140,15 @@
 				}
 			}
 		}
-		#appText {
-			padding-top: 0px;
-		}
-		#appLinks {
-			padding-top: 0px;
+		#appPane {
+			.appBlock {
+				&#appText {
+					padding-top: 0px;
+				}
+				&#appLinks {
+					padding-top: 0px;
+				}
+			}
 		}
 		.column {
 			width: 160px;
@@ -256,7 +262,7 @@
 			flex-wrap: wrap;
 			.appBlock {
 				&#appText {
-					width: 65%;
+					width: 64%;
 				}
 				&#appImgs {
 					width: 26%;
@@ -266,7 +272,7 @@
 				&#appLinks {
 					float: left;
 					margin-top: -205px;
-					width: 65%;
+					width: 64%;
 				}
 			}
 		}
@@ -324,8 +330,12 @@
 				}
 			}
 		}
-		#projectsBlock {
-			padding-left: 14%
+		#javaPane {
+			#javaTable {
+				#projectsBlock {
+					padding-left: 14%
+				}
+			}
 		}
 		#contactEnd {
 			height: 85px;
@@ -356,8 +366,21 @@
 		.column {
 			margin-top: 15%;
 		}
-		#projectsBlock {
-			padding-left: 10%
+		#javaPane {
+			#projectsBlock {
+				#javaTable {
+					padding-left: 10%
+				}
+			}
+		}
+		#contactBkg {
+			opacity: 0.2;
+		}
+		#formPane {
+			display: block;
+			.textBlock {
+				width: 90%;
+			}
 		}
 	}
 
@@ -390,10 +413,18 @@
 				}
 			}
 		}
-		#portHead {
-			font-size: 2.2em;
+		#portTop {
+			#portHead {
+				font-size: 2em;
+			}
+			#portHead2 {
+				margin-top: 1.8em;
+				width: 50%;
+				font-size: 1.2rem;
+				padding-left: 0.1em;
+			}
 		}
-		appPane {
+		#appPane {
 			.appBlock {
 				&#appText {
 					width: 63%;
@@ -409,6 +440,18 @@
 				}
 			}
 		}
+		#javaPane {
+			#javaTable {
+				#projectsBlock {
+					padding-left: 5%
+				}
+				#skillsBlock {
+					padding-left: 1%;
+					padding-right: 1%;
+					width: 20%;
+				}
+			}
+		}
 		.column {
 			width: 90%;
 			margin-top: 10%;
@@ -419,14 +462,6 @@
 		}
 		#websPane2>p {
 			margin-top: 10px;
-		}
-		#projectsBlock {
-			padding-left: 5%
-		}
-		#skillsBlock {
-			padding-left: 1%;
-			padding-right: 1%;
-			width: 20%;
 		}
 		#cvImg {
 			width: 100%;
@@ -488,10 +523,6 @@
 		}
 		.conText {
 			padding-top: 50px;
-		}
-		#formPane {
-			width: 84%;
-			padding-bottom: 20px;
 		}
 		#formfieldset {
 			margin-top: 1.6em;
