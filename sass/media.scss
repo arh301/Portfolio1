@@ -1,5 +1,4 @@
 	@charset "utf-8";
-	@import url("large-media.css");
 	/* CSS Document */
 
 	@media(max-width:1350px) {
@@ -10,24 +9,12 @@
 					&.port {
 						margin-left: -1em !important;
 						-webkit-animation: slide-drop55L 0.8s;
-						@include slide("drop55L",
-						30%,
-						50%,
-						-2.6em,
-						-1em,
-						inherit,
-						inherit);
+						@include slide("drop55L", 30%, 50%, -2.6em, -1em, inherit, inherit);
 					}
 					&.contact {
 						margin-right: -1em !important;
 						-webkit-animation: slide-drop55R 0.8s;
-						@include slide("drop55R",
-						30%,
-						50%,
-						0,
-						0,
-						-2.6em,
-						-1em);
+						@include slide("drop55R", 30%, 50%, 0, 0, -2.6em, -1em);
 					}
 				}
 			}
@@ -80,10 +67,12 @@
 		#appIm3 {
 			display: none;
 		}
-		.column {
-			width: 160px;
-			margin-top: 0;
-			padding-left: 22px !important;
+		.row {
+			.column {
+				width: 160px;
+				margin-top: 0;
+				padding-left: 22px !important;
+			}
 		}
 		.slideImg {
 			margin-top: 4%;
@@ -116,25 +105,13 @@
 						margin-left: 0em !important;
 						left: 17% !important;
 						top: 50% !important;
-						@include slide("drop",
-						30%,
-						50%,
-						0em,
-						0em,
-						inherit,
-						inherit);
+						@include slide("drop", 30%, 50%, 0em, 0em, inherit, inherit);
 						-webkit-animation: slide-drop 1s;
 					}
 					&.contact {
 						top: 56% !important;
 						margin-right: 0em !important;
-						@include slide("drop",
-						30%,
-						50%,
-						inherit,
-						inherit,
-						0em,
-						0em);
+						@include slide("drop", 30%, 50%, inherit, inherit, 0em, 0em);
 						-webkit-animation: slide-drop 1s;
 					}
 				}
@@ -150,10 +127,12 @@
 				}
 			}
 		}
-		.column {
-			width: 160px;
-			margin-top: 0;
-			padding-left: 18px !important;
+		.row {
+			.column {
+				width: 160px;
+				margin-top: 0;
+				padding-left: 18px !important;
+			}
 		}
 		#javaPane {
 			#javaTable {
@@ -197,10 +176,12 @@
 				}
 			}
 		}
-		.column {
-			width: 170px;
-			padding-left: 15% !important;
-			padding-right: 15% !important;
+		.row {
+			.column {
+				width: 170px;
+				padding-left: 15% !important;
+				padding-right: 15% !important;
+			}
 		}
 		.slideImg {
 			margin-top: 8%;
@@ -245,13 +226,7 @@
 					}
 					&.port,
 					&.contact {
-						@include slide("drop50s",
-						30%,
-						50%,
-						inherit,
-						inherit,
-						inherit,
-						inherit);
+						@include slide("drop50s", 30%, 50%, inherit, inherit, inherit, inherit);
 						-webkit-animation: slide-drop50s 0.8s;
 					}
 				}
@@ -282,13 +257,15 @@
 		#screenshots2 {
 			display: block;
 		}
-		.column {
-			width: 85%;
-			margin-top: 5%;
-			margin-left: 0 auto;
-			margin-right: 0 auto;
-			padding-left: 0% !important;
-			padding-right: 0% !important;
+		.row {
+			.column {
+				width: 85%;
+				margin-top: 5%;
+				margin-left: 0 auto;
+				margin-right: 0 auto;
+				padding-left: 0% !important;
+				padding-right: 0% !important;
+			}
 		}
 		#appIm1 {
 			margin-left: 7%;
@@ -363,8 +340,10 @@
 				}
 			}
 		}
-		.column {
-			margin-top: 15%;
+		.row {
+			.column {
+				margin-top: 15%;
+			}
 		}
 		#javaPane {
 			#projectsBlock {
@@ -390,24 +369,12 @@
 				.headerSlider {
 					&.port {
 						margin-left: 0.5em !important;
-						@include slide("right",
-						40%,
-						50%,
-						0.2em,
-						0.5em,
-						inherit,
-						inherit);
+						@include slide("right", 40%, 50%, 0.2em, 0.5em, inherit, inherit);
 						-webkit-animation: slide-right 0.8s;
 					}
 					&.contact {
 						margin-right: 0.5em !important;
-						@include slide("left",
-						40%,
-						50%,
-						inherit,
-						inherit,
-						0.2em,
-						0.5em);
+						@include slide("left", 40%, 50%, inherit, inherit, 0.2em, 0.5em);
 						-webkit-animation: slide-left 0.8s;
 					}
 				}
@@ -452,9 +419,12 @@
 				}
 			}
 		}
-		.column {
-			width: 90%;
-			margin-top: 10%;
+		.row{
+
+			.column {
+				width: 90%;
+				margin-top: 10%;
+			}
 		}
 		#ipp1 {
 			padding-left: 9% !important;
@@ -475,25 +445,13 @@
 					&.port {
 						margin-left: 0.7em !important;
 						top: 56% !important;
-						@include slide("right",
-						50%,
-						56%,
-						0em,
-						0.7em,
-						inherit,
-						inherit);
+						@include slide("right", 50%, 56%, 0em, 0.7em, inherit, inherit);
 						-webkit-animation: slide-right 1s;
 					}
 					&.contact {
 						top: 56% !important;
 						margin-right: 0.7em !important;
-						@include slide("leftdown",
-						50%,
-						56%,
-						inherit,
-						inherit,
-						0em,
-						0.7em);
+						@include slide("leftdown", 50%, 56%, inherit, inherit, 0em, 0.7em);
 						-webkit-animation: slide-leftdown 1s;
 					}
 				}

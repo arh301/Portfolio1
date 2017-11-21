@@ -11,19 +11,27 @@
   <link rel="stylesheet" type="text/css" href="../Gi/slick-1.6.0/slick/slick.css" />
   <link rel="stylesheet" type="text/css" href="../Gi/slick-1.6.0/slick/slick-theme.css" />
   <script src="resources/game/game.js"></script>
+  <script type="text/javascript">
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'ArrowUp' || e.key === 'ArrowDown') {
+        e.preventDefault();
+        return false;
+      }
+    });
+  </script>
 </head>
 
-<body style="overflow:hidden">
+<body>
 
   <header>
     <div class="headerButtonBlock">
       <a href="port.html" class="headerButtonContent">
-        <p class="headerPortText">&lt;<span >/</span>&gt;
+        <p class="headerPortText">&lt;<span>/</span>&gt;
         </p>
       </a>
       <p class="headerSlider port">Portfolio</p>
     </div>
-    <a href="index.html"  class="name">
+    <a href="index.html" class="name">
       <span>Anna</span>Hughes</a>
     <div class="headerButtonBlock">
       <a href="contact.html" class="headerButtonContent">
@@ -43,9 +51,9 @@
     <p id="gameFail">THIS GAME IS NOT COMPATIBLE WITH HANDHELD DEVICES. Please revisit this page from a laptop/PC to play the game! Or
       <a class="link" href="resources/game.zip">Get the code.</a>
     </p>
-    <video id="video" src="resources/game/video1.mp4" width="720" height="400" autoplay loop muted style="position:absolute"></video>
+    <video id="video" src="resources/game/video1.mp4" width="720" height="400" autoplay loop muted></video>
 
-    <canvas id="myCanvas" width="703" height="390" style="border:10px solid #000000; position:absolute"></canvas>
+    <canvas id="myCanvas" width="703" height="390"></canvas>
   </div>
 </body>
 

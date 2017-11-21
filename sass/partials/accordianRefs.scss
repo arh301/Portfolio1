@@ -2,98 +2,16 @@
 
 /* CSS Document */
 
-.refs {
-    width: 70%;
-    float: left;
-    padding-left: 14%;
-    color: white;
-}
-
-.content>ul li {
-    line-height: 34px;
-    font-size: 1.3rem;
-    font-weight: 300;
-    margin-left: 20px;
-    padding-left: 4px
-}
-
-.content ul {
-    -webkit-margin-before: 0em;
-}
-
-.accordion {
-    width: 100%;
-    max-width: 75rem;
-    margin: 0 auto;
-}
-
-.accordion-item {
-    position: relative;
-}
-
-.accordion-item.active .heading {
-    color: white;
-}
-
-.accordion-item.active .icon {
-    background: #fefefe;
-}
-
-.accordion-item.active .icon:before {
-    background: #B7B7B7;
-}
-
-.accordion-item.active .icon:after {
-    background: #B7B7B7;
-    width: 0;
-}
-
-.accordion-item .heading {
-    display: block;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #B7B7B7;
-    font-weight: 700;
-    font-size: 1.5rem;
-    position: relative;
-    padding: 1.5rem 0 1.5rem 4rem;
-    transition: 0.3s ease-in-out;
-}
-
-.accordion-item .heading .title {
-    padding-top: 2px;
-}
-
-.accordion-item .heading:hover {
-    color: white;
-}
-
-.accordion-item .heading:hover .icon:before {
-    background: #B7B7B7;
-}
-
-.accordion-item .heading:hover .icon:after {
-    background: white;
-}
-
-.accordion-item .icon {
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 0;
-    width: 2.8rem;
-    height: 2.8rem;
-    border: 2px solid #fefefe;
-    border-radius: 3px;
-    transform: translateY(-50%);
-}
-
-.accordion-item .icon:before,
-.accordion-item .icon:after {
+//colors
+$white: white;
+$offWhite: #fefefe;
+$grey: #b7b7b7;
+//@extend-elements
+%extend_1 {
     content: '';
     width: 1.25rem;
     height: 0.25rem;
-    background: #B7B7B7;
+    background: $grey;
     position: absolute;
     border-radius: 3px;
     left: 50%;
@@ -102,21 +20,98 @@
     transform: translate(-50%, -50%);
 }
 
-.accordion-item .icon:after {
-    transform: translate(-50%, -50%) rotate(90deg);
-    z-index: -1;
+.refs {
+    width: 70%;
+    float: left;
+    padding-left: 14%;
+    color: white;
+    .accordion {
+        width: 100%;
+        max-width: 75rem;
+        margin: 0 auto;
+        .accordion-item {
+            position: relative;
+            &.active {
+                .heading {
+                    color: $white;
+                }
+                .icon {
+                    background: $offWhite;
+                    &:before {
+                        background: $grey;
+                    }
+                    &:after {
+                        background: $grey;
+                        width: 0;
+                    }
+                }
+            }
+            .heading {
+                display: block;
+                text-transform: uppercase;
+                text-decoration: none;
+                color: $grey;
+                font-weight: 700;
+                font-size: 1.5rem;
+                position: relative;
+                padding: 1.5rem 0 1.5rem 4rem;
+                transition: 0.3s ease-in-out;
+                .title {
+                    padding-top: 2px;
+                }
+                &:hover {
+                    color: $white;
+                    .icon {
+                        &:before {
+                            background: $grey;
+                        }
+                        &:after {
+                            background: $white;
+                        }
+                    }
+                }
+            }
+            .icon {
+                display: block;
+                position: absolute;
+                top: 50%;
+                left: 0;
+                width: 2.8rem;
+                height: 2.8rem;
+                border: 2px solid $offWhite;
+                border-radius: 3px;
+                transform: translateY(-50%);
+                &:before {
+                    @extend %extend_1;
+                }
+                &:after {
+                    @extend %extend_1;
+                    transform: translate(-50%, -50%) rotate(90deg);
+                    z-index: -1;
+                }
+            }
+            .content {
+                display: none;
+                p {
+                    margin-top: 0;
+                }
+                ul li {
+                    line-height: 34px;
+                    font-size: 1.3rem;
+                    font-weight: 300;
+                    margin-left: 20px;
+                    padding-left: 4px
+                }
+                ul {
+                    -webkit-margin-before: 0em;
+                }
+            }
+        }
+    }
 }
 
-.accordion-item .content {
-    display: none;
-}
 
-.accordion-item .content p {
-    margin-top: 0;
-}
-
-
-/* Media query for accordian only */
+/* Media queries for accordian only */
 
 @media only screen and (min-width: 775px) {
     .refs {

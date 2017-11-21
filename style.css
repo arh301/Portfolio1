@@ -1,6 +1,5 @@
 /* CSS Document */
 /* CSS Document */
-@import url("large-media.css");
 @-webkit-keyframes pulse {
   0%,
   100% {
@@ -266,9 +265,6 @@ header {
       animation-fill-mode: forwards; }
 
 /* CSS Document */
-body {
-  line-height: 1.2em; }
-
 .parallax {
   position: relative;
   background-attachment: fixed;
@@ -340,6 +336,9 @@ body {
       padding-right: 2%;
       padding-left: 2%;
       font-family: 'Roboto+Condensed', sans-serif; }
+      #appPane .appBlock#appLinks .bold {
+        margin-bottom: 0px;
+        font-weight: 600; }
 
 #websPane {
   width: 100%;
@@ -490,17 +489,22 @@ body {
 #gamePane {
   width: 725px;
   margin: 0 auto;
+  margin-bottom: 5%;
   display: block;
   height: 400px; }
-
-#gameFail {
-  font-size: 1.2em;
-  color: white;
-  padding-top: 3.5em;
-  margin-bottom: 1em;
-  margin: 1.2em;
-  text-align: center;
-  display: none; }
+  #gamePane #gameFail {
+    font-size: 1.2em;
+    color: white;
+    padding-top: 3.5em;
+    margin-bottom: 1em;
+    margin: 1.2em;
+    text-align: center;
+    display: none; }
+  #gamePane video {
+    position: absolute; }
+  #gamePane canvas {
+    border: 10px solid #000000;
+    position: absolute; }
 
 /* CSS Document */
 #contactBkg {
@@ -586,83 +590,11 @@ body {
           line-height: 1.8em; }
 
 /* CSS Document */
-.refs {
-  width: 70%;
-  float: left;
-  padding-left: 14%;
-  color: white; }
-
-.content > ul li {
-  line-height: 34px;
-  font-size: 1.3rem;
-  font-weight: 300;
-  margin-left: 20px;
-  padding-left: 4px; }
-
-.content ul {
-  -webkit-margin-before: 0em; }
-
-.accordion {
-  width: 100%;
-  max-width: 75rem;
-  margin: 0 auto; }
-
-.accordion-item {
-  position: relative; }
-
-.accordion-item.active .heading {
-  color: white; }
-
-.accordion-item.active .icon {
-  background: #fefefe; }
-
-.accordion-item.active .icon:before {
-  background: #B7B7B7; }
-
-.accordion-item.active .icon:after {
-  background: #B7B7B7;
-  width: 0; }
-
-.accordion-item .heading {
-  display: block;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #B7B7B7;
-  font-weight: 700;
-  font-size: 1.5rem;
-  position: relative;
-  padding: 1.5rem 0 1.5rem 4rem;
-  transition: 0.3s ease-in-out; }
-
-.accordion-item .heading .title {
-  padding-top: 2px; }
-
-.accordion-item .heading:hover {
-  color: white; }
-
-.accordion-item .heading:hover .icon:before {
-  background: #B7B7B7; }
-
-.accordion-item .heading:hover .icon:after {
-  background: white; }
-
-.accordion-item .icon {
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 0;
-  width: 2.8rem;
-  height: 2.8rem;
-  border: 2px solid #fefefe;
-  border-radius: 3px;
-  transform: translateY(-50%); }
-
-.accordion-item .icon:before,
-.accordion-item .icon:after {
+.refs .accordion .accordion-item .icon:before, .refs .accordion .accordion-item .icon:after {
   content: '';
   width: 1.25rem;
   height: 0.25rem;
-  background: #B7B7B7;
+  background: #b7b7b7;
   position: absolute;
   border-radius: 3px;
   left: 50%;
@@ -670,17 +602,71 @@ body {
   transition: 0.3s ease-in-out;
   transform: translate(-50%, -50%); }
 
-.accordion-item .icon:after {
-  transform: translate(-50%, -50%) rotate(90deg);
-  z-index: -1; }
+.refs {
+  width: 70%;
+  float: left;
+  padding-left: 14%;
+  color: white; }
+  .refs .accordion {
+    width: 100%;
+    max-width: 75rem;
+    margin: 0 auto; }
+    .refs .accordion .accordion-item {
+      position: relative; }
+      .refs .accordion .accordion-item.active .heading {
+        color: white; }
+      .refs .accordion .accordion-item.active .icon {
+        background: #fefefe; }
+        .refs .accordion .accordion-item.active .icon:before {
+          background: #b7b7b7; }
+        .refs .accordion .accordion-item.active .icon:after {
+          background: #b7b7b7;
+          width: 0; }
+      .refs .accordion .accordion-item .heading {
+        display: block;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #b7b7b7;
+        font-weight: 700;
+        font-size: 1.5rem;
+        position: relative;
+        padding: 1.5rem 0 1.5rem 4rem;
+        transition: 0.3s ease-in-out; }
+        .refs .accordion .accordion-item .heading .title {
+          padding-top: 2px; }
+        .refs .accordion .accordion-item .heading:hover {
+          color: white; }
+          .refs .accordion .accordion-item .heading:hover .icon:before {
+            background: #b7b7b7; }
+          .refs .accordion .accordion-item .heading:hover .icon:after {
+            background: white; }
+      .refs .accordion .accordion-item .icon {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 2.8rem;
+        height: 2.8rem;
+        border: 2px solid #fefefe;
+        border-radius: 3px;
+        transform: translateY(-50%); }
+        .refs .accordion .accordion-item .icon:after {
+          transform: translate(-50%, -50%) rotate(90deg);
+          z-index: -1; }
+      .refs .accordion .accordion-item .content {
+        display: none; }
+        .refs .accordion .accordion-item .content p {
+          margin-top: 0; }
+        .refs .accordion .accordion-item .content ul li {
+          line-height: 34px;
+          font-size: 1.3rem;
+          font-weight: 300;
+          margin-left: 20px;
+          padding-left: 4px; }
+        .refs .accordion .accordion-item .content ul {
+          -webkit-margin-before: 0em; }
 
-.accordion-item .content {
-  display: none; }
-
-.accordion-item .content p {
-  margin-top: 0; }
-
-/* Media query for accordian only */
+/* Media queries for accordian only */
 @media only screen and (min-width: 775px) {
   .refs {
     width: 40%;
@@ -719,18 +705,16 @@ body {
   padding-top: 0.6em; }
 
 /* CSS Document */
-.row > .column {
-  padding: 0 1.6%; }
+.row .column {
+  padding: 0 1.6%;
+  float: left;
+  width: 30%; }
 
 .row:after {
   content: "";
   display: table;
   margin: 0 auto;
   clear: both; }
-
-.column {
-  float: left;
-  width: 30%; }
 
 .slideImg {
   width: 100%;
@@ -789,11 +773,17 @@ body {
 .mySlides {
   display: none;
   background-color: black; }
+  .mySlides .sliderImg {
+    width: 80%;
+    max-width: 300px; }
 
 .mySlides2 {
   display: none;
   text-align: center;
   background-color: black; }
+  .mySlides2 .sliderImg {
+    width: 80%;
+    max-width: 700px; }
 
 .cursor {
   cursor: pointer; }
@@ -917,7 +907,7 @@ img.hover-shadow {
     width: 27%; }
   #appIm3 {
     display: none; }
-  .column {
+  .row .column {
     width: 160px;
     margin-top: 0;
     padding-left: 22px !important; }
@@ -972,7 +962,7 @@ img.hover-shadow {
     padding-top: 0px; }
   #appPane .appBlock#appLinks {
     padding-top: 0px; }
-  .column {
+  .row .column {
     width: 160px;
     margin-top: 0;
     padding-left: 18px !important; }
@@ -1001,7 +991,7 @@ img.hover-shadow {
     width: 36%;
     padding-top: 0px;
     padding-left: 3%; }
-  .column {
+  .row .column {
     width: 170px;
     padding-left: 15% !important;
     padding-right: 15% !important; }
@@ -1061,7 +1051,7 @@ img.hover-shadow {
     display: none; }
   #screenshots2 {
     display: block; }
-  .column {
+  .row .column {
     width: 85%;
     margin-top: 5%;
     margin-left: 0 auto;
@@ -1118,7 +1108,7 @@ img.hover-shadow {
       height: 430px; }
       #appPane .appBlock#appImgs #appIm1 {
         padding-bottom: 10px; }
-  .column {
+  .row .column {
     margin-top: 15%; }
   #javaPane #projectsBlock #javaTable {
     padding-left: 10%; }
@@ -1180,7 +1170,7 @@ img.hover-shadow {
     padding-left: 1%;
     padding-right: 1%;
     width: 20%; }
-  .column {
+  .row .column {
     width: 90%;
     margin-top: 10%; }
   #ipp1 {
