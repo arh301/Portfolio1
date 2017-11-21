@@ -168,9 +168,11 @@ header {
         line-height: 48px; }
         header .headerButtonBlock .headerButtonContent .headerPortText.home {
           padding-top: 28px; }
+          header .headerButtonBlock .headerButtonContent .headerPortText.home span {
+            font-size: 3.1rem; }
         header .headerButtonBlock .headerButtonContent .headerPortText span {
-          font-size: 2rem;
-          font-weight: 600; }
+          font-size: 2.85rem;
+          font-weight: 500; }
       header .headerButtonBlock .headerButtonContent .headerContactImg {
         width: 48px;
         text-align: center;
@@ -508,7 +510,7 @@ body {
   position: fixed;
   opacity: 0.2;
   background-size: cover;
-  background-image: url(img/typewriter.JPG); }
+  background-image: url(img/typewriter.jpg); }
 
 #formPane {
   font-size: 1.12em;
