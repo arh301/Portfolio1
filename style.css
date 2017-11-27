@@ -8,14 +8,14 @@
     box-shadow: 0 0 0 0;
     border-radius: 50%; }
   40% {
-    box-shadow: 0 0 10px white, inset 0 0 4px lightgray; }
+    box-shadow: 0 0 10px #FDFEFC, inset 0 0 4px lightgray; }
   35% {
     border-radius: 10%; }
   20% {
-    box-shadow: 0 0 20px white, inset 0 0 10px lightgray;
+    box-shadow: 0 0 20px #FDFEFC, inset 0 0 10px lightgray;
     border-radius: 50%; }
   10% {
-    box-shadow: 0 0 10px white, inset 0 0 4px lightgray;
+    box-shadow: 0 0 10px #FDFEFC, inset 0 0 4px lightgray;
     border-radius: 50%; } }
 
 @keyframes pulse2 {
@@ -23,10 +23,10 @@
     box-shadow: 0 0 0 0;
     border-radius: 50%; }
   60% {
-    box-shadow: 0 0 16px white, inset 0 0 8px lightgray;
+    box-shadow: 0 0 16px #FDFEFC, inset 0 0 8px lightgray;
     border-radius: 50%; }
   100% {
-    box-shadow: 0 0 20px white, inset 0 0 8px lightgray;
+    box-shadow: 0 0 20px #FDFEFC, inset 0 0 8px lightgray;
     border-radius: 10%; } }
 
 @keyframes drop {
@@ -59,15 +59,22 @@ body {
   font-family: 'Barlow', sans-serif;
   font-size: 1em;
   position: absolute;
-  background-color: #561111; }
+  background-color: #5C1A1B; }
   body.contact {
     background-color: #222222; }
   body.portBody {
-    line-height: 1.2em; }
+    line-height: 1.2em;
+    background: #D8DAD3; }
+    body.portBody p {
+      font-size: 0.95rem; }
+    body.portBody li {
+      font-size: 0.9rem;
+      letter-spacing: 0.4px; }
   body p {
-    font-family: 'Roboto+Condensed', sans-serif; }
+    font-family: 'Roboto+Condensed', sans-serif;
+    letter-spacing: 0.3px; }
   body .text {
-    color: white;
+    color: #FDFEFC;
     padding: 4%;
     padding-left: 8%;
     padding-right: 8%; }
@@ -75,28 +82,39 @@ body {
     width: 100%;
     height: 10.6em;
     display: block; }
-  body h3 {
+    body spacer.port {
+      height: 8em;
+      background: #5c1a1b; }
+  body h2 {
     font-size: 1.5em;
-    background-color: #F7F3E3;
-    margin-top: 0.2em;
+    background-color: #F1F2EB;
+    border-top: 4px solid rgba(92, 26, 27, 0.8);
+    margin-top: 0em;
     margin-bottom: 0;
     padding: 0.8em;
     text-align: center; }
-    body h3.border-bottom {
-      border-bottom: #561111 4px solid; }
-  body h4 {
+  body h3 {
     font-size: 1.3rem; }
-  body h5 {
+  body h4 {
     float: none;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     display: inline;
-    padding-left: 0.1em; }
+    padding-left: 0.4em; }
+  body h5 {
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.1rem;
+    margin-top: 0.6em;
+    margin-bottom: 0.6em; }
   body a.link {
-    font-weight: 400;
+    font-weight: bold;
     color: inherit;
     font-size: inherit;
     padding: 0;
-    text-decoration: underline; }
+    text-decoration: none; }
+    body a.link:hover {
+      text-decoration: underline; }
+    body a.link:visited {
+      text-decoration: none; }
 
 header {
   position: fixed;
@@ -108,8 +126,8 @@ header {
   align-items: center;
   padding-top: 1%;
   top: 0;
-  background-color: rgba(86, 17, 17, 0.9);
-  border-bottom: 2px solid #F7F3E3;
+  background-color: rgba(92, 26, 27, 0.9);
+  border-bottom: 2px solid #F1F2EB;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -121,13 +139,13 @@ header {
   header.homeHeader {
     height: 11em;
     border-bottom: 0;
-    background-color: rgba(86, 17, 17, 0.6); }
+    background-color: rgba(92, 26, 27, 0.6); }
   header .name {
     margin: 0 auto;
     flex: 1;
     text-align: center;
     font-size: 2em;
-    color: white;
+    color: #FDFEFC;
     text-decoration: none !important; }
     header .name span {
       font-weight: bolder;
@@ -160,11 +178,12 @@ header {
         width: 80px;
         height: 48px;
         opacity: 0.5;
-        color: white;
+        color: #FDFEFC;
         margin: 0 auto;
         padding-top: 21px;
         padding-bottom: 20px;
-        line-height: 48px; }
+        line-height: 48px;
+        font-size: 3rem; }
         header .headerButtonBlock .headerButtonContent .headerPortText.home {
           padding-top: 28px; }
           header .headerButtonBlock .headerButtonContent .headerPortText.home span {
@@ -176,7 +195,7 @@ header {
         width: 48px;
         text-align: center;
         opacity: 0.5;
-        color: white;
+        color: #FDFEFC;
         margin: 0 auto;
         padding-top: 21px;
         padding-bottom: 20px; }
@@ -208,7 +227,7 @@ header {
         margin-right: 0%; }
     header .headerButtonBlock:hover .headerButtonContent {
       -webkit-animation: pulse2 0.8s;
-      box-shadow: 0 0 20px white, inset 0 0 8px lightgray;
+      box-shadow: 0 0 20px #FDFEFC, inset 0 0 8px lightgray;
       border-radius: 10%; }
       header .headerButtonBlock:hover .headerButtonContent.active {
         box-shadow: 0 0 0 0 !important;
@@ -224,16 +243,16 @@ header {
     font-size: 1em;
     line-height: 1em;
     background-color: none;
-    border-bottom: 0px solid white; }
+    border-bottom: 0px solid #FDFEFC; }
   20% {
     margin-left: 1.6em; }
   100% {
     font-size: 1.2em;
     margin-left: 0em;
     line-height: 1.4em;
-    background-color: rgba(86, 17, 17, 0.4);
+    background-color: rgba(92, 26, 27, 0.4);
     padding: 0.15em;
-    border-bottom: 2px solid white; } }
+    border-bottom: 2px solid #FDFEFC; } }
 
 #homeBkg {
   width: 100%;
@@ -247,7 +266,7 @@ header {
 .homeTemp {
   width: 95%;
   z-index: 0;
-  color: white;
+  color: #FDFEFC;
   padding-top: 8.4em;
   margin: 0 auto;
   text-align: center;
@@ -271,24 +290,42 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 35%;
+  height: 45%;
   top: 0%;
-  z-index: -1; }
+  z-index: -1;
+  opacity: 0.8; }
   .parallax#para1 {
-    background-image: url(img/ionic2.png); }
+    background-image: url(img/bricks.jpeg); }
   .parallax#para2 {
-    background-image: url(img/steps.jpg); }
+    background-image: url(img/wires.jpeg);
+    opacity: 0.5; }
   .parallax#para3 {
-    background-image: url(img/tree.JPG); }
+    background-image: url(img/tree.jpeg);
+    opacity: 0.4; }
   .parallax#para4 {
     background-image: url(img/type.jpg); }
 
 #portTop {
   width: 100%;
-  height: 6em;
+  height: 7em;
+  padding-top: 4em;
   margin-right: 0%;
-  color: white;
-  display: flex; }
+  color: #080808;
+  display: flex;
+  position: relative; }
+  #portTop::after {
+    content: "";
+    background-image: url(img/bricks.jpeg);
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top;
+    z-index: -1; }
   #portTop #portHead {
     font-size: 2.56em;
     width: 50%;
@@ -303,111 +340,112 @@ header {
     padding-left: 0.1em; }
 
 #appPane {
-  background-color: #D9D9D9;
+  background-color: #D8DAD3;
   width: 100%;
   margin: 0 auto;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   display: flex;
-  border: white 0.2em solid; }
+  border: #FDFEFC 0.2em solid; }
   #appPane .appBlock {
     padding-top: 0px;
     height: auto;
-    vertical-align: top; }
+    vertical-align: top;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 1%;
+    padding-bottom: 1%; }
     #appPane .appBlock#appText {
       width: 25%;
-      order: 1;
-      padding-left: 3%;
-      padding-right: 2%; }
-      #appPane .appBlock#appText ul {
-        margin-top: 5px;
-        margin-left: -11px; }
+      order: 1; }
     #appPane .appBlock#appImgs {
       padding: 2%;
-      background-color: #F7F3E3;
-      width: 40%;
+      background-color: #F1F2EB;
+      flex: 1;
       order: 2;
+      display: flex;
+      align-items: center;
       text-align: center;
       box-shadow: 0px 0px 0px 6px rgba(179, 179, 179, 0.8);
       border-radius: 0.1em; }
     #appPane .appBlock#appLinks {
       width: 25%;
       order: 3;
-      padding-right: 2%;
-      padding-left: 2%;
       font-family: 'Roboto+Condensed', sans-serif; }
       #appPane .appBlock#appLinks .bold {
-        margin-bottom: 0px;
         font-weight: 600; }
 
 #websPane {
   width: 100%;
   margin: 0 auto;
-  display: table; }
+  display: flex; }
   #websPane #websPane1 {
-    width: 50%;
-    margin-top: 0.6%;
+    width: 44%;
+    flex: 1;
     display: block;
-    background-color: #D9D9D9;
+    background-color: #D8DAD3;
     padding: 3%;
-    border-radius: 2em;
-    border: #561111 14px solid;
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
-    padding-top: 0;
-    float: left;
-    color: black; }
+    padding-top: 1%;
+    color: #020202; }
     #websPane #websPane1 p {
       margin-bottom: 0px; }
   #websPane #websPane2 {
-    background-color: #561111;
+    flex: 1;
+    background-color: #5C1A1B;
     width: 44%;
-    color: white;
+    color: #FDFEFC;
     display: block;
-    padding: 2.4%;
-    padding-bottom: 0.7%;
+    padding: 3%;
     padding-top: 0;
-    float: right;
     text-align: center; }
-    #websPane #websPane2 h4 {
-      text-align: left !important; }
+    #websPane #websPane2 h3 {
+      font-size: 1.4rem;
+      padding-bottom: 2%; }
     #websPane #websPane2 img {
       display: block;
       border-radius: 4px;
       width: 55%;
       min-width: 220px;
       margin: 0 auto;
-      margin-top: 3%;
-      border: rgba(0, 0, 0, 0.8) 2px solid; }
+      margin-top: 4%;
+      margin-bottom: 4%; }
 
 #animationPane {
   display: table;
   width: 100%;
   font-size: 1.1em;
-  background-color: #F7F3E3;
-  padding-bottom: 1em; }
+  background-color: #F1F2EB;
+  box-shadow: 0 0 10px 14px #f1f2eb;
+  padding-bottom: 1em;
+  padding-top: 1em; }
   #animationPane #clockPane {
     width: 38%;
-    color: black;
+    color: #020202;
     display: block;
     text-align: center;
     padding: 3%;
     padding-bottom: 1%;
     float: left;
-    background-color: #F7F3E3; }
+    background-color: #F1F2EB; }
     #animationPane #clockPane p {
       margin-bottom: 0px; }
     #animationPane #clockPane svg {
       margin: 0 auto;
       z-index: 1;
-      left: 50%; }
+      margin-top: 2%;
+      margin-bottom: 2%;
+      box-shadow: 0 0 10px 6px #020202; }
   #animationPane #gamePane1 {
     width: 48%;
-    color: black;
+    color: #020202;
     text-align: center;
     display: block;
     float: right;
-    background-color: #F7F3E3;
+    background-color: #F1F2EB;
     padding: 3%;
     padding-bottom: 0%; }
     #animationPane #gamePane1 img {
@@ -419,9 +457,9 @@ header {
   width: 96%;
   margin: 0 auto;
   padding: 2%;
-  color: white;
-  font-size: 1.1rem;
-  line-height: 1.2em; }
+  color: #FDFEFC;
+  line-height: 1.2em;
+  background: rgba(92, 26, 27, 0.95); }
   #javaPane p {
     text-align: center;
     width: 73%;
@@ -436,6 +474,7 @@ header {
     #javaPane #javaTable #projectsBlock,
     #javaPane #javaTable #paintBlock,
     #javaPane #javaTable #skillsBlock {
+      font-size: 0.95rem;
       display: table-cell;
       vertical-align: top;
       width: 25%; }
@@ -443,27 +482,21 @@ header {
       #javaPane #javaTable #paintBlock i,
       #javaPane #javaTable #skillsBlock i {
         padding-left: 10px; }
-      #javaPane #javaTable #projectsBlock h5,
-      #javaPane #javaTable #paintBlock h5,
-      #javaPane #javaTable #skillsBlock h5 {
-        padding-left: 7px; }
+      #javaPane #javaTable #projectsBlock h4,
+      #javaPane #javaTable #paintBlock h4,
+      #javaPane #javaTable #skillsBlock h4 {
+        padding-left: 0.5em; }
     #javaPane #javaTable #projectsBlock {
       height: auto;
       padding-left: 3%;
       padding-right: 2%;
       bottom: 0;
       padding-top: 1%;
-      font-size: 0.9em;
-      font-family: 'Roboto+Condensed', sans-serif; }
-      #javaPane #javaTable #projectsBlock ul {
-        margin-top: 5px;
-        margin-left: -11px; }
-      #javaPane #javaTable #projectsBlock h5 {
-        margin-top: 5px; }
+      font-size: 0.9em; }
     #javaPane #javaTable #paintBlock {
-      background-color: #F7F3E3;
+      background-color: #F1F2EB;
       max-height: 11em;
-      box-shadow: 0px 0px 0px 6px rgba(179, 179, 179, 0.4);
+      box-shadow: 0 0 10px 4px grey;
       border-radius: 0.2em;
       margin: 0;
       padding: 0;
@@ -471,7 +504,6 @@ header {
       #javaPane #javaTable #paintBlock img {
         width: 99%; }
     #javaPane #javaTable #skillsBlock {
-      font-size: 0.9em;
       padding-right: 3%;
       padding-top: 1%;
       padding-left: 3%; }
@@ -479,7 +511,7 @@ header {
 /* CSS Document */
 #gameText {
   font-size: 1.2em;
-  color: white;
+  color: #FDFEFC;
   padding-top: 0.5em;
   padding-top: 0.5em;
   margin-bottom: 3%;
@@ -494,7 +526,7 @@ header {
   height: 400px; }
   #gamePane #gameFail {
     font-size: 1.2em;
-    color: white;
+    color: #FDFEFC;
     padding-top: 3.5em;
     margin-bottom: 1em;
     margin: 1.2em;
@@ -526,7 +558,7 @@ header {
     #formPane .textBlock p {
       margin: 0 auto;
       padding-bottom: 1em;
-      color: white;
+      color: #FDFEFC;
       font-size: 1.4rem;
       position: relative; }
     #formPane .textBlock #linkedInText {
@@ -563,7 +595,7 @@ header {
             text-align: right;
             padding-right: 0.8em;
             font-weight: 600;
-            color: white; }
+            color: #FDFEFC; }
           #formPane .formBlock #formfieldset #form .contactField #name,
           #formPane .formBlock #formfieldset #form .contactField #email {
             text-indent: 3%;
@@ -582,7 +614,7 @@ header {
           position: absolute;
           border-color: rgba(255, 255, 255, 0.8);
           background-color: rgba(39, 34, 30, 0.9);
-          color: white;
+          color: #FDFEFC;
           border-radius: 1em;
           font-family: 'Josefin Sans', sans-serif !important;
           font-weight: 500;
@@ -594,7 +626,7 @@ header {
   content: '';
   width: 1.25rem;
   height: 0.25rem;
-  background: #b7b7b7;
+  background: #D8DAD3;
   position: absolute;
   border-radius: 3px;
   left: 50%;
@@ -614,19 +646,19 @@ header {
     .refs .accordion .accordion-item {
       position: relative; }
       .refs .accordion .accordion-item.active .heading {
-        color: white; }
+        color: #FDFEFC; }
       .refs .accordion .accordion-item.active .icon {
-        background: #fefefe; }
+        background: #F1F2EB; }
         .refs .accordion .accordion-item.active .icon:before {
-          background: #b7b7b7; }
+          background: #D8DAD3; }
         .refs .accordion .accordion-item.active .icon:after {
-          background: #b7b7b7;
+          background: #D8DAD3;
           width: 0; }
       .refs .accordion .accordion-item .heading {
         display: block;
         text-transform: uppercase;
         text-decoration: none;
-        color: #b7b7b7;
+        color: #D8DAD3;
         font-weight: 700;
         font-size: 1.5rem;
         position: relative;
@@ -635,11 +667,11 @@ header {
         .refs .accordion .accordion-item .heading .title {
           padding-top: 2px; }
         .refs .accordion .accordion-item .heading:hover {
-          color: white; }
+          color: #FDFEFC; }
           .refs .accordion .accordion-item .heading:hover .icon:before {
-            background: #b7b7b7; }
+            background: #D8DAD3; }
           .refs .accordion .accordion-item .heading:hover .icon:after {
-            background: white; }
+            background: #FDFEFC; }
       .refs .accordion .accordion-item .icon {
         display: block;
         position: absolute;
@@ -647,7 +679,7 @@ header {
         left: 0;
         width: 2.8rem;
         height: 2.8rem;
-        border: 2px solid #fefefe;
+        border: 2px solid #F1F2EB;
         border-radius: 3px;
         transform: translateY(-50%); }
         .refs .accordion .accordion-item .icon:after {
@@ -692,40 +724,26 @@ header {
     line-height: 30px; } }
 
 /* CSS Document */
-#cvTop {
-  color: white;
-  text-align: center;
-  font-size: 1.3em; }
-
-#cvImg {
-  width: 75%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 0.6em; }
-
-/* CSS Document */
-.row .column {
-  padding: 0 1.6%;
-  float: left;
-  width: 30%; }
-
-.row:after {
-  content: "";
-  display: table;
-  margin: 0 auto;
-  clear: both; }
+.row {
+  width: 100%;
+  display: flex; }
+  .row.webs {
+    margin-top: 5%; }
+  .row .column {
+    padding-left: 3%;
+    padding-right: 3%;
+    width: 30%; }
+  .row:after {
+    content: "";
+    display: table;
+    margin: 0 auto;
+    clear: both; }
 
 .slideImg {
   width: 100%;
-  border: 2px #212121 solid;
+  box-shadow: 0 0 10px 4px grey;
   border-radius: 4px;
   margin-top: 2%; }
-
-#ipp1,
-#ipp2,
-#ipp3 {
-  margin-top: 4%; }
 
 #screenshots2 {
   display: none;
@@ -744,7 +762,7 @@ header {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: black; }
+  background-color: #020202; }
 
 /* Modal Content */
 .modal-content {
@@ -757,7 +775,7 @@ header {
 
 /* The Close Button */
 .close {
-  color: white;
+  color: #FDFEFC;
   position: fixed;
   right: 58px;
   font-size: 40px;
@@ -772,7 +790,7 @@ header {
 
 .mySlides {
   display: none;
-  background-color: black; }
+  background-color: #020202; }
   .mySlides .sliderImg {
     width: 80%;
     max-width: 300px; }
@@ -780,7 +798,7 @@ header {
 .mySlides2 {
   display: none;
   text-align: center;
-  background-color: black; }
+  background-color: #020202; }
   .mySlides2 .sliderImg {
     width: 80%;
     max-width: 700px; }
@@ -797,7 +815,7 @@ header {
   width: auto;
   padding: 16px;
   margin-top: -50px;
-  color: white;
+  color: #FDFEFC;
   font-weight: bold;
   font-size: 20px;
   transition: 0.6s ease;
@@ -814,7 +832,7 @@ header {
   left: 0;
   border-radius: 3px 0 0 3px; }
 
-/* On hover, add a black background color with a little bit see-through */
+/* On hover, add a #020202 background color with a little bit see-through */
 .prev:hover,
 .next:hover {
   background-color: rgba(0, 0, 0, 0.8); }
@@ -829,9 +847,9 @@ header {
 
 .caption-container {
   text-align: center;
-  background-color: black;
+  background-color: #020202;
   padding: 2px 16px;
-  color: white; }
+  color: #FDFEFC; }
 
 .demo {
   opacity: 0.6; }
@@ -877,50 +895,15 @@ img.hover-shadow {
       top: 50%;
       margin-left: 0;
       margin-right: -1em;
-      letter-spacing: 3px; } }
-  #websPane1 > .row {
-    margin-top: 15px; }
-  #websPane2 > p {
-    margin-top: 10px; } }
-
-@media (max-width: 1299px) {
-  .slideImg {
-    margin-top: 10%; } }
-
-@media (max-width: 1249px) {
-  .slideImg {
-    margin-top: 15%; }
-  #websPane1 > .slideImg {
-    margin-top: 2% !important; }
-  #javaPane #projectsBlock {
-    padding-left: 1.5%; } }
+      letter-spacing: 3px; } } }
 
 @media (max-width: 1199px) {
-  #appPane .appBlock#appText {
-    padding-top: 10px;
-    width: 27%; }
-  #appPane .appBlock#appImgs {
-    width: 400px;
-    padding: 15px; }
-  #appPane .appBlock#appLinks {
-    padding-top: 10px;
-    width: 27%; }
-  #appIm3 {
-    display: none; }
   .row .column {
-    width: 160px;
-    margin-top: 0;
-    padding-left: 22px !important; }
-  .slideImg {
-    margin-top: 4%; }
-  #ipp1 {
-    width: 53%;
-    margin-left: 17%;
-    margin-top: 2%; }
-  #ipp2 {
-    display: none; }
-  #ipp3 {
-    display: none; }
+    width: 44%; }
+    .row .column#appIm3 {
+      display: none; }
+    .row .column#ipp3 {
+      display: none; }
   #animationPane #gamePane1 {
     text-align: right;
     width: 47%;
@@ -958,20 +941,10 @@ img.hover-shadow {
       margin-left: inherit;
       margin-right: 0em;
       letter-spacing: 3px; } }
-  #appPane .appBlock#appText {
-    padding-top: 0px; }
-  #appPane .appBlock#appLinks {
-    padding-top: 0px; }
-  .row .column {
-    width: 160px;
-    margin-top: 0;
-    padding-left: 18px !important; }
   #javaPane #javaTable #projectsBlock {
     padding-left: 20%; }
   #javaPane #javaTable #paintBlock {
-    display: none; }
-  #contactEnd {
-    height: 110px; } }
+    display: none; } }
 
 @media (max-width: 1055px) {
   .headerContactSlider {
@@ -980,38 +953,26 @@ img.hover-shadow {
   #homePane {
     width: auto;
     height: 100%; }
+  #appPane .appBlock#appText, #appPane .appBlock#appLinks {
+    width: 30%; }
   #appPane .appBlock#appImgs {
-    width: 28%;
-    padding: 10px; }
-  #appPane .appBlock#appText {
-    width: 36%;
-    padding-top: 0px;
-    padding-right: 3%; }
-  #appPane .appBlock#appLinks {
-    width: 36%;
-    padding-top: 0px;
-    padding-left: 3%; }
-  .row .column {
-    width: 170px;
-    padding-left: 15% !important;
-    padding-right: 15% !important; }
-  .slideImg {
-    margin-top: 8%; }
-  #appIm2 {
-    display: none; }
-  #ipp1 {
-    padding-right: 0px;
-    margin-top: 0%;
-    margin-left: 0px;
-    padding-left: 19% !important;
-    width: 220px !important; }
-  #cvImg {
-    width: 90%; }
+    padding: 1%; }
+  .row {
+    display: block;
+    margin-left: 0%; }
+    .row .column {
+      width: 60%;
+      margin: 0 auto; }
+      .row .column#ipp1 {
+        width: 55%; }
+      .row .column#appIm2 {
+        display: none; }
+      .row .column#ipp2 {
+        display: none; }
   #animationPane #clockPane {
     width: 44%; }
   #animationPane #gamePane1 p {
-    padding-left: 20px;
-    padding-top: 20px; } }
+    padding: 2%; } }
 
 @media (max-width: 919px) {
   .headerButtonBlock:hover .headerSlider {
@@ -1035,40 +996,58 @@ img.hover-shadow {
       margin-right: inherit;
       letter-spacing: 3px; } }
   #appPane {
-    flex-direction: row;
-    flex-wrap: wrap; }
+    margin-right: 25%;
+    flex-direction: column; }
     #appPane .appBlock#appText {
-      width: 64%; }
+      width: 63%; }
     #appPane .appBlock#appImgs {
-      width: 26%;
-      margin: 0;
-      height: 440px; }
+      display: block;
+      position: absolute;
+      right: 0;
+      width: 28%;
+      height: 520px; }
     #appPane .appBlock#appLinks {
-      float: left;
-      margin-top: -205px;
-      width: 64%; }
+      width: 63%;
+      margin-bottom: 1em; }
   #screenshots1 {
     display: none; }
   #screenshots2 {
-    display: block; }
-  .row .column {
+    display: block;
+    margin-top: 6%; }
+  .row.webs {
+    width: 100%;
+    display: flex;
+    margin-bottom: 2%; }
+    .row.webs .column {
+      padding-left: 3%;
+      padding-right: 3%;
+      width: 30%; }
+      .row.webs .column#ipp1 {
+        width: 44%; }
+      .row.webs .column#ipp2 {
+        display: block; }
+      .row.webs .column#ipp3 {
+        display: block; }
+  .row.app .column {
     width: 85%;
     margin-top: 5%;
     margin-left: 0 auto;
     margin-right: 0 auto;
     padding-left: 0% !important;
     padding-right: 0% !important; }
-  #appIm1 {
-    margin-left: 7%;
-    margin-right: 7%;
-    padding-bottom: 2%;
-    padding-left: 0% !important;
-    padding-right: 0% !important; }
-  #ipp1 {
-    padding-right: 0px;
-    margin-left: 0px;
-    padding-left: 17% !important;
-    width: 220px !important; }
+    .row.app .column#appIm1 {
+      padding-bottom: 2%; }
+  #websPane {
+    display: block; }
+    #websPane #websPane1 {
+      width: 100%;
+      padding-left: 8%;
+      padding-right: 8%;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0; }
+    #websPane #websPane2 {
+      padding: 3% 8% 3% 8%;
+      width: 84%; }
   #animationPane #clockPane {
     width: 100%;
     padding: 0%;
@@ -1088,27 +1067,12 @@ img.hover-shadow {
       padding-left: 0px;
       padding-top: 0px; }
     #animationPane #gamePane1 img {
-      width: 40%; }
+      width: 60%; }
   #javaPane #javaTable #projectsBlock {
-    padding-left: 14%; }
-  #contactEnd {
-    height: 85px; } }
-
-@media (max-width: 879px) {
-  #ipp1 {
-    padding-right: 0px;
-    margin-left: 0px;
-    padding-left: 13% !important;
-    width: 220px !important; } }
+    padding-left: 14%; } }
 
 @media (max-width: 855px) {
-  #appPane {
-    border-bottom: 0; }
-    #appPane .appBlock#appImgs {
-      height: 430px; }
-      #appPane .appBlock#appImgs #appIm1 {
-        padding-bottom: 10px; }
-  .row .column {
+  .row.app {
     margin-top: 15%; }
   #javaPane #projectsBlock #javaTable {
     padding-left: 10%; }
@@ -1155,31 +1119,21 @@ img.hover-shadow {
     width: 50%;
     font-size: 1.2rem;
     padding-left: 0.1em; }
-  #appPane .appBlock#appText {
-    width: 63%; }
-  #appPane .appBlock#appLinks {
-    width: 62%; }
   #appPane .appBlock#appImgs {
-    width: 29%;
-    height: 440px;
-    padding-left: 0px;
-    margin-left: 0; }
+    height: 558px; }
   #javaPane #javaTable #projectsBlock {
     padding-left: 5%; }
   #javaPane #javaTable #skillsBlock {
     padding-left: 1%;
     padding-right: 1%;
-    width: 20%; }
-  .row .column {
-    width: 90%;
-    margin-top: 10%; }
-  #ipp1 {
-    padding-left: 9% !important;
-    padding-right: 9% !important; }
-  #websPane2 > p {
-    margin-top: 10px; }
-  #cvImg {
-    width: 100%; } }
+    width: 16%; }
+  .row.app {
+    margin-top: 40%; }
+    .row.app .column {
+      width: 90%;
+      margin-top: 10%; }
+  .row.webs#ipp1 {
+    width: 65%; } }
 
 @media only screen and (max-width: 680px) and (orientation: portrait) {
   .headerButtonBlock:hover .headerSlider.port {
@@ -1212,25 +1166,6 @@ img.hover-shadow {
       margin-left: inherit;
       margin-right: 0.7em;
       letter-spacing: 3px; } }
-  .slideImg {
-    margin-top: 20%; }
-  #ipp1 {
-    padding-left: 4% !important;
-    padding-right: 5% !important;
-    margin-top: -17%; }
-  #websPane2 > p {
-    margin-top: 8px; }
-  #websPane2 {
-    padding-left: 0;
-    padding-right: 25px;
-    width: 45%; }
-  #conLeftPane {
-    width: 100%;
-    height: auto;
-    padding-bottom: 40px;
-    margin-left: 0%; }
-  .conText {
-    padding-top: 50px; }
   #formfieldset {
     margin-top: 1.6em; }
   .homeHeader {
@@ -1258,7 +1193,7 @@ img.hover-shadow {
 /* CSS Document */
 @media (min-width: 1351px) {
   body {
-    font-size: 1.1em; }
+    font-size: 1.05em; }
   .headerButtonBlock:hover .headerSlider.port {
     margin-left: -1em !important;
     -webkit-animation: slide-drop55L 0.8s; }
@@ -1286,7 +1221,12 @@ img.hover-shadow {
       top: 50%;
       margin-left: 0;
       margin-right: -1em;
-      letter-spacing: 3px; } } }
+      letter-spacing: 3px; } }
+  .row {
+    width: 100%;
+    display: flex; }
+    .row.webs {
+      margin-top: 7%; } }
 
 @media (min-width: 1580px) {
   body {

@@ -4,7 +4,7 @@
 
 @media (min-width:1351px) {
 	body {
-		font-size: 1.1em;
+		font-size: 1.05em;
 	}
 	.headerButtonBlock {
 		&:hover {
@@ -21,6 +21,13 @@
 					@include slide("drop55R", 30%, 50%, 0, 0, -3em, -1em);
 				}
 			}
+		}
+	}
+	.row {
+		width: 100%;
+		display: flex;
+		&.webs {
+			margin-top: 7%;
 		}
 	}
 }

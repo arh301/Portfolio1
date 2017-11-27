@@ -522,7 +522,7 @@ a.link {
 }
 
 #appPane {
-	background-color: #D9D9D9;
+	background-color: #D8DAD3;
 	width: 100%;
 	margin: 0 auto;
 	box-sizing: border-box;
@@ -589,7 +589,7 @@ a.link {
 	width: 50%;
 	margin-top: 0.6%;
 	display: block;
-	background-color: #D9D9D9;
+	background-color: #D8DAD3;
 	padding: 3%;
 	border-radius: 25px;
 	border: #561111 14px solid;
@@ -738,7 +738,7 @@ a.link {
 
 #papers {
 	width: 96%;
-	background-color: #D9D9D9;
+	background-color: #D8DAD3;
 	margin: 0 auto;
 	display: block;
 	color: black;

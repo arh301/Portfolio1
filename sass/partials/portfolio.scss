@@ -8,17 +8,20 @@
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 35%;
+	height: 45%;
 	top: 0%;
 	z-index: -1;
+	opacity: 0.8;
 	&#para1 {
-		background-image: url(img/ionic2.png);
+		background-image: url(img/bricks.jpeg);
 	}
 	&#para2 {
-		background-image: url(img/steps.jpg);
+		background-image: url(img/wires.jpeg);
+		opacity: 0.5;
 	}
 	&#para3 {
-		background-image: url(img/tree.JPG);
+		background-image: url(img/tree.jpeg);
+		opacity: 0.4;
 	}
 	&#para4 {
 		background-image: url(img/type.jpg);
@@ -27,10 +30,26 @@
 
 #portTop {
 	width: 100%;
-	height: 6em;
+	height: 7em;
+	padding-top: 4em;
 	margin-right: 0%;
-	color: white;
+	color: #080808;
 	display: flex;
+	position: relative;
+	&::after {
+		content: "";
+		background-image: url(img/bricks.jpeg);
+		opacity: 0.5;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		position: absolute;
+		background-size: cover;
+		background-attachment: fixed;
+		background-position: top;
+		z-index: -1;
+	}
 	#portHead {
 		font-size: 2.56em;
 		width: 50%;
@@ -48,32 +67,32 @@
 }
 
 #appPane {
-	background-color: #D9D9D9;
+	background-color: #D8DAD3;
 	width: 100%;
 	margin: 0 auto;
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	display: flex;
-	border: white 0.2em solid;
+	border: #FDFEFC 0.2em solid;
 	.appBlock {
 		padding-top: 0px;
 		height: auto;
 		vertical-align: top;
+		padding-left: 3%;
+		padding-right: 3%;
+		padding-top: 1%;
+		padding-bottom: 1%;
 		&#appText {
 			width: 25%;
 			order: 1;
-			padding-left: 3%;
-			padding-right: 2%;
-			ul {
-				margin-top: 5px;
-				margin-left: -11px
-			}
 		}
 		&#appImgs {
 			padding: 2%;
-			background-color: #F7F3E3;
-			width: 40%;
+			background-color: #F1F2EB;
+			flex: 1;
 			order: 2;
+			display: flex;
+			align-items: center;
 			text-align: center;
 			box-shadow: 0px 0px 0px 6px rgba(179, 179, 179, 0.8);
 			border-radius: 0.1em;
@@ -81,12 +100,9 @@
 		&#appLinks {
 			width: 25%;
 			order: 3;
-			padding-right: 2%;
-			padding-left: 2%;
 			font-family: 'Roboto+Condensed', sans-serif;
 			.bold {
-				margin-bottom: 0px;
-				font-weight: 600
+				font-weight: 600;
 			}
 		}
 	}
@@ -95,36 +111,35 @@
 #websPane {
 	width: 100%;
 	margin: 0 auto;
-	display: table;
+	display: flex;
 	#websPane1 {
-		width: 50%;
-		margin-top: 0.6%;
+		width: 44%;
+		flex: 1;
 		display: block;
-		background-color: #D9D9D9;
+		background-color: #D8DAD3;
 		padding: 3%;
-		border-radius: 2em;
-		border: $main-maroon 14px solid;
+		border-top-right-radius: 1em;
+		border-bottom-right-radius: 1em;
 		box-sizing: border-box;
 		-moz-box-sizing: border-box;
-		padding-top: 0;
-		float: left;
-		color: black;
+		padding-top: 1%;
+		color: #020202;
 		p {
 			margin-bottom: 0px;
 		}
 	}
 	#websPane2 {
+		flex: 1;
 		background-color: $main-maroon;
 		width: 44%;
-		color: white;
+		color: #FDFEFC;
 		display: block;
-		padding: 2.4%;
-		padding-bottom: 0.7%;
+		padding: 3%;
 		padding-top: 0;
-		float: right;
 		text-align: center;
-		h4 {
-			text-align: left !important;
+		h3 {
+			font-size: 1.4rem;
+			padding-bottom: 2%;
 		}
 		img {
 			display: block;
@@ -132,8 +147,8 @@
 			width: 55%;
 			min-width: 220px;
 			margin: 0 auto;
-			margin-top: 3%;
-			border: rgba(0, 0, 0, 0.8) 2px solid;
+			margin-top: 4%;
+			margin-bottom: 4%;
 		}
 	}
 }
@@ -142,33 +157,37 @@
 	display: table;
 	width: 100%;
 	font-size: 1.1em;
-	background-color: #F7F3E3;
+	background-color: #F1F2EB;
+	box-shadow: 0 0 10px 14px #f1f2eb;
 	padding-bottom: 1em;
+	padding-top: 1em;
 	#clockPane {
 		width: 38%;
-		color: black;
+		color: #020202;
 		display: block;
 		text-align: center;
 		padding: 3%;
 		padding-bottom: 1%;
 		float: left;
-		background-color: #F7F3E3;
+		background-color: #F1F2EB;
 		p {
 			margin-bottom: 0px;
 		}
 		svg {
 			margin: 0 auto;
 			z-index: 1;
-			left: 50%
+			margin-top: 2%;
+			margin-bottom: 2%;
+			box-shadow: 0 0 10px 6px #020202;
 		}
 	}
 	#gamePane1 {
 		width: 48%;
-		color: black;
+		color: #020202;
 		text-align: center;
 		display: block;
 		float: right;
-		background-color: #F7F3E3;
+		background-color: #F1F2EB;
 		padding: 3%;
 		padding-bottom: 0%;
 		img {
@@ -183,14 +202,14 @@
 	width: 96%;
 	margin: 0 auto;
 	padding: 2%;
-	color: white;
-	font-size: 1.1rem;
+	color: #FDFEFC;
 	line-height: 1.2em;
+	background: rgba(92, 26, 27, 0.95);
 	p {
 		text-align: center;
 		width: 73%;
 		padding-bottom: 10px;
-		margin: 0 auto
+		margin: 0 auto;
 	}
 	#javaTable {
 		width: 100%;
@@ -201,14 +220,15 @@
 		#projectsBlock,
 		#paintBlock,
 		#skillsBlock {
+			font-size: 0.95rem;
 			display: table-cell;
 			vertical-align: top;
 			width: 25%;
 			i {
 				padding-left: 10px;
 			}
-			h5 {
-				padding-left: 7px;
+			h4 {
+				padding-left: 0.5em;
 			}
 		}
 		#projectsBlock {
@@ -218,19 +238,11 @@
 			bottom: 0;
 			padding-top: 1%;
 			font-size: 0.9em;
-			font-family: 'Roboto+Condensed', sans-serif;
-			ul {
-				margin-top: 5px;
-				margin-left: -11px;
-			}
-			h5 {
-				margin-top: 5px;
-			}
 		}
 		#paintBlock {
-			background-color: #F7F3E3;
+			background-color: #F1F2EB;
 			max-height: 11em;
-			box-shadow: 0px 0px 0px 6px rgba(179, 179, 179, 0.4);
+			box-shadow: 0 0 10px 4px grey;
 			border-radius: 0.2em;
 			margin: 0;
 			padding: 0;
@@ -240,7 +252,6 @@
 			}
 		}
 		#skillsBlock {
-			font-size: 0.9em;
 			padding-right: 3%;
 			padding-top: 1%;
 			padding-left: 3%;

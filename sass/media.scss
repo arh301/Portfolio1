@@ -19,74 +19,19 @@
 				}
 			}
 		}
-		#websPane1>.row {
-			margin-top: 15px;
-		}
-		#websPane2>p {
-			margin-top: 10px;
-		}
-	}
-
-	@media (max-width: 1299px) {
-		.slideImg {
-			margin-top: 10%;
-		}
-	}
-
-	@media (max-width: 1249px) {
-		.slideImg {
-			margin-top: 15%;
-		}
-		#websPane1>.slideImg {
-			margin-top: 2% !important;
-		}
-		#javaPane {
-			#projectsBlock {
-				padding-left: 1.5%
-			}
-		}
 	}
 
 	@media (max-width: 1199px) {
-		#appPane {
-			.appBlock {
-				&#appText {
-					padding-top: 10px;
-					width: 27%;
-				}
-				&#appImgs {
-					width: 400px;
-					padding: 15px;
-				}
-				&#appLinks {
-					padding-top: 10px;
-					width: 27%;
-				}
-			}
-		}
-		#appIm3 {
-			display: none;
-		}
 		.row {
 			.column {
-				width: 160px;
-				margin-top: 0;
-				padding-left: 22px !important;
+				width: 44%;
+				&#appIm3 {
+					display: none;
+				}
+				&#ipp3 {
+					display: none;
+				}
 			}
-		}
-		.slideImg {
-			margin-top: 4%;
-		}
-		#ipp1 {
-			width: 53%;
-			margin-left: 17%;
-			margin-top: 2%;
-		}
-		#ipp2 {
-			display: none;
-		}
-		#ipp3 {
-			display: none;
 		}
 		#animationPane {
 			#gamePane1 {
@@ -117,23 +62,6 @@
 				}
 			}
 		}
-		#appPane {
-			.appBlock {
-				&#appText {
-					padding-top: 0px;
-				}
-				&#appLinks {
-					padding-top: 0px;
-				}
-			}
-		}
-		.row {
-			.column {
-				width: 160px;
-				margin-top: 0;
-				padding-left: 18px !important;
-			}
-		}
 		#javaPane {
 			#javaTable {
 				#projectsBlock {
@@ -143,9 +71,6 @@
 					display: none;
 				}
 			}
-		}
-		#contactEnd {
-			height: 110px;
 		}
 	}
 
@@ -160,44 +85,31 @@
 		}
 		#appPane {
 			.appBlock {
-				&#appImgs {
-					width: 28%;
-					padding: 10px;
-				}
-				&#appText {
-					width: 36%;
-					padding-top: 0px;
-					padding-right: 3%;
-				}
+				&#appText,
 				&#appLinks {
-					width: 36%;
-					padding-top: 0px;
-					padding-left: 3%;
+					width: 30%;
+				}
+				&#appImgs {
+					padding: 1%;
 				}
 			}
 		}
 		.row {
+			display: block;
+			margin-left: 0%;
 			.column {
-				width: 170px;
-				padding-left: 15% !important;
-				padding-right: 15% !important;
+				width: 60%;
+				margin: 0 auto;
+				&#ipp1 {
+					width: 55%;
+				}
+				&#appIm2 {
+					display: none;
+				}
+				&#ipp2 {
+					display: none;
+				}
 			}
-		}
-		.slideImg {
-			margin-top: 8%;
-		}
-		#appIm2 {
-			display: none;
-		}
-		#ipp1 {
-			padding-right: 0px;
-			margin-top: 0%;
-			margin-left: 0px;
-			padding-left: 19% !important;
-			width: 220px !important;
-		}
-		#cvImg {
-			width: 90%;
 		}
 		#animationPane {
 			#clockPane {
@@ -205,8 +117,7 @@
 			}
 			#gamePane1 {
 				p {
-					padding-left: 20px;
-					padding-top: 20px;
+					padding: 2%;
 				}
 			}
 		}
@@ -233,21 +144,22 @@
 			}
 		}
 		#appPane {
-			flex-direction: row;
-			flex-wrap: wrap;
+			margin-right: 25%;
+			flex-direction: column;
 			.appBlock {
 				&#appText {
-					width: 64%;
+					width: 63%;
 				}
 				&#appImgs {
-					width: 26%;
-					margin: 0;
-					height: 440px;
+					display: block;
+					position: absolute;
+					right: 0;
+					width: 28%;
+					height: 520px;
 				}
 				&#appLinks {
-					float: left;
-					margin-top: -205px;
-					width: 64%;
+					width: 63%;
+					margin-bottom: 1em;
 				}
 			}
 		}
@@ -256,29 +168,55 @@
 		}
 		#screenshots2 {
 			display: block;
+			margin-top: 6%;
 		}
 		.row {
-			.column {
-				width: 85%;
-				margin-top: 5%;
-				margin-left: 0 auto;
-				margin-right: 0 auto;
-				padding-left: 0% !important;
-				padding-right: 0% !important;
+			&.webs {
+				width: 100%;
+				display: flex;
+				margin-bottom: 2%;
+				.column {
+					padding-left: 3%;
+					padding-right: 3%;
+					width: 30%;
+					&#ipp1 {
+						width: 44%;
+					}
+					&#ipp2 {
+						display: block;
+					}
+					&#ipp3 {
+						display: block;
+					}
+				}
+			}
+			&.app {
+				.column {
+					width: 85%;
+					margin-top: 5%;
+					margin-left: 0 auto;
+					margin-right: 0 auto;
+					padding-left: 0% !important;
+					padding-right: 0% !important;
+					&#appIm1 {
+						padding-bottom: 2%;
+					}
+				}
 			}
 		}
-		#appIm1 {
-			margin-left: 7%;
-			margin-right: 7%;
-			padding-bottom: 2%;
-			padding-left: 0% !important;
-			padding-right: 0% !important;
-		}
-		#ipp1 {
-			padding-right: 0px;
-			margin-left: 0px;
-			padding-left: 17% !important;
-			width: 220px !important;
+		#websPane {
+			display: block;
+			#websPane1 {
+				width: 100%;
+				padding-left: 8%;
+				padding-right: 8%;
+				border-top-right-radius: 0;
+				border-bottom-right-radius: 0;
+			}
+			#websPane2 {
+				padding: 3% 8% 3% 8%;
+				width: 84%;
+			}
 		}
 		#animationPane {
 			#clockPane {
@@ -303,7 +241,7 @@
 					padding-top: 0px;
 				}
 				img {
-					width: 40%
+					width: 60%;
 				}
 			}
 		}
@@ -314,36 +252,14 @@
 				}
 			}
 		}
-		#contactEnd {
-			height: 85px;
-		}
-	}
-
-	@media (max-width: 879px) {
-		#ipp1 {
-			padding-right: 0px;
-			margin-left: 0px;
-			padding-left: 13% !important;
-			width: 220px !important;
-		}
 	}
 
 	@media (max-width: 855px) {
-		#appPane {
-			border-bottom: 0;
-			.appBlock {
-				&#appImgs {
-					height: 430px;
-					#appIm1 {
-						padding-bottom: 10px;
-					}
-				}
-			}
-		}
 		.row {
-			.column {
+			&.app {
 				margin-top: 15%;
 			}
+			&.webs {}
 		}
 		#javaPane {
 			#projectsBlock {
@@ -393,17 +309,8 @@
 		}
 		#appPane {
 			.appBlock {
-				&#appText {
-					width: 63%;
-				}
-				&#appLinks {
-					width: 62%;
-				}
 				&#appImgs {
-					width: 29%;
-					height: 440px;
-					padding-left: 0px;
-					margin-left: 0;
+					height: 558px;
 				}
 			}
 		}
@@ -415,26 +322,23 @@
 				#skillsBlock {
 					padding-left: 1%;
 					padding-right: 1%;
-					width: 20%;
+					width: 16%;
 				}
 			}
 		}
-		.row{
-
-			.column {
-				width: 90%;
-				margin-top: 10%;
+		.row {
+			&.app {
+				margin-top: 40%;
+				.column {
+					width: 90%;
+					margin-top: 10%;
+				}
 			}
-		}
-		#ipp1 {
-			padding-left: 9% !important;
-			padding-right: 9% !important;
-		}
-		#websPane2>p {
-			margin-top: 10px;
-		}
-		#cvImg {
-			width: 100%;
+			&.webs {
+				&#ipp1 {
+					width: 65%;
+				}
+			}
 		}
 	}
 
@@ -456,31 +360,6 @@
 					}
 				}
 			}
-		}
-		.slideImg {
-			margin-top: 20%;
-		}
-		#ipp1 {
-			padding-left: 4% !important;
-			padding-right: 5% !important;
-			margin-top: -17%;
-		}
-		#websPane2>p {
-			margin-top: 8px;
-		}
-		#websPane2 {
-			padding-left: 0;
-			padding-right: 25px;
-			width: 45%;
-		}
-		#conLeftPane {
-			width: 100%;
-			height: auto;
-			padding-bottom: 40px;
-			margin-left: 0%;
-		}
-		.conText {
-			padding-top: 50px;
 		}
 		#formfieldset {
 			margin-top: 1.6em;
