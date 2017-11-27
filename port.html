@@ -22,7 +22,7 @@
   <script>
     $(document).ready(function () {
       $('.your-class').slick({
-        setting-name: setting-value
+        setting - name: setting - value
       });
     });
   </script>
@@ -110,27 +110,33 @@
         </p>
       </a>
     </div>
-    <a href="index.html" class="name"><span>Anna</span>Hughes</a>
+    <a href="index.html" class="name">
+      <span>Anna</span>Hughes</a>
     <div class="headerButtonBlock">
       <a href="contact.html" class="headerButtonContent">
-              <img src="img/contactIcon.png" class="headerContactImg">
-          </a>
+        <img src="img/contactIcon.png" class="headerContactImg">
+      </a>
       <p class="headerSlider contact">Contact</p>
     </div>
   </header>
 
   <spacer class="port"></spacer>
   <div id="portTop">
-    <div id="portHead">Technical Projects</br>s</div>
-    <div id="portHead2">ee some of my
-      <del>work</del> code.</div>
+    <div id="portHead">Technical Projects</div>
+    <div id="portHead2">See some of my
+        <div class="verticalFlip">
+          <span>work.</span>
+          <span>code.</span>
+        </div>
+    </div>
   </div>
 
   <h2>Hybrid Mobile App</h2>
   <div id="appPane">
     <div id="appText" class="appBlock">
-      <h5>Dissertation => </h5> <p> An Ionic/Cordova hybrid mobile app that enables users to donate money to individuals
-        experiencing homelessness, contributing towards housing deposits and products/services from registered retailers. Ongoing and open to opportunites.</p>
+      <h5>My ~dissertation~ project</h5>
+      <p> An Ionic/Cordova hybrid mobile app that enables users to donate money to individuals experiencing homelessness, contributing
+        towards housing deposits and products/services from registered retailers. Ongoing and open to opportunites.</p>
       <i class="fa fa-cogs" aria-hidden="true"></i>
       <h4>Skills</h4>
       <ul>
@@ -143,13 +149,17 @@
     </div>
     <div id="appImgs" class="appBlock">
       <div class="row app">
-        <div class="column" id="appIm1" class="ippIm"> <img src="img/appScreenshots/app1.png" onclick="openModal();currentSlide(1,0)" class="hover-shadow cursor slideImg"> </div>
-        <div class="column" id="appIm2" class="ippIm"> <img src="img/appScreenshots/app2.png" onclick="openModal();currentSlide(3,0)" class="hover-shadow cursor slideImg"> </div>
-        <div class="column" id="appIm3" class="ippIm"> <img src="img/appScreenshots/app3.png" onclick="openModal();currentSlide(2,0)" class="hover-shadow cursor slideImg"> </div>
+        <div class="column" id="appIm1" class="ippIm">
+          <img src="img/appScreenshots/app1.png" onclick="openModal();currentSlide(1,0)" class="hover-shadow cursor slideImg"> </div>
+        <div class="column" id="appIm2" class="ippIm">
+          <img src="img/appScreenshots/app2.png" onclick="openModal();currentSlide(3,0)" class="hover-shadow cursor slideImg"> </div>
+        <div class="column" id="appIm3" class="ippIm">
+          <img src="img/appScreenshots/app3.png" onclick="openModal();currentSlide(2,0)" class="hover-shadow cursor slideImg"> </div>
       </div>
       <p id="screenshots2" onclick="openModal();currentSlide(1,0)" class="cursor"> Click for more images of the mobile app.</p>
 
-      <div id="myModal" class="modal"> <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
         <div class="modal-content">
           <div class="mySlides">
             <div class="numbertext">1 / 9</div>
@@ -178,18 +188,25 @@
           <div class="mySlides">
             <div class="numbertext">9 / 9</div>
             <img src="img/appScreenshots/app9.png" class="sliderImg"> </div>
-          <a class="prev" onclick="plusSlides(-1)">&#10094;</a> <a class="next" onclick="plusSlides(1)">&#10095;</a> </div>
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
       </div>
     </div>
     <div id="appLinks" class="appBlock">
       <p id="screenshots1">Click on the app screenshots to see more images.</p>
       <p class="bold">This project has won 2 awards:</p>
       <ul>
-        <li>Second prize in final-year poster competition at <a class="link" href="http://www.hannahdee.eu/blog/?p=1586" target="_blank">BCSWomen Lovelace Colloqium '17.</a>          View poster <a class="link" href="img/lovelacePoster.jpg">here.</a></li>
-        <li><a class="link" href="http://www.sussex.ac.uk/informatics/showcase/prizewinningstudentprojects" target="_blank">CASM award </a>          from University of Sussex.</li>
+        <li>Second prize in final-year poster competition at
+          <a class="link" href="http://www.hannahdee.eu/blog/?p=1586" target="_blank">BCSWomen Lovelace Colloqium '17.</a> View poster
+          <a class="link" href="img/lovelacePoster.jpg">here.</a>
+        </li>
+        <li>
+          <a class="link" href="http://www.sussex.ac.uk/informatics/showcase/prizewinningstudentprojects" target="_blank">CASM award </a> from University of Sussex.</li>
       </ul>
       <p>Selected pages of the project report, including some of the requirements, design, implementation and conclusive documentation,
-        can be downloaded <a href="resources/disso_cut.pdf" target="_blank" class="link">here</a>.</p>
+        can be downloaded
+        <a href="resources/disso_cut.pdf" target="_blank" class="link">here</a>.</p>
 
     </div>
   </div>
@@ -201,11 +218,15 @@
       <p>Intuitive website to market an independent yarn and knitting business. Built to advertise all stock and link to etsy
         store where customers can purchase products. 2015.</p>
       <div class="row webs">
-        <div class="column" id="ipp1"> <img src="img/ipp1.png" onclick="openModal2();currentSlide(1,2)" class="hover-shadow cursor slideImg"> </div>
-        <div class="column" id="ipp2"> <img src="img/ipp3.png" onclick="openModal2();currentSlide(3,2)" class="hover-shadow cursor slideImg"> </div>
-        <div class="column" id="ipp3"> <img src="img/ipp2.png" onclick="openModal2();currentSlide(2,2)" class="hover-shadow cursor slideImg"> </div>
+        <div class="column" id="ipp1">
+          <img src="img/ipp1.png" onclick="openModal2();currentSlide(1,2)" class="hover-shadow cursor slideImg"> </div>
+        <div class="column" id="ipp2">
+          <img src="img/ipp3.png" onclick="openModal2();currentSlide(3,2)" class="hover-shadow cursor slideImg"> </div>
+        <div class="column" id="ipp3">
+          <img src="img/ipp2.png" onclick="openModal2();currentSlide(2,2)" class="hover-shadow cursor slideImg"> </div>
       </div>
-      <div id="myModal2" class="modal"> <span class="close cursor" onclick="closeModal2()">&times;</span>
+      <div id="myModal2" class="modal">
+        <span class="close cursor" onclick="closeModal2()">&times;</span>
         <div class="modal-content">
           <div class="mySlides2">
             <div class="numbertext">1 / 3</div>
@@ -216,28 +237,38 @@
           <div class="mySlides2">
             <div class="numbertext">3 / 3</div>
             <img src="img/ipp3.png" class="sliderImg"> </div>
-          <a class="prev" onclick="plusSlides(-1)">&#10094;</a> <a class="next" onclick="plusSlides(1)">&#10095;</a> </div>
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
       </div>
     </div>
     <div id="websPane2">
       <h3>Gight Website</h3>
-      <a href="resources/gight/index.html"><img src="img/gight.png" alt="gight"></a>
+      <a href="resources/gight/index.html">
+        <img src="img/gight.png" alt="gight">
+      </a>
       <p>As a founding member of Gight, a student start-up producing safety lighting for elderly and disabled people, I produced
         the first website for the company. The site included an Ecwid store and an introduction to Gight. Leaving the company
-        in 2016 due to moving back the UK, this is no longer the active website; learn about Gight <a class="link" href="http://gight.nl/">here</a>.
-        Click on the screenshot above to visit the prototype made by myself in 2016.</p>
+        in 2016 due to moving back the UK, this is no longer the active website; learn about Gight
+        <a class="link" href="http://gight.nl/">here</a>. Click on the screenshot above to visit the prototype made by myself in 2016.</p>
     </div>
   </div>
   <div id="para2" class="parallax"></div>
   <h2 class="border-bottom">JavaScript animations</h2>
   <div id="animationPane">
     <div id="clockPane">
-      <p>Raphael multimedia clock built with JavaScript and SVG. <a class="link" href="resources/clock.zip">Get the code.</a></p>
+      <p>Raphael multimedia clock built with JavaScript and SVG.
+        <a class="link" href="resources/clock.zip">Get the code.</a>
+      </p>
     </div>
     <div id="gamePane1">
-      <p><a class="link" href="game.html">Click here</a> to play Dodjet, a simple Canvas game built using
-        JavaScript. <a class="link" href="resources/game.zip">Get the code.</a></p>
-      <a href="game.html"> <img src="img/gameShot.png" alt="game"></a>
+      <p>
+        <a class="link" href="game.html">Click here</a> to play Dodjet, a simple Canvas game built using JavaScript.
+        <a class="link" href="resources/game.zip">Get the code.</a>
+      </p>
+      <a href="game.html">
+        <img src="img/gameShot.png" alt="game">
+      </a>
       <p>*These animation projects were built as small assignments for a multimedia course and meet a specification; they were
         not built for release.</p>
     </div>
@@ -254,9 +285,15 @@
         <i class="fa fa-folder-open" aria-hidden="true"></i>
         <h4> Projects</h4>
         <ul>
-          <li>Paint program - <a class="link" href="resources/paint.zip">get code</a></li>
-          <li>J2EE Transaction service - <a class="link" href="resources/transactionService.zip">get code</a> </li>
-          <li>Hybrid app (AngularJS) - see <a class="link" href="#portTop">top</a></li>
+          <li>Paint program -
+            <a class="link" href="resources/paint.zip">get code</a>
+          </li>
+          <li>J2EE Transaction service -
+            <a class="link" href="resources/transactionService.zip">get code</a>
+          </li>
+          <li>Hybrid app (AngularJS) - see
+            <a class="link" href="#portTop">top</a>
+          </li>
           <li>Ant game - Software Engineering group</li>
           <li>NLE and Network exercises</li>
           <li>Data Structures and algorithms exercises</li>

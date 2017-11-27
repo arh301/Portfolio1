@@ -284,6 +284,138 @@ header {
       animation-fill-mode: forwards; }
 
 /* CSS Document */
+@-moz-keyframes vertical {
+  0% {
+    opacity: 0; }
+  2% {
+    opacity: 0.4;
+    -moz-transform: rotateX(180deg); }
+  5% {
+    opacity: 1;
+    -moz-transform: translateY(0px); }
+  45% {
+    opacity: 1;
+    -moz-transform: translateY(0px); }
+  50% {
+    opacity: 0;
+    -moz-transform: translateY(25px); }
+  100% {
+    opacity: 0; } }
+
+@-webkit-keyframes vertical {
+  0% {
+    opacity: 0; }
+  2% {
+    opacity: 0.5;
+    -webkit-transform: rotateX(180deg); }
+  5% {
+    opacity: 1;
+    -webkit-transform: translateY(0px); }
+  45% {
+    opacity: 1;
+    -webkit-transform: translateY(0px); }
+  50% {
+    opacity: 0;
+    -webkit-transform: translateY(25px); }
+  100% {
+    opacity: 0; } }
+
+@-ms-keyframes vertical {
+  0% {
+    opacity: 0; }
+  2% {
+    opacity: 0.4;
+    -ms-transform: rotateX(180deg); }
+  5% {
+    opacity: 1;
+    -ms-transform: translateY(0px); }
+  45% {
+    opacity: 1;
+    -ms-transform: translateY(0px); }
+  50% {
+    opacity: 0;
+    -ms-transform: translateY(25px); }
+  100% {
+    opacity: 0; } }
+
+@-moz-keyframes horizontal {
+  0% {
+    opacity: 0; }
+  5% {
+    opacity: 0.4;
+    -moz-transform: translateX(2em); }
+  40% {
+    opacity: 0.8;
+    -moz-transform: translateX(0px); }
+  60% {
+    opacity: 1;
+    -moz-transform: translateX(-1em); }
+  70% {
+    opacity: 1;
+    -moz-transform: translateX(0em); }
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes horizontal {
+  0% {
+    opacity: 0; }
+  5% {
+    opacity: 0.4;
+    -webkit-transform: translateX(2em); }
+  40% {
+    opacity: 0.8;
+    -webkit-transform: translateX(0px); }
+  60% {
+    opacity: 1;
+    -webkit-transform: translateX(-1em); }
+  70% {
+    opacity: 1;
+    -webkit-transform: translateX(0em); }
+  100% {
+    opacity: 1; } }
+
+@-ms-keyframes horizontal {
+  0% {
+    opacity: 0; }
+  5% {
+    opacity: 0.4;
+    -ms-transform: translateX(2em); }
+  40% {
+    opacity: 0.8;
+    -ms-transform: translateX(0px); }
+  60% {
+    opacity: 1;
+    -ms-transform: translateX(-1em); }
+  70% {
+    opacity: 1;
+    -ms-transform: translateX(0em); }
+  100% {
+    opacity: 1; } }
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 0.8; }
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 0.8; }
+  100% {
+    opacity: 1; } }
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 0.8; }
+  100% {
+    opacity: 1; } }
+
 .parallax {
   position: relative;
   background-attachment: fixed;
@@ -307,11 +439,11 @@ header {
 
 #portTop {
   width: 100%;
-  height: 7em;
-  padding-top: 4em;
+  height: 6em;
+  padding-top: 3em;
+  padding-bottom: 3em;
   margin-right: 0%;
   color: #080808;
-  display: flex;
   position: relative; }
   #portTop::after {
     content: "";
@@ -327,17 +459,46 @@ header {
     background-position: top;
     z-index: -1; }
   #portTop #portHead {
-    font-size: 2.56em;
-    width: 50%;
+    font-size: 1.8em;
+    width: 70%;
+    margin-left: 30%;
+    font-weight: 600;
+    line-height: 0.8em;
+    padding-bottom: 3%;
+    animation: horizontal 2s;
+    -ms-animation: horizontal 2s;
+    -webkit-animation: horizontal 2s; }
+  #portTop #portHead2 {
+    font-size: 2.4em;
+    width: 100%;
     margin: 0;
     font-weight: 600;
-    text-align: right;
+    text-align: center;
+    line-height: 0.8em;
+    animation: fadeIn 2s;
+    -ms-animation: fadeIn 2s;
+    -webkit-animation: fadeIn 2s; }
+
+.verticalFlip {
+  display: inline;
+  text-indent: 6px; }
+  .verticalFlip span {
+    animation: vertical 6s linear infinite 0s;
+    -ms-animation: vertical 6s linear infinite 0s;
+    -webkit-animation: vertical 6s linear infinite 0s;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    margin-left: 0px !important;
     line-height: 0.8em; }
-  #portTop #portHead2 {
-    margin-top: 2.2em;
-    width: 50%;
-    font-size: 1.25rem;
-    padding-left: 0.1em; }
+    .verticalFlip span:nth-child(1) {
+      animation-delay: 0s;
+      -ms-animation-delay: 0s;
+      -webkit-animation-delay: 0s; }
+    .verticalFlip span:nth-child(2) {
+      animation-delay: 3s;
+      -ms-animation-delay: 3s;
+      -webkit-animation-delay: 3s; }
 
 #appPane {
   background-color: #D8DAD3;
