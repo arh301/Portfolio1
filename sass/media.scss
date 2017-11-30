@@ -143,6 +143,11 @@
 				}
 			}
 		}
+		#portTop {
+			#portHead {
+				margin-left: 25%;
+			}
+		}
 		#appPane {
 			margin-right: 25%;
 			flex-direction: column;
@@ -255,6 +260,9 @@
 	}
 
 	@media (max-width: 855px) {
+		.parallax{
+			background-attachment: unset;
+		}
 		.row {
 			&.app {
 				margin-top: 15%;
@@ -297,14 +305,14 @@
 			}
 		}
 		#portTop {
+			padding-top: 4em;
+			padding-bottom: 4em;
 			#portHead {
-				font-size: 2em;
+				margin-left: 25%;
+				font-size: 1.5rem;
 			}
 			#portHead2 {
-				margin-top: 1.8em;
-				width: 50%;
-				font-size: 1.2rem;
-				padding-left: 0.1em;
+				font-size: 1.8rem;
 			}
 		}
 		#appPane {
