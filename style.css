@@ -720,16 +720,19 @@ header {
     margin: 5%; }
     #formPane .textBlock p {
       margin: 0 auto;
-      padding-bottom: 1em;
+      padding-bottom: 0.8em;
       color: #FDFEFC;
       font-size: 1.4rem;
-      position: relative; }
+      position: relative;
+      letter-spacing: 1.2px; }
+      #formPane .textBlock p#hello {
+        font-size: 1.7rem; }
     #formPane .textBlock #linkedInText {
       position: relative; }
       #formPane .textBlock #linkedInText img {
         width: 5em;
         margin-left: 0.4em;
-        bottom: 0.95em;
+        bottom: 0.9em;
         position: absolute; }
   #formPane .formBlock {
     flex: 1; }
@@ -1061,6 +1064,8 @@ img.hover-shadow {
       letter-spacing: 3px; } } }
 
 @media (max-width: 1199px) {
+  #portTop::after {
+    background-attachment: unset; }
   .row .column {
     width: 44%; }
     .row .column#appIm3 {
@@ -1158,6 +1163,8 @@ img.hover-shadow {
       margin-left: inherit;
       margin-right: inherit;
       letter-spacing: 3px; } }
+  #portTop::after {
+    background-size: 120%; }
   #portTop #portHead {
     margin-left: 25%; }
   #appPane {

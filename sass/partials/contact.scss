@@ -23,17 +23,21 @@
         margin: 5%;
         p {
             margin: 0 auto;
-            padding-bottom: 1em;
+            padding-bottom: 0.8em;
             color: #FDFEFC;
             font-size: 1.4rem;
             position: relative;
+            letter-spacing: 1.2px;
+            &#hello{
+                font-size: 1.7rem;
+            }
         }
         #linkedInText {
             position: relative;
             img {
                 width: 5em;
                 margin-left: 0.4em;
-                bottom: 0.95em;
+                bottom: 0.9em;
                 position: absolute;
             }
         }
