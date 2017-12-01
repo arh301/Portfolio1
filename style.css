@@ -466,7 +466,10 @@ header {
     padding-bottom: 1.4em;
     animation: horizontal 2s;
     -ms-animation: horizontal 2s;
-    -webkit-animation: horizontal 2s; }
+    -webkit-animation: horizontal 2s;
+    animation-delay: 1.5s;
+    -moz-animation-delay: 1.5s;
+    -webkit-animation-delay: 1.5s; }
   #portTop #portHead2 {
     font-size: 2.4em;
     width: 100%;
@@ -476,7 +479,10 @@ header {
     line-height: 0.8em;
     animation: fadeIn 2s;
     -ms-animation: fadeIn 2s;
-    -webkit-animation: fadeIn 2s; }
+    -webkit-animation: fadeIn 2s;
+    animation-delay: 2s;
+    -moz-animation-delay: 2s;
+    -webkit-animation-delay: 2s; }
 
 .verticalFlip {
   display: inline;
@@ -491,13 +497,13 @@ header {
     margin-left: 0px !important;
     line-height: 0.8em; }
     .verticalFlip span:nth-child(1) {
-      animation-delay: 0s;
-      -ms-animation-delay: 0s;
-      -webkit-animation-delay: 0s; }
+      animation-delay: 2s;
+      -ms-animation-delay: 2s;
+      -webkit-animation-delay: 2s; }
     .verticalFlip span:nth-child(2) {
-      animation-delay: 3s;
-      -ms-animation-delay: 3s;
-      -webkit-animation-delay: 3s; }
+      animation-delay: 5s;
+      -ms-animation-delay: 5s;
+      -webkit-animation-delay: 5s; }
 
 #appPane {
   background-color: #D8DAD3;
