@@ -20,6 +20,16 @@ $grey: #D8DAD3;
     transform: translate(-50%, -50%);
 }
 
+#refsBkg {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: -1;
+	opacity: 0.2;
+	background-size: cover;
+	background-image: url(img/pebbles.JPG);
+}
+
 .refs {
     width: 70%;
     float: left;
@@ -115,8 +125,8 @@ $grey: #D8DAD3;
 
 @media only screen and (min-width: 775px) {
     .refs {
-        width: 40%;
-        padding-left: 8%;
+        width: 36%;
+        padding-left: 12%;
     }
     .accordion-item .heading {
         font-size: 1.2rem;

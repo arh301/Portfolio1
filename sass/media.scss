@@ -22,6 +22,11 @@
 	}
 
 	@media (max-width: 1199px) {
+		#portTop {
+			&::after {
+				background-attachment: unset;
+			}
+		}
 		.row {
 			.column {
 				width: 44%;
@@ -36,8 +41,7 @@
 		#animationPane {
 			#gamePane1 {
 				text-align: right;
-				width: 47%;
-				padding-left: 0px;
+				width: 46%;
 			}
 		}
 	}
@@ -144,6 +148,9 @@
 			}
 		}
 		#portTop {
+			&::after {
+				background-size: 120%;
+			}
 			#portHead {
 				margin-left: 25%;
 			}
@@ -221,6 +228,7 @@
 			#websPane2 {
 				padding: 3% 8% 3% 8%;
 				width: 84%;
+				box-shadow: -2px -2px 2px 2px #5C1A1B;
 			}
 		}
 		#animationPane {
@@ -235,16 +243,13 @@
 				}
 			}
 			#gamePane1 {
-				width: 90%;
+				width: 92%;
+				margin-left: 3%;
 				float: none;
 				text-align: center;
-				padding-left: 5%;
-				padding-right: 5%;
-				padding-bottom: 0%;
-				p {
-					padding-left: 0px;
-					padding-top: 0px;
-				}
+				background-color: #D8DAD3;
+				border-radius: 10px;
+				box-shadow: 0px 0px 20px 1px dimgrey;
 				img {
 					width: 60%;
 				}
@@ -260,7 +265,7 @@
 	}
 
 	@media (max-width: 855px) {
-		.parallax{
+		.parallax {
 			background-attachment: unset;
 		}
 		.row {

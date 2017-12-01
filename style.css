@@ -563,7 +563,8 @@ header {
     display: block;
     padding: 3%;
     padding-top: 0;
-    text-align: center; }
+    text-align: center;
+    box-shadow: -2px 0px 4px 0px #5C1A1B; }
     #websPane #websPane2 h3 {
       font-size: 1.4rem;
       padding-bottom: 2%; }
@@ -582,15 +583,15 @@ header {
   font-size: 1.1em;
   background-color: #F1F2EB;
   box-shadow: 0px 25px 60px -25px black;
-  padding-bottom: 1em;
+  border-radius: 15px;
   padding-top: 1em; }
   #animationPane #clockPane {
     width: 38%;
     color: #020202;
     display: block;
     text-align: center;
-    padding: 3%;
-    padding-bottom: 1%;
+    padding: 4%;
+    padding-right: 0;
     float: left;
     background-color: #F1F2EB; }
     #animationPane #clockPane p {
@@ -602,14 +603,14 @@ header {
       margin-bottom: 2%;
       box-shadow: 0 0 10px 6px #020202; }
   #animationPane #gamePane1 {
-    width: 48%;
+    width: 46%;
     color: #020202;
     text-align: center;
     display: block;
     float: right;
-    background-color: #F1F2EB;
-    padding: 3%;
-    padding-bottom: 0%; }
+    margin: 3%;
+    margin-left: 0;
+    padding: 1%; }
     #animationPane #gamePane1 img {
       width: 80%;
       margin: 0 auto; }
@@ -618,10 +619,11 @@ header {
   display: block;
   width: 96%;
   margin: 0 auto;
-  padding: 1%;
+  padding: 2%;
   color: #FDFEFC;
   line-height: 1.2em;
-  background: rgba(92, 26, 27, 0.95); }
+  background: rgba(92, 26, 27, 0.95);
+  border-bottom: 10px solid #F1F2EB; }
   #javaPane p {
     text-align: center;
     width: 73%;
@@ -800,6 +802,15 @@ header {
   transition: 0.3s ease-in-out;
   transform: translate(-50%, -50%); }
 
+#refsBkg {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -1;
+  opacity: 0.2;
+  background-size: cover;
+  background-image: url(img/pebbles.JPG); }
+
 .refs {
   width: 70%;
   float: left;
@@ -867,8 +878,8 @@ header {
 /* Media queries for accordian only */
 @media only screen and (min-width: 775px) {
   .refs {
-    width: 40%;
-    padding-left: 8%; }
+    width: 36%;
+    padding-left: 12%; }
   .accordion-item .heading {
     font-size: 1.2rem; }
   .content > ul li {
@@ -1074,8 +1085,7 @@ img.hover-shadow {
       display: none; }
   #animationPane #gamePane1 {
     text-align: right;
-    width: 47%;
-    padding-left: 0px; } }
+    width: 46%; } }
 
 @media (max-width: 1125px) {
   .headerButtonBlock:hover .headerSlider.port {
@@ -1219,7 +1229,8 @@ img.hover-shadow {
       border-bottom-right-radius: 0; }
     #websPane #websPane2 {
       padding: 3% 8% 3% 8%;
-      width: 84%; }
+      width: 84%;
+      box-shadow: -2px -2px 2px 2px #5C1A1B; }
   #animationPane #clockPane {
     width: 100%;
     padding: 0%;
@@ -1229,15 +1240,13 @@ img.hover-shadow {
     #animationPane #clockPane svg {
       left: 0; }
   #animationPane #gamePane1 {
-    width: 90%;
+    width: 92%;
+    margin-left: 3%;
     float: none;
     text-align: center;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-bottom: 0%; }
-    #animationPane #gamePane1 p {
-      padding-left: 0px;
-      padding-top: 0px; }
+    background-color: #D8DAD3;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 1px dimgrey; }
     #animationPane #gamePane1 img {
       width: 60%; }
   #javaPane #javaTable #projectsBlock {

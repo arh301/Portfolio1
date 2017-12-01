@@ -330,7 +330,7 @@
 		width: 100%;
 		margin: 0 auto;
 		display: flex;
-		box-shadow: 0px 25px 60px -25px black;		
+		box-shadow: 0px 25px 60px -25px black;
 		#websPane1 {
 			width: 44%;
 			flex: 1;
@@ -356,6 +356,7 @@
 			padding: 3%;
 			padding-top: 0;
 			text-align: center;
+			box-shadow: -2px 0px 4px 0px #5C1A1B;
 			h3 {
 				font-size: 1.4rem;
 				padding-bottom: 2%;
@@ -377,16 +378,16 @@
 		width: 100%;
 		font-size: 1.1em;
 		background-color: #F1F2EB;
-		box-shadow:  0px 25px 60px -25px black;
-		padding-bottom: 1em;
+		box-shadow: 0px 25px 60px -25px black;
+		border-radius: 15px;
 		padding-top: 1em;
 		#clockPane {
 			width: 38%;
 			color: #020202;
 			display: block;
 			text-align: center;
-			padding: 3%;
-			padding-bottom: 1%;
+			padding: 4%;
+			padding-right: 0;
 			float: left;
 			background-color: #F1F2EB;
 			p {
@@ -401,14 +402,14 @@
 			}
 		}
 		#gamePane1 {
-			width: 48%;
+			width: 46%;
 			color: #020202;
 			text-align: center;
 			display: block;
 			float: right;
-			background-color: #F1F2EB;
-			padding: 3%;
-			padding-bottom: 0%;
+			margin: 3%;
+			margin-left: 0;
+			padding: 1%;
 			img {
 				width: 80%;
 				margin: 0 auto;
@@ -420,10 +421,11 @@
 		display: block;
 		width: 96%;
 		margin: 0 auto;
-		padding: 1%;
+		padding: 2%;
 		color: #FDFEFC;
 		line-height: 1.2em;
 		background: rgba(92, 26, 27, 0.95);
+		border-bottom: 10px solid #F1F2EB;
 		p {
 			text-align: center;
 			width: 73%;
