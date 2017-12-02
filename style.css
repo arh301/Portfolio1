@@ -457,6 +457,18 @@ header {
     background-attachment: fixed;
     background-position: top;
     z-index: -1; }
+
+@keyframes shakeHeader1 {
+  0% {
+    margin-left: 30%;
+    margin-bottom: 0.4em; }
+  30% {
+    margin-left: 35%; }
+  60% {
+    margin-left: 40%; }
+  100% {
+    margin-bottom: 1.4em;
+    margin-left: 30%; } }
   #portTop #portHead {
     font-size: 1.8em;
     width: 70%;
@@ -464,9 +476,9 @@ header {
     font-weight: 600;
     line-height: 0.8em;
     padding-bottom: 1.4em;
-    animation: horizontal 2s;
-    -ms-animation: horizontal 2s;
-    -webkit-animation: horizontal 2s;
+    animation: shakeHeader1 2s;
+    -ms-animation: shakeHeader1 2s;
+    -webkit-animation: shakeHeader1 2s;
     animation-delay: 1.5s;
     -moz-animation-delay: 1.5s;
     -webkit-animation-delay: 1.5s; }
