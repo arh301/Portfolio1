@@ -36,7 +36,7 @@
     var id = "";
 
     function openModal() {
-      document.getElementById('myModal').style.display = "block";
+      document.getElementById('myModal').style.display = "flex";
       id = "";
     }
 
@@ -45,7 +45,7 @@
     }
 
     function openModal2() {
-      document.getElementById('myModal2').style.display = "block";
+      document.getElementById('myModal2').style.display = "flex";
       id = "2";
     }
 
@@ -116,10 +116,10 @@
   <div id="portTop">
     <div id="portHead">Technical Projects</div>
     <div id="portHead2">See some of my
-        <div class="verticalFlip">
-          <span>work.</span>
-          <span>code.</span>
-        </div>
+      <div class="verticalFlip">
+        <span>work.</span>
+        <span>code.</span>
+      </div>
     </div>
   </div>
 
@@ -151,7 +151,6 @@
       <p id="screenshots2" onclick="openModal();currentSlide(1,0)" class="cursor"> Click for more images of the mobile app.</p>
 
       <div id="myModal" class="modal">
-        <span class="close cursor" onclick="closeModal()">&times;</span>
         <div class="modal-content">
           <div class="mySlides">
             <div class="numbertext">1 / 9</div>
@@ -182,6 +181,7 @@
             <img src="img/appScreenshots/app9.png" class="sliderImg"> </div>
           <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
           <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          <span class="close cursor" onclick="closeModal()">&times;</span>
         </div>
       </div>
     </div>
@@ -218,7 +218,6 @@
           <img src="img/ipp2.png" onclick="openModal2();currentSlide(2,2)" class="hover-shadow cursor slideImg"> </div>
       </div>
       <div id="myModal2" class="modal">
-        <span class="close cursor" onclick="closeModal2()">&times;</span>
         <div class="modal-content">
           <div class="mySlides2">
             <div class="numbertext">1 / 3</div>
@@ -231,6 +230,7 @@
             <img src="img/ipp3.png" class="sliderImg"> </div>
           <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
           <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          <span class="close cursor" onclick="closeModal2()">&times;</span>
         </div>
       </div>
     </div>
@@ -312,7 +312,7 @@
 
     </div>
   </div>
-  
+
   <!-- <div id="para4" class="parallax"></div> -->
   <!--<h2>Research papers</h2>
 <div id="papers">
