@@ -946,6 +946,8 @@ header {
   position: fixed;
   z-index: 3;
   left: 0;
+  border-radius: 10px;
+  box-shadow: 0 0 100px 20px grey;
   margin-left: 4%;
   margin-right: 4%;
   width: 92%;
