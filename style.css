@@ -961,7 +961,7 @@ header {
   color: #FDFEFC;
   position: absolute;
   right: 0em;
-  top: 0;
+  top: 0.3em;
   font-size: 2.1rem;
   font-weight: bold; }
 
@@ -1024,6 +1024,7 @@ header {
 /* Number text (1/3 etc) */
 .numbertext {
   color: #f2f2f2;
+  top: 0.6em;
   position: absolute; }
 
 .caption-container {
