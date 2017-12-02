@@ -229,13 +229,13 @@ header {
       -webkit-animation: pulse2 0.8s;
       box-shadow: 0 0 20px #FDFEFC, inset 0 0 8px lightgray;
       border-radius: 10%; }
-      header .headerButtonBlock:hover .headerButtonContent.active {
-        box-shadow: 0 0 0 0 !important;
-        -webkit-animation: none; }
       header .headerButtonBlock:hover .headerButtonContent .headerPortText {
         opacity: 0.8; }
       header .headerButtonBlock:hover .headerButtonContent .headerContactImg {
         opacity: 1; }
+    header .headerButtonBlock:active .headerButtonContent {
+      box-shadow: 0 0 0 0 !important;
+      -webkit-animation: none; }
 
 /* CSS Document */
 @keyframes grow {
@@ -768,7 +768,6 @@ header {
             line-height: 1.5em;
             text-align: right;
             padding-right: 0.8em;
-            font-weight: 600;
             color: #FDFEFC; }
           #formPane .formBlock #formfieldset #form .contactField #name,
           #formPane .formBlock #formfieldset #form .contactField #email {
