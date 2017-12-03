@@ -17,81 +17,6 @@
   </script>
   <script src="raphael.min.js" type="text/javascript">
   </script>
-
-  <script>
-    jQuery(function () {
-      var icons = {
-        header: "fa fa-plus-square-o",
-        activeHeader: "fa fa-minus-square-o"
-      };
-      jQuery("#accordion").accordion({
-        icons: icons,
-        collapsible: true,
-        active: false,
-        heightStyle: "content"
-      });
-    });
-  </script>
-  <script>
-    var id = "";
-
-    function openModal() {
-      document.getElementById('myModal').style.display = "flex";
-      id = "1";
-    }
-
-    function closeModal() {
-      document.getElementById('myModal').style.display = "none";
-    }
-
-    function openModal2() {
-      document.getElementById('myModal2').style.display = "flex";
-      id = "2";
-    }
-
-    function closeModal2() {
-      document.getElementById('myModal2').style.display = "none";
-    }
-
-    var slideIndex = 1;;
-    showSlides(slideIndex);
-
-    function plusSlides(n) {
-      showSlides(slideIndex += n);
-    }
-
-    function currentSlide(n) {
-      showSlides(slideIndex = n);
-    }
-
-    function showSlides(n) {
-      var i;
-      var slides;
-      if (id < 2) {
-        slides = document.getElementsByClassName("mySlides");
-      } else {
-        var text = "mySlides" + id;
-        slides = document.getElementsByClassName(text);
-      }
-      var dots = document.getElementsByClassName("demo");
-      var captionText = document.getElementById("caption");
-      if (n > slides.length) {
-        slideIndex = 1
-      }
-      if (n < 1) {
-        slideIndex = slides.length
-      }
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-      }
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-      }
-      if (slides[slideIndex - 1]) {
-        slides[slideIndex - 1].style.display = "block";
-      }
-    }
-  </script>
 </head>
 
 <body class="portBody">
@@ -317,6 +242,67 @@
   <!--<h2>Research papers</h2>
 <div id="papers">
 </div> -->
+
+<script>
+  var id = "";
+
+  function openModal() {
+    document.getElementById('myModal').style.display = "flex";
+    id = "1";
+  }
+
+  function closeModal() {
+    document.getElementById('myModal').style.display = "none";
+  }
+
+  function openModal2() {
+    document.getElementById('myModal2').style.display = "flex";
+    id = "2";
+  }
+
+  function closeModal2() {
+    document.getElementById('myModal2').style.display = "none";
+  }
+
+  var slideIndex = 1;;
+  showSlides(slideIndex);
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    var i;
+    var slides;
+    if (id < 2) {
+      slides = document.getElementsByClassName("mySlides");
+    } else {
+      var text = "mySlides" + id;
+      slides = document.getElementsByClassName(text);
+    }
+    var dots = document.getElementsByClassName("demo");
+    var captionText = document.getElementById("caption");
+    if (n > slides.length) {
+      slideIndex = 1
+    }
+    if (n < 1) {
+      slideIndex = slides.length
+    }
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    if (slides[slideIndex - 1]) {
+      slides[slideIndex - 1].style.display = "block";
+    }
+  }
+</script>
 </body>
 
 </html>
